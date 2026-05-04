@@ -1,24 +1,16 @@
 import type { Metadata } from 'next';
-import { Inter_Tight, Instrument_Serif, JetBrains_Mono } from 'next/font/google';
+import { Inter, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import { siteConfig } from '@/data/site';
 import { ConsentBanner } from '@/components/ConsentBanner';
 
-// 2026-05-05 design pass — Inter Tight (UI), Instrument Serif (italic
-// accents only; sparingly), JetBrains Mono (eyebrows + code-style
-// labels). Pulled from the Claude Design dental handoff.
-const sans = Inter_Tight({
+// 2026-05-05 — Enfield design from the Claude Design handoff uses Inter
+// only across the entire system. JetBrains Mono retained for any code-
+// style labels (postcodes, etc.) that remain in the existing pages.
+const sans = Inter({
   subsets: ['latin'],
-  weight: ['400', '500', '600'],
+  weight: ['400', '500', '600', '700'],
   variable: '--font-sans',
-  display: 'swap',
-});
-
-const display = Instrument_Serif({
-  subsets: ['latin'],
-  weight: ['400'],
-  style: ['normal', 'italic'],
-  variable: '--font-display',
   display: 'swap',
 });
 
@@ -132,7 +124,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   };
 
   return (
-    <html lang="en-GB" className={`${sans.variable} ${display.variable} ${mono.variable}`}>
+    <html lang="en-GB" className={`${sans.variable} ${mono.variable}`}>
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />

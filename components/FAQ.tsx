@@ -3,53 +3,36 @@
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 
-interface FAQItem { question: string; answer: string; }
+type FAQItem = { question: string; answer: string };
 
-interface Props {
-  faqs: FAQItem[];
-  title?: string;
-  embedSchema?: boolean;
-}
-
-export function FAQ({ faqs, title = 'Frequently asked questions', embedSchema = true }: Props) {
+// 2026-05-05 Enfield rebuild: rounded-card accordion. Soft blue
+// hover, divider between rows, Inter throughout. The page-level
+// FAQPage JSON-LD lives at the call site (not this component) to
+// avoid double-emit when the same component is rendered on a page
+// that already emits FAQPage schema.
+export function FAQ({ faqs, title = 'Frequently asked questions' }: { faqs: FAQItem[]; title?: string }) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
-
-  const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqs.map(f => ({
-      '@type': 'Question',
-      name: f.question,
-      acceptedAnswer: { '@type': 'Answer', text: f.answer },
-    })),
-  };
 
   return (
     <section>
-      {embedSchema && (
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      )}
-      <h2
-        className="font-sans font-medium text-ink leading-[1.1] tracking-tightest mb-8"
-        style={{ fontSize: 'clamp(26px, 3.4vw, 40px)' }}
-      >
+      <h2 className="text-[24px] lg:text-[30px] font-bold leading-tight text-ink mb-6 tracking-[-0.01em]">
         {title}
       </h2>
-      <div className="border-t border-sand">
+      <div className="bg-white border border-line rounded-card overflow-hidden">
         {faqs.map((faq, i) => (
-          <div key={i} className="border-b border-sand">
+          <div key={i} className={i > 0 ? 'border-t border-line' : ''}>
             <button
               onClick={() => setOpenIndex(openIndex === i ? null : i)}
-              className="w-full flex items-center justify-between gap-4 py-5 text-left text-[15px] lg:text-[16px] font-medium text-ink hover:text-brand-600 transition-colors"
+              className="w-full flex items-center justify-between gap-4 px-5 lg:px-6 py-4 text-left text-[15px] font-semibold text-ink hover:bg-soft transition-colors"
             >
               <span>{faq.question}</span>
               <ChevronDown
                 size={18}
-                className={`text-sand-text flex-shrink-0 transition-transform duration-200 ${openIndex === i ? 'rotate-180' : ''}`}
+                className={`text-ink-mute flex-shrink-0 transition-transform duration-200 ${openIndex === i ? 'rotate-180' : ''}`}
               />
             </button>
             {openIndex === i && (
-              <div className="pb-5 text-[14.5px] text-sand-body leading-[1.65] max-w-prose">
+              <div className="px-5 lg:px-6 pb-5 text-[14.5px] text-ink-text leading-relaxed border-t border-line pt-4">
                 {faq.answer}
               </div>
             )}

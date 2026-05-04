@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 //
-// 2026-05-05 redesign — calm-but-urgent dental palette pulled from the
-// Claude Design handoff. Warm off-white base, deep ink, teal as the
-// primary accent and a muted coral for the conversion CTA. All accents
-// share similar chroma so the ink doesn't fight the warm paper.
+// 2026-05-05 — Enfield design tokens from the Claude Design handoff.
+// Medical-trust blue on a clean white surface, soft 12px rounded
+// cards, single accent (Inter only — no serif italics). Distinct from
+// the Harlow rebuild's warm cream/coral aesthetic.
 module.exports = {
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}',
@@ -13,63 +13,65 @@ module.exports = {
     extend: {
       colors: {
         // Surfaces
-        cream:  '#faf7f0',  // primary page background — warm off-white
-        paper:  '#fffdf7',  // slightly warmer card surface
-        ink:    '#0f1f1c',  // deep ink, near-black with cool green undertone
-        'ink-soft':  '#1a2826', // slightly lifted dark surface (e.g. inside dark cards)
-        'ink-line':  '#2a322f', // dark-on-dark divider
-        'ink-mute':  '#8a9a96', // muted text on dark backgrounds
-        'ink-soft-text': '#eef3ed', // soft white text on dark backgrounds
+        bg:        '#ffffff',  // primary page background — white
+        cream:     '#ffffff',  // legacy alias kept so any consumer not migrated still works
+        paper:     '#ffffff',  // ditto
+        soft:      '#f4f9fc',  // section background — pale blue
+        line:      '#e3e8ef',  // primary divider
+        ink:       '#1a2233',  // body / heading text — deep navy ink
 
-        // Sand line / muted text family for the warm paper sections
-        sand:        '#d9d3c5', // primary divider on cream
-        'sand-soft': '#ece7dd', // subtler border
-        'sand-card': '#e3ddcf', // card-edge tone
-        'sand-text': '#7a705c', // mono-eyebrow text on cream
-        'sand-body': '#4a4438', // body text on cream
-        'sand-deep': '#6b6353', // wordmark sub-label
+        // Text scale
+        'ink-text':  '#3a4456',  // secondary body text
+        'ink-mute':  '#6b7488',  // tertiary / labels
 
-        // Brand teal (primary accent, calm)
+        // Brand blue (medical-trust primary)
         brand: {
-          50:  '#eaf3ef',
-          100: '#d6e8e0',
-          200: '#b8d6c9',
-          300: '#a8d0c5', // light teal — accent in headlines on dark bg
-          400: '#69b39e',
-          500: '#3a8a78', // primary teal accent
-          600: '#2d6f60',
-          700: '#23574c',
-          800: '#1a3f37',
-          900: '#0f1f1c', // collapses to ink for hover/active
+          50:  '#f4f9fc',
+          100: '#e8f3fb',
+          200: '#cfe4f4',
+          300: '#a7cbe5',
+          400: '#5fa3cf',
+          500: '#0a6cb8',  // primary blue — buttons, headlines, links
+          600: '#08507f',  // darker — utility bar, hover
+          700: '#063e62',
+          800: '#04304b',
+          900: '#1a2233',  // collapses to ink
         },
 
-        // Coral / urgent CTA (used for the emergency-call style accent)
-        coral: {
-          50:  '#fbeee8',
-          100: '#f6d8cc',
-          300: '#e29a82',
-          500: '#c4624e', // primary coral CTA
-          600: '#a84d3a',
-          700: '#83392a',
-        },
+        // Status colours from the design tokens. `success` for the
+        // live-now dot, `warning` for the YMYL alert strip, `danger`
+        // for the medical-emergency callout text.
+        success: { 500: '#2e9c6b' },
+        warning: { 500: '#f5b400', 600: '#c88f00' },
+        danger:  { 500: '#d93b3b', 600: '#b22e2e', 700: '#8a2424' },
 
-        // Legacy "urgent" key kept for the YMYL "999/NHS 111" callout
-        // copy that already references it. Now points at the same coral
-        // family so the warning still reads coherently.
+        // Legacy alias kept so anything still referencing urgent.*
+        // renders coherently. Maps to danger.
         urgent: {
-          50:  '#fbeee8',
-          500: '#c4624e',
-          600: '#a84d3a',
-          700: '#83392a',
+          50:  '#fff0f0',
+          500: '#d93b3b',
+          600: '#b22e2e',
+          700: '#8a2424',
         },
       },
       fontFamily: {
-        sans:    ['var(--font-sans)', 'system-ui', 'sans-serif'],     // Inter Tight
-        display: ['var(--font-display)', 'Georgia', 'serif'],          // Instrument Serif (italic accents)
-        mono:    ['var(--font-mono)', 'ui-monospace', 'monospace'],   // JetBrains Mono (eyebrows)
+        // Inter only on Enfield. The display token aliases sans so any
+        // legacy `font-display` usage falls through to Inter cleanly.
+        sans:    ['var(--font-sans)', 'system-ui', 'sans-serif'],
+        body:    ['var(--font-sans)', 'system-ui', 'sans-serif'],
+        display: ['var(--font-sans)', 'system-ui', 'sans-serif'],
+        mono:    ['var(--font-mono)', 'ui-monospace', 'monospace'],
       },
-      letterSpacing: {
-        tightest: '-0.035em',
+      borderRadius: {
+        'card':  '12px',
+        'btn':   '10px',
+        'pill':  '999px',
+      },
+      boxShadow: {
+        // Subtle blue-tinted shadow on primary CTAs. Used everywhere a
+        // button or card needs to lift slightly off the page.
+        'btn-blue':  '0 4px 12px rgba(10,108,184,0.25)',
+        'card-soft': '0 2px 8px rgba(15,28,53,0.06)',
       },
     },
   },

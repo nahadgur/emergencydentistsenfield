@@ -18,13 +18,13 @@ function renderBlock(block: ContentBlock, i: number) {
   switch (block.type) {
     case 'h2':
       return (
-        <h2 key={i} className="font-display text-[26px] lg:text-[32px] text-ink leading-tight mt-10 mb-4">
+        <h2 key={i} className="font-sans font-medium text-[26px] lg:text-[32px] text-ink leading-tight mt-10 mb-4">
           {block.text}
         </h2>
       );
     case 'h3':
       return (
-        <h3 key={i} className="font-display text-[20px] lg:text-[24px] text-ink leading-tight mt-8 mb-3">
+        <h3 key={i} className="font-sans font-medium text-[20px] lg:text-[24px] text-ink leading-tight mt-8 mb-3">
           {block.text}
         </h3>
       );
@@ -97,7 +97,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
                 <span className="w-1 h-1 rounded-full bg-white/30" />
                 <span className="flex items-center gap-1"><Clock size={11} /> {article.publishDate}</span>
               </div>
-              <h1 className="font-display text-[32px] lg:text-[44px] leading-tight text-white mb-4">
+              <h1 className="font-sans font-medium text-[32px] lg:text-[44px] leading-tight text-white mb-4">
                 {article.title}
               </h1>
               <p className="text-[15px] lg:text-[17px] text-white/75 leading-relaxed">
@@ -146,7 +146,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
 
         <section className="bg-brand-600 text-white text-center py-14">
           <div className="container-width max-w-3xl">
-            <h2 className="font-display text-[26px] lg:text-[36px] leading-tight mb-3">
+            <h2 className="font-sans font-medium text-[26px] lg:text-[36px] leading-tight mb-3">
               Need a Enfield emergency dentist now?
             </h2>
             <p className="text-[15px] text-white/85 max-w-xl mx-auto mb-6 leading-relaxed">

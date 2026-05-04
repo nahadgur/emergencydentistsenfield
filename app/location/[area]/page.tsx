@@ -92,14 +92,14 @@ export default function AreaPage({ params }: { params: { area: string } }) {
                     {hub.postcode}
                   </span>
                 </div>
-                <h1 className="font-display text-[34px] lg:text-[48px] leading-tight text-white mb-5">
+                <h1 className="font-sans font-medium text-[34px] lg:text-[48px] leading-tight text-white mb-5">
                   {ac?.heroHeading ?? `Emergency dentists in ${hub.name}`}
                 </h1>
                 <p className="text-[15px] lg:text-[17px] leading-relaxed text-white/80 max-w-2xl mb-6">
                   {ac?.heroParagraph ?? `Free matching with vetted GDC-registered emergency dentists for ${hub.name} (${hub.postcode}) residents. Matched within 60 minutes during opening hours, first thing the next morning otherwise.`}
                 </p>
                 {lp && (
-                  <p className="font-display italic text-[16px] text-brand-300/85 max-w-xl leading-relaxed">
+                  <p className="font-sans font-medium italic text-[16px] text-brand-300/85 max-w-xl leading-relaxed">
                     {lp.character}
                   </p>
                 )}
@@ -145,7 +145,7 @@ export default function AreaPage({ params }: { params: { area: string } }) {
                   <div className="space-y-4">
                     {partners.map(p => (
                       <div key={p.id}>
-                        <h3 className="font-display text-[20px] text-ink leading-tight mb-1">
+                        <h3 className="font-sans font-medium text-[20px] text-ink leading-tight mb-1">
                           {p.name}
                         </h3>
                         <p className="text-[11px] font-mono uppercase tracking-[0.18em] text-brand-700 mb-2">
@@ -175,7 +175,7 @@ export default function AreaPage({ params }: { params: { area: string } }) {
               {ac && (
                 <section>
                   <p className="eyebrow mb-3">— {hub.name} in detail</p>
-                  <h2 className="font-display text-[28px] lg:text-[36px] leading-tight text-ink mb-5">
+                  <h2 className="font-sans font-medium text-[28px] lg:text-[36px] leading-tight text-ink mb-5">
                     {ac.introHeading}
                   </h2>
                   <div className="space-y-4 text-[15px] lg:text-[16px] leading-relaxed text-ink/80">
@@ -197,7 +197,7 @@ export default function AreaPage({ params }: { params: { area: string } }) {
               {/* Patient profile */}
               {ac?.patientProfile && (
                 <section>
-                  <h2 className="font-display text-[26px] lg:text-[32px] leading-tight text-ink mb-5">
+                  <h2 className="font-sans font-medium text-[26px] lg:text-[32px] leading-tight text-ink mb-5">
                     {ac.patientProfile.heading}
                   </h2>
                   <div className="bg-white border border-ink/10 rounded-lg p-6">
@@ -217,7 +217,7 @@ export default function AreaPage({ params }: { params: { area: string } }) {
               {ac?.commonTriggers && ac.commonTriggers.length > 0 && (
                 <section>
                   <p className="eyebrow mb-3">— Why people in {hub.name} engage us</p>
-                  <h2 className="font-display text-[26px] lg:text-[32px] leading-tight text-ink mb-5">
+                  <h2 className="font-sans font-medium text-[26px] lg:text-[32px] leading-tight text-ink mb-5">
                     Common triggers from {hub.name} patients
                   </h2>
                   <ul className="space-y-2.5">
@@ -233,7 +233,7 @@ export default function AreaPage({ params }: { params: { area: string } }) {
               {/* Sub-areas */}
               <section>
                 <p className="eyebrow mb-3">— Coverage</p>
-                <h2 className="font-display text-[26px] lg:text-[32px] leading-tight text-ink mb-2">
+                <h2 className="font-sans font-medium text-[26px] lg:text-[32px] leading-tight text-ink mb-2">
                   {hub.name} streets we cover
                 </h2>
                 <p className="text-[14.5px] text-ink/65 mb-5 leading-relaxed">
@@ -261,7 +261,7 @@ export default function AreaPage({ params }: { params: { area: string } }) {
               {/* Services available */}
               <section>
                 <p className="eyebrow mb-3">— What we match for</p>
-                <h2 className="font-display text-[26px] lg:text-[32px] leading-tight text-ink mb-3">
+                <h2 className="font-sans font-medium text-[26px] lg:text-[32px] leading-tight text-ink mb-3">
                   Emergency types we match for {hub.name} residents
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -319,7 +319,7 @@ export default function AreaPage({ params }: { params: { area: string } }) {
                 </div>
 
                 <div className="bg-ink text-white rounded-lg p-5">
-                  <p className="font-display text-[18px] leading-tight mb-2">
+                  <p className="font-sans font-medium text-[18px] leading-tight mb-2">
                     From £27.40 NHS / £80 private
                   </p>
                   <p className="text-[12.5px] text-white/65 mb-4 leading-relaxed">
@@ -354,7 +354,7 @@ export default function AreaPage({ params }: { params: { area: string } }) {
 
         <section className="bg-brand-600 text-white text-center py-14 lg:py-18">
           <div className="container-width max-w-3xl">
-            <h2 className="font-display text-[28px] lg:text-[40px] leading-tight mb-3">
+            <h2 className="font-sans font-medium text-[28px] lg:text-[40px] leading-tight mb-3">
               Get matched for an emergency in {hub.name}
             </h2>
             <p className="text-[15px] text-white/85 max-w-xl mx-auto mb-6 leading-relaxed">

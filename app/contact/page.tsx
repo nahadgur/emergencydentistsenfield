@@ -22,7 +22,7 @@ export default function ContactPage() {
           <div className="container-width pt-10 pb-14">
             <Breadcrumbs dark items={[{ label: 'Contact' }]} />
             <p className="text-[10px] font-mono uppercase tracking-[0.22em] text-brand-300 mt-6 mb-4">Get in touch</p>
-            <h1 className="font-display text-[34px] lg:text-[46px] leading-tight max-w-2xl mb-5">
+            <h1 className="font-sans font-medium text-[34px] lg:text-[46px] leading-tight max-w-2xl mb-5">
               How to reach Emergency Dentists Enfield
             </h1>
             <p className="text-[15px] lg:text-[17px] text-white/80 max-w-2xl leading-relaxed">
@@ -52,7 +52,7 @@ export default function ContactPage() {
             {/* Form, takes 7 cols */}
             <div className="lg:col-span-7">
               <p className="eyebrow text-brand-600 mb-2">Get matched</p>
-              <h2 className="font-display text-[26px] lg:text-[32px] text-ink leading-tight mb-3">
+              <h2 className="font-sans font-medium text-[26px] lg:text-[32px] text-ink leading-tight mb-3">
                 Tell us what is wrong
               </h2>
               <p className="text-[14.5px] text-ink/70 leading-relaxed mb-6 max-w-xl">
@@ -110,7 +110,7 @@ function Card({ eyebrow, title, body, email, footer }: CardProps) {
   return (
     <div className="rounded-lg border p-5 bg-paper border-ink/10">
       <p className="eyebrow mb-2 text-ink/55">{eyebrow}</p>
-      <h3 className="font-display text-[18px] text-ink leading-tight mb-2">{title}</h3>
+      <h3 className="font-sans font-medium text-[18px] text-ink leading-tight mb-2">{title}</h3>
       <p className="text-[13.5px] text-ink/70 leading-relaxed mb-3">{body}</p>
       {email && (
         <p className="font-mono text-[13px] text-ink">{email}</p>

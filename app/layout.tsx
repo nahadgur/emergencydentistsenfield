@@ -1,19 +1,23 @@
 import type { Metadata } from 'next';
-import { Inter, Source_Serif_4, JetBrains_Mono } from 'next/font/google';
+import { Inter_Tight, Instrument_Serif, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import { siteConfig } from '@/data/site';
 import { ConsentBanner } from '@/components/ConsentBanner';
 
-const sans = Inter({
+// 2026-05-05 design pass — Inter Tight (UI), Instrument Serif (italic
+// accents only; sparingly), JetBrains Mono (eyebrows + code-style
+// labels). Pulled from the Claude Design dental handoff.
+const sans = Inter_Tight({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['400', '500', '600'],
   variable: '--font-sans',
   display: 'swap',
 });
 
-const display = Source_Serif_4({
+const display = Instrument_Serif({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['400'],
+  style: ['normal', 'italic'],
   variable: '--font-display',
   display: 'swap',
 });
@@ -25,33 +29,39 @@ const mono = JetBrains_Mono({
   display: 'swap',
 });
 
+// Homepage meta — under 60 chars title, under 160 chars description.
+// Per-page meta lives in segment-level layout.tsx files.
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | Free Matching with Vetted GDC-Registered Dentists`,
+    default: 'Emergency Dentist Enfield — Same-Day Match · Free',
     template: `%s | ${siteConfig.name}`,
   },
-  description: siteConfig.description,
+  description:
+    'Free same-day matching with vetted, GDC-registered emergency dentists across Enfield Borough. Toothache, abscess, knocked-out tooth, broken tooth.',
   alternates: { canonical: siteConfig.url },
   robots: { index: true, follow: true },
   openGraph: {
     type: 'website',
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: siteConfig.name,
-    description: siteConfig.description,
+    title: 'Emergency Dentist Enfield — Same-Day Match · Free',
+    description:
+      'Free same-day matching with vetted, GDC-registered emergency dentists across Enfield Borough. Toothache, abscess, knocked-out tooth, broken tooth.',
     locale: 'en_GB',
   },
   twitter: {
     card: 'summary_large_image',
-    title: siteConfig.name,
-    description: siteConfig.description,
+    title: 'Emergency Dentist Enfield — Same-Day Match · Free',
+    description:
+      'Free same-day matching with vetted, GDC-registered emergency dentists across Enfield Borough.',
   },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  // Schema graph — WebSite, Organization, and the matching Service all
-  // reference each other via @id so Google reads the site as one entity.
+  // Schema graph — WebSite + Organization + Service. NOT Dentist /
+  // LocalBusiness for the brand because we are a referral service.
+  // Claiming Dentist would misrepresent under Google's YMYL rules.
   const websiteSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
@@ -69,7 +79,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     '@id': `${siteConfig.url}/#organization`,
     name: siteConfig.name,
     url: siteConfig.url,
+    logo: `${siteConfig.url}/logo.png`,
     description: siteConfig.description,
+    sameAs: [siteConfig.url],
     areaServed: {
       '@type': 'AdministrativeArea',
       name: siteConfig.serviceArea,
@@ -79,7 +91,44 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       '@type': 'ContactPoint',
       contactType: 'customer service',
       availableLanguage: 'English',
+      areaServed: 'GB',
     },
+  };
+
+  // The matching service — areaServed scoped to every Enfield postcode
+  // we cover (EN1, EN2, EN3, N9, N13, N14, N18, N21).
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': `${siteConfig.url}/#service`,
+    name: 'Emergency dental matching service for Enfield',
+    serviceType: 'Emergency dental matching and referral',
+    description:
+      'Free service connecting Enfield Borough patients with vetted, GDC-registered emergency dentists. Same-day toothache, knocked-out tooth, dental abscess, broken or chipped tooth, lost crown or filling, dental trauma, and wisdom-tooth pain triage covered.',
+    provider: { '@id': `${siteConfig.url}/#organization` },
+    areaServed: [
+      { '@type': 'AdministrativeArea', name: 'London Borough of Enfield' },
+      { '@type': 'PostalAddress', addressRegion: 'London', postalCode: 'EN1', addressCountry: 'GB' },
+      { '@type': 'PostalAddress', addressRegion: 'London', postalCode: 'EN2', addressCountry: 'GB' },
+      { '@type': 'PostalAddress', addressRegion: 'London', postalCode: 'EN3', addressCountry: 'GB' },
+      { '@type': 'PostalAddress', addressRegion: 'London', postalCode: 'N9',  addressCountry: 'GB' },
+      { '@type': 'PostalAddress', addressRegion: 'London', postalCode: 'N13', addressCountry: 'GB' },
+      { '@type': 'PostalAddress', addressRegion: 'London', postalCode: 'N14', addressCountry: 'GB' },
+      { '@type': 'PostalAddress', addressRegion: 'London', postalCode: 'N18', addressCountry: 'GB' },
+      { '@type': 'PostalAddress', addressRegion: 'London', postalCode: 'N21', addressCountry: 'GB' },
+    ],
+    audience: {
+      '@type': 'PeopleAudience',
+      audienceType: 'Patients with urgent dental needs in Enfield Borough and surrounding EN/N postcodes',
+    },
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'GBP',
+      availability: 'https://schema.org/InStock',
+      description: 'Free to patients. We are a referral service.',
+    },
+    isPartOf: { '@id': `${siteConfig.url}/#website` },
   };
 
   return (
@@ -87,12 +136,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       </head>
       <body className="min-h-screen flex flex-col">
-        {/* GA4 only loads after the visitor accepts the cookie banner
-            (UK PECR requires prior consent). gaId is empty in siteConfig
-            until the live tracking ID is configured — the banner shows
-            either way for choice persistence. */}
         <ConsentBanner gaId={siteConfig.gaId} />
         {children}
       </body>

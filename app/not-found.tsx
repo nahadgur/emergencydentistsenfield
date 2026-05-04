@@ -19,13 +19,13 @@ export default function NotFound() {
       <Header />
       <main className="flex-grow bg-cream flex items-center justify-center py-24 lg:py-32 px-5">
         <div className="max-w-2xl text-center">
-          <p className="font-display italic text-[120px] lg:text-[180px] leading-none text-brand-600 mb-2">
+          <p className="font-sans font-medium italic text-[120px] lg:text-[180px] leading-none text-brand-600 mb-2">
             404
           </p>
           <p className="text-[10px] font-mono uppercase tracking-[0.22em] text-ink/55 mb-6">
             Page not found
           </p>
-          <h1 className="font-display text-[28px] lg:text-[42px] leading-tight text-ink mb-5">
+          <h1 className="font-sans font-medium text-[28px] lg:text-[42px] leading-tight text-ink mb-5">
             We couldn&apos;t find that page
           </h1>
           <p className="text-[15px] text-ink/65 max-w-xl mx-auto mb-10 leading-relaxed">

@@ -32,7 +32,7 @@ export default function BlogIndexPage() {
           <div className="container-width pt-10 pb-14">
             <Breadcrumbs dark items={[{ label: 'Guides' }]} />
             <p className="text-[10px] font-mono uppercase tracking-[0.22em] text-brand-300 mt-6 mb-4">— Emergency dental guides</p>
-            <h1 className="font-display text-[34px] lg:text-[46px] leading-tight max-w-2xl mb-5">
+            <h1 className="font-sans font-medium text-[34px] lg:text-[46px] leading-tight max-w-2xl mb-5">
               Practical guides for dental emergencies
             </h1>
             <p className="text-[15px] lg:text-[17px] text-white/80 max-w-2xl leading-relaxed">
@@ -50,7 +50,7 @@ export default function BlogIndexPage() {
                   <span className="w-1 h-1 rounded-full bg-ink/30" />
                   <span className="flex items-center gap-1"><Clock size={11} /> {a.publishDate}</span>
                 </div>
-                <h2 className="font-display text-[22px] lg:text-[26px] text-ink leading-tight mb-3 group-hover:text-brand-600 transition-colors">
+                <h2 className="font-sans font-medium text-[22px] lg:text-[26px] text-ink leading-tight mb-3 group-hover:text-brand-600 transition-colors">
                   {a.title}
                 </h2>
                 <p className="text-[14px] text-ink/70 leading-relaxed mb-4 line-clamp-3">

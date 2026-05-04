@@ -186,7 +186,7 @@ export default function ServicePage({ params }: { params: { serviceSlug: string 
                     : service.urgencyTier === 'urgent' ? 'Same-day match'
                     : 'Same-week match'}
                 </p>
-                <h1 className="font-display text-[34px] lg:text-[48px] leading-tight text-white mb-5">
+                <h1 className="font-sans font-medium text-[34px] lg:text-[48px] leading-tight text-white mb-5">
                   {service.title}
                 </h1>
                 <p className="text-[15px] lg:text-[17px] leading-relaxed text-white/80 max-w-2xl mb-6">
@@ -213,7 +213,7 @@ export default function ServicePage({ params }: { params: { serviceSlug: string 
               {/* Intro */}
               <section>
                 <p className="eyebrow mb-3">— What this is</p>
-                <h2 className="font-display text-[28px] lg:text-[36px] leading-tight text-ink mb-5">
+                <h2 className="font-sans font-medium text-[28px] lg:text-[36px] leading-tight text-ink mb-5">
                   {service.title}: what you need to know
                 </h2>
                 <div className="space-y-4 text-[15px] lg:text-[16px] leading-relaxed text-ink/80">
@@ -224,7 +224,7 @@ export default function ServicePage({ params }: { params: { serviceSlug: string 
               {/* Benefits */}
               <section>
                 <p className="eyebrow mb-3">— Why specialist matching matters</p>
-                <h2 className="font-display text-[26px] lg:text-[32px] leading-tight text-ink mb-5">
+                <h2 className="font-sans font-medium text-[26px] lg:text-[32px] leading-tight text-ink mb-5">
                   What good emergency care looks like for {service.title.toLowerCase()}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -247,13 +247,13 @@ export default function ServicePage({ params }: { params: { serviceSlug: string 
                     <AlertTriangle size={16} className="text-urgent-600" />
                     <p className="eyebrow text-urgent-600 m-0">— Common mistakes</p>
                   </div>
-                  <h2 className="font-display text-[26px] lg:text-[32px] leading-tight text-ink mb-5">
+                  <h2 className="font-sans font-medium text-[26px] lg:text-[32px] leading-tight text-ink mb-5">
                     {mistakes.headline}
                   </h2>
                   <div className="space-y-4">
                     {mistakes.mistakes.map((m, i) => (
                       <div key={i} className="bg-paper border-l-4 border-urgent-500 rounded-r-md p-5">
-                        <p className="font-display text-[18px] text-ink mb-2 leading-tight">
+                        <p className="font-sans font-medium text-[18px] text-ink mb-2 leading-tight">
                           {i + 1}. {m.what}
                         </p>
                         <p className="text-[14px] text-ink/70 leading-relaxed">{m.why}</p>
@@ -271,7 +271,7 @@ export default function ServicePage({ params }: { params: { serviceSlug: string 
                       <ArrowRight size={14} className="text-brand-600" />
                       <p className="eyebrow text-brand-600 m-0">— Often connected to</p>
                     </div>
-                    <h3 className="font-display text-[22px] text-ink mb-3 leading-tight">
+                    <h3 className="font-sans font-medium text-[22px] text-ink mb-3 leading-tight">
                       {pairedService.title}
                     </h3>
                     <p className="text-[14.5px] text-ink/75 leading-relaxed mb-4">{pair.reason}</p>
@@ -285,7 +285,7 @@ export default function ServicePage({ params }: { params: { serviceSlug: string 
               {/* When matching is right */}
               <section>
                 <p className="eyebrow mb-3">— When this fits</p>
-                <h2 className="font-display text-[26px] lg:text-[32px] leading-tight text-ink mb-3">
+                <h2 className="font-sans font-medium text-[26px] lg:text-[32px] leading-tight text-ink mb-3">
                   Is matching for {service.title.toLowerCase()} right for you?
                 </h2>
                 <p className="text-[15px] text-ink/70 mb-5 leading-relaxed">{content.candidateIntro}</p>
@@ -304,7 +304,7 @@ export default function ServicePage({ params }: { params: { serviceSlug: string 
               {/* Process */}
               <section>
                 <p className="eyebrow mb-3">— The matching process</p>
-                <h2 className="font-display text-[26px] lg:text-[32px] leading-tight text-ink mb-5">
+                <h2 className="font-sans font-medium text-[26px] lg:text-[32px] leading-tight text-ink mb-5">
                   How {service.title.toLowerCase()} matching works
                 </h2>
                 <div className="space-y-3">
@@ -336,7 +336,7 @@ export default function ServicePage({ params }: { params: { serviceSlug: string 
               <div className="lg:sticky lg:top-24 space-y-5">
                 <div className="bg-white border border-ink/10 rounded-lg p-5">
                   <p className="eyebrow mb-2">Get matched</p>
-                  <h3 className="font-display text-[20px] text-ink leading-tight mb-2">
+                  <h3 className="font-sans font-medium text-[20px] text-ink leading-tight mb-2">
                     Free Enfield matching
                   </h3>
                   <p className="text-[13px] text-ink/65 mb-4 leading-relaxed">
@@ -372,7 +372,7 @@ export default function ServicePage({ params }: { params: { serviceSlug: string 
 
         <section className="bg-brand-600 text-white py-14 lg:py-18 text-center">
           <div className="container-width max-w-3xl">
-            <h2 className="font-display text-[28px] lg:text-[40px] leading-tight mb-3">
+            <h2 className="font-sans font-medium text-[28px] lg:text-[40px] leading-tight mb-3">
               Get matched for {service.title.toLowerCase()}
             </h2>
             <p className="text-[15px] text-white/85 max-w-xl mx-auto mb-6 leading-relaxed">

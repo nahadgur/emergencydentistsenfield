@@ -24,7 +24,7 @@ export default function PrivacyPage() {
           <div className="container-width pt-10 pb-14">
             <Breadcrumbs dark items={[{ label: 'Privacy' }]} />
             <p className="text-[10px] font-mono uppercase tracking-[0.22em] text-brand-300 mt-6 mb-4">— Legal · Privacy notice</p>
-            <h1 className="font-display text-[34px] lg:text-[46px] leading-tight max-w-2xl mb-5">
+            <h1 className="font-sans font-medium text-[34px] lg:text-[46px] leading-tight max-w-2xl mb-5">
               Privacy notice
             </h1>
             <p className="text-[15px] text-white/80 max-w-2xl leading-relaxed mb-3">
@@ -171,7 +171,7 @@ export default function PrivacyPage() {
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section>
-      <h2 className="font-display text-[22px] lg:text-[28px] text-ink leading-tight mb-4">{title}</h2>
+      <h2 className="font-sans font-medium text-[22px] lg:text-[28px] text-ink leading-tight mb-4">{title}</h2>
       <div className="space-y-4 [&_a]:text-brand-600 [&_a]:underline [&_a:hover]:text-brand-700 [&_strong]:text-ink [&_strong]:font-semibold [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-2 [&_code]:font-mono [&_code]:text-[13px] [&_code]:bg-ink/[0.06] [&_code]:px-1.5 [&_code]:py-0.5 [&_code]:rounded">
         {children}
       </div>

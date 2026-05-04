@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { ArrowRight, Clock, ShieldCheck, MapPin, Heart, AlertCircle } from 'lucide-react';
+import { ArrowRight, AlertCircle, MapPin } from 'lucide-react';
 import { services } from '@/data/services';
 import { AREA_HUBS } from '@/data/locations';
 import { siteConfig, FAQS_HOME } from '@/data/site';
@@ -13,14 +13,13 @@ import { Footer } from '@/components/Footer';
 import { LeadFormModal } from '@/components/LeadFormModal';
 import { HeroLeadForm } from '@/components/HeroLeadForm';
 import { FAQ } from '@/components/FAQ';
-import { EmergencyDisclaimer } from '@/components/EmergencyDisclaimer';
+import { Reveal } from '@/components/Reveal';
 
-const iconMap: Record<string, React.ReactNode> = {
-  ShieldCheck: <ShieldCheck size={18} />,
-  Clock:       <Clock size={18} />,
-  MapPin:      <MapPin size={18} />,
-  Heart:       <Heart size={18} />,
-};
+// 2026-05-05 — design pass to match the Claude Design dental handoff,
+// plus SEO/animation pass: scroll-reveal on every section, 20 LSI
+// keyword strongs woven into the body copy, 5 keyword-rich internal
+// links. Mockup wording is NOT used; everything in copy slots is the
+// site's own voice from data/homepage.ts and data/site.ts.
 
 export default function HomePage() {
   const [modal, setModal] = useState(false);
@@ -32,283 +31,323 @@ export default function HomePage() {
 
       <main className="flex-grow bg-cream">
 
-        {/* ─── Hero with above-fold form ─────────────────────────── */}
-        <section className="bg-ink text-white relative overflow-hidden">
-          <div className="container-width pt-12 pb-16 lg:pt-20 lg:pb-24">
+        {/* ─── Hero ────────────────────────────────────────────── */}
+        <section className="bg-cream relative">
+          <div className="container-width pt-10 pb-14 lg:pt-16 lg:pb-20">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
 
-              {/* Left: hero copy */}
-              <div className="lg:col-span-7">
-                <p className="text-[11px] font-mono uppercase tracking-[0.22em] text-brand-300 mb-5 flex items-center gap-3">
-                  <span className="w-8 h-px bg-brand-300/60" />
+              <Reveal className="lg:col-span-7">
+                <div className="status-pill mb-6">
                   {heroContent.eyebrow}
-                </p>
-                <h1 className="font-display text-[36px] sm:text-[46px] lg:text-[58px] leading-[1.05] tracking-tight text-white mb-6">
-                  {heroContent.title}
-                </h1>
-                <p className="text-[15px] lg:text-[17px] leading-relaxed text-white/80 max-w-2xl mb-8">
-                  {heroContent.subtitle}
-                </p>
+                </div>
 
-                {/* Trust strip */}
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+                <h1
+                  className="font-sans font-medium text-ink mb-5 leading-[1.02] tracking-tightest"
+                  style={{ fontSize: 'clamp(34px, 5.4vw, 60px)' }}
+                  dangerouslySetInnerHTML={{ __html: heroContent.titleHtml }}
+                />
+
+                <p
+                  className="text-[15px] lg:text-[17px] leading-[1.55] text-sand-body max-w-xl mb-8 lsi-prose"
+                  dangerouslySetInnerHTML={{ __html: heroContent.subtitleHtml }}
+                />
+
+                {/* Wait-time-style stat strip — repurposed for matching
+                    service: typical-match-time, today's open slots in
+                    the network, postcode coverage. No clinical claims. */}
+                <div className="grid grid-cols-3 border border-sand-soft bg-paper mb-8 max-w-xl">
                   {[
-                    { icon: <Clock size={16} />, text: '60-min match' },
-                    { icon: <ShieldCheck size={16} />, text: 'GDC-verified' },
-                    { icon: <MapPin size={16} />, text: 'CM postcodes' },
-                    { icon: <Heart size={16} />, text: 'Free to patients' },
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-center gap-2 text-[12px] text-white/75">
-                      <span className="text-brand-300">{item.icon}</span>
-                      <span>{item.text}</span>
+                    { k: 'Avg match', v: '60m' },
+                    { k: 'Today',     v: 'Open' },
+                    { k: 'Coverage',  v: 'EN/N' },
+                  ].map((s, i) => (
+                    <div
+                      key={s.k}
+                      className={`px-3 py-3 text-center ${i === 0 ? '' : 'border-l border-sand-soft'}`}
+                    >
+                      <div className="font-mono uppercase text-[9px] tracking-[0.12em] text-sand-text mb-1">
+                        {s.k}
+                      </div>
+                      <div className="text-[18px] font-medium text-ink tracking-[-0.02em]">
+                        {s.v}
+                      </div>
                     </div>
                   ))}
                 </div>
 
-                {/* NHS 111 / 999 callout — YMYL */}
-                <div className="bg-urgent-50/95 border-l-4 border-urgent-500 rounded-md p-4 max-w-2xl">
+                {/* NHS 111 / 999 callout */}
+                <div className="border-l-4 border-coral-500 bg-coral-50/80 p-4 max-w-2xl">
                   <div className="flex items-start gap-3">
-                    <AlertCircle size={18} className="text-urgent-600 flex-shrink-0 mt-0.5" />
-                    <div className="text-[13px] text-ink/85 leading-relaxed">
-                      <strong className="text-urgent-700">Genuine medical emergency?</strong>{' '}
-                      Spreading facial swelling, breathing difficulty, or uncontrolled bleeding —
-                      call <strong className="text-urgent-700">999</strong> or{' '}
-                      <strong className="text-urgent-700">NHS 111</strong> (free, 24/7).
+                    <AlertCircle size={18} className="text-coral-600 flex-shrink-0 mt-0.5" />
+                    <div className="text-[13px] text-ink/85 leading-[1.55]">
+                      <strong className="text-coral-700">Genuine medical emergency?</strong>{' '}
+                      Spreading facial swelling, breathing difficulty, or uncontrolled bleeding,
+                      call <strong className="text-coral-700">999</strong> or{' '}
+                      <strong className="text-coral-700">NHS 111</strong> (free, 24/7).
                       Hospital, not a dentist.
                     </div>
                   </div>
                 </div>
-              </div>
+              </Reveal>
 
-              {/* Right: lead form (above fold) */}
-              <div className="lg:col-span-5">
+              <Reveal direction="right" delay={120} className="lg:col-span-5">
                 <HeroLeadForm />
-              </div>
+              </Reveal>
             </div>
           </div>
         </section>
 
-        {/* ─── Three categories of emergency ─────────────────────── */}
-        <section className="bg-cream py-16 lg:py-24">
+        {/* ─── 01 — Triage ─────────────────────────────────────── */}
+        <Reveal as="section" className="bg-ink text-ink-soft-text py-16 lg:py-20">
           <div className="container-width">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 mb-10">
-              <div className="lg:col-span-5">
-                <p className="eyebrow mb-3">— Triage</p>
-                <h2 className="font-display text-[32px] lg:text-[44px] leading-tight text-ink">
-                  {problemFraming.heading}
-                </h2>
-              </div>
-              <div className="lg:col-span-7 space-y-4 text-[15px] lg:text-[16px] leading-relaxed text-ink/75 self-end">
-                {problemFraming.paragraphs.map((p, i) => (
-                  <p key={i}>{p}</p>
+            <p className="eyebrow-num-on-dark mb-3">01 — Triage</p>
+            <h2
+              className="font-sans font-medium leading-[1.1] tracking-tightest mb-10 max-w-2xl"
+              style={{ fontSize: 'clamp(28px, 3.6vw, 44px)' }}
+            >
+              {problemFraming.heading}
+            </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+              <div className="space-y-4 text-[15px] lg:text-[16px] leading-[1.65] text-ink-mute/95 max-w-prose lsi-prose-on-dark">
+                {problemFraming.paragraphsHtml.map((p, i) => (
+                  <p key={i} dangerouslySetInnerHTML={{ __html: p }} />
                 ))}
               </div>
             </div>
           </div>
-        </section>
+        </Reveal>
 
-        {/* ─── Service catalogue ─────────────────────────────────── */}
-        <section className="bg-paper py-16 lg:py-24">
+        {/* ─── 02 — Care types ────────────────────────────────── */}
+        <Reveal as="section" className="bg-cream py-16 lg:py-20">
           <div className="container-width">
-            <div className="mb-10 lg:mb-12">
-              <p className="eyebrow mb-3">— Seven emergency types</p>
-              <h2 className="font-display text-[30px] lg:text-[42px] leading-tight text-ink mb-3">
-                What we match for
-              </h2>
-              <p className="text-[15px] text-ink/65 max-w-2xl leading-relaxed">
-                The seven most common dental emergencies, each with its own urgency triage and detail page.
-              </p>
-            </div>
+            <p className="eyebrow-num mb-3">02 — Care types</p>
+            <h2
+              className="font-sans font-medium leading-[1.1] tracking-tightest mb-3 max-w-2xl text-ink"
+              style={{ fontSize: 'clamp(28px, 3.6vw, 44px)' }}
+            >
+              What we match for
+            </h2>
+            <p className="text-[15px] text-sand-body max-w-2xl leading-[1.55] mb-10">
+              The seven most common dental emergencies, each with its own urgency triage and detail page.
+            </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5">
-              {services.map(s => (
-                <Link key={s.slug} href={`/services/${s.slug}/`} className="card p-5 lg:p-6 group">
-                  <div className="flex items-baseline justify-between mb-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-sand max-w-5xl">
+              {services.map((s, i) => (
+                <Reveal key={s.slug} delay={Math.min(i * 60, 360)}>
+                  <Link
+                    href={`/services/${s.slug}/`}
+                    className="group bg-cream p-5 lg:p-6 flex flex-col gap-3 hover:bg-paper transition-colors min-h-[170px] h-full"
+                  >
+                    <span className="font-mono text-[10px] tracking-[0.1em] text-sand-text">
+                      {String(i + 1).padStart(2, '0')}
+                    </span>
                     <span
-                      className={`text-[10px] font-mono uppercase tracking-[0.18em] ${
-                        s.urgencyTier === 'critical' ? 'text-urgent-600'
-                        : s.urgencyTier === 'urgent' ? 'text-brand-600'
-                        : 'text-ink/55'
+                      className={`font-mono uppercase text-[10px] tracking-[0.18em] ${
+                        s.urgencyTier === 'critical' ? 'text-coral-600'
+                        : s.urgencyTier === 'urgent'   ? 'text-brand-600'
+                        : 'text-sand-text'
                       }`}
                     >
                       {s.urgencyTier === 'critical' ? '★ Critical priority'
                         : s.urgencyTier === 'urgent' ? 'Same-day'
                         : 'Same-week'}
                     </span>
-                  </div>
-                  <h3 className="font-display text-[20px] text-ink mb-2 group-hover:text-brand-600 transition-colors leading-tight">
-                    {s.title}
-                  </h3>
-                  <p className="text-[13.5px] text-ink/70 leading-relaxed mb-4 line-clamp-3">
-                    {s.description}
-                  </p>
-                  <span className="text-[12px] font-bold text-brand-600 inline-flex items-center gap-1">
-                    Read more <ArrowRight size={12} />
-                  </span>
-                </Link>
+                    <h3 className="font-sans font-medium text-[19px] text-ink leading-[1.15] tracking-[-0.02em] group-hover:text-brand-600 transition-colors">
+                      {s.title}
+                    </h3>
+                    <p className="text-[13.5px] text-sand-body leading-[1.5] line-clamp-3 flex-grow">
+                      {s.description}
+                    </p>
+                    <span className="text-[12px] font-medium text-brand-600 inline-flex items-center gap-1.5 mt-auto">
+                      Read more <ArrowRight size={12} className="transition-transform group-hover:translate-x-0.5" />
+                    </span>
+                  </Link>
+                </Reveal>
               ))}
             </div>
           </div>
-        </section>
+        </Reveal>
 
-        {/* ─── How matching works ────────────────────────────────── */}
-        <section className="bg-ink text-white py-16 lg:py-24">
+        {/* ─── 03 — How it works ──────────────────────────────── */}
+        <Reveal as="section" className="bg-paper py-16 lg:py-20 border-y border-sand-soft">
           <div className="container-width">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 mb-12">
-              <div className="lg:col-span-7">
-                <p className="text-[10px] font-mono uppercase tracking-[0.22em] text-brand-300 mb-3">— How it works</p>
-                <h2 className="font-display text-[32px] lg:text-[44px] leading-tight">
-                  {howItWorks.heading}
-                </h2>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-              {howItWorks.steps.map((step) => (
-                <div key={step.step} className="border-t-2 border-brand-300 pt-5">
-                  <div className="font-display text-[48px] lg:text-[60px] leading-none text-brand-300 mb-4">
-                    {step.step}
-                  </div>
-                  <h3 className="font-display text-[22px] text-white mb-3 leading-tight">{step.title}</h3>
-                  <p className="text-[14px] leading-relaxed text-white/70">{step.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+            <p className="eyebrow-num mb-3">03 — How it works</p>
+            <h2
+              className="font-sans font-medium leading-[1.1] tracking-tightest mb-10 lg:mb-12 max-w-2xl text-ink"
+              style={{ fontSize: 'clamp(28px, 3.6vw, 44px)' }}
+            >
+              {howItWorks.heading}
+            </h2>
 
-        {/* ─── Why use a matching service ────────────────────────── */}
-        <section className="bg-cream py-16 lg:py-24">
-          <div className="container-width">
-            <div className="mb-10 lg:mb-12 max-w-2xl">
-              <p className="eyebrow mb-3">— Why us</p>
-              <h2 className="font-display text-[30px] lg:text-[42px] leading-tight text-ink">
-                {whyMatchingService.heading}
-              </h2>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-5">
-              {whyMatchingService.points.map((p, i) => (
-                <div key={i} className="bg-white border border-ink/10 rounded-lg p-6">
-                  <h3 className="font-display text-[19px] text-ink mb-2 leading-tight">{p.title}</h3>
-                  <p className="text-[14px] text-ink/70 leading-relaxed">{p.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ─── Partner surgeries ─────────────────────────────────── */}
-        <section className="bg-paper py-16 lg:py-24">
-          <div className="container-width">
-            <div className="mb-8 max-w-2xl">
-              <p className="eyebrow mb-3">— Network anchors</p>
-              <h2 className="font-display text-[30px] lg:text-[42px] leading-tight text-ink mb-3">
-                Partner surgeries we work with in Enfield
-              </h2>
-              <p className="text-[15px] text-ink/65 leading-relaxed">
-                Named partner sites we route to alongside the wider matched-dentist network. Our matching service draws from a verified pool of GDC-registered Enfield-area practices — these are the recognisable names within it.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-6">
-              {PARTNERS.map(p => (
-                <div
-                  key={p.id}
-                  className="bg-white border border-ink/10 rounded-lg p-6 lg:p-7 flex flex-col"
+            <div className="flex flex-col">
+              {howItWorks.steps.map((step, i) => (
+                <Reveal
+                  key={step.step}
+                  delay={i * 90}
+                  className={`grid grid-cols-[64px_1fr] lg:grid-cols-[80px_1fr] gap-5 lg:gap-7 py-6 lg:py-8 border-t border-sand ${i === howItWorks.steps.length - 1 ? 'border-b' : ''}`}
                 >
-                  <div className="flex items-start gap-2 mb-3">
-                    <ShieldCheck size={18} className="text-brand-500 flex-shrink-0 mt-1" />
-                    <div>
-                      <h3 className="font-display text-[20px] text-ink leading-tight">{p.name}</h3>
-                      <p className="text-[11px] font-mono uppercase tracking-[0.18em] text-brand-700 mt-1">
-                        {p.area}{p.postcode ? ` · ${p.postcode}` : ''}
-                      </p>
-                    </div>
+                  <div className="font-display italic text-brand-500 leading-none"
+                       style={{ fontSize: 'clamp(40px, 5vw, 56px)' }}>
+                    {String(parseInt(step.step, 10)).padStart(2, '0')}
                   </div>
-                  <p className="text-[14px] text-ink/75 leading-relaxed mb-4 flex-grow">
-                    {p.description}
-                  </p>
-                  <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mt-auto pt-2">
+                  <div>
+                    <h3 className="font-sans font-medium text-[19px] lg:text-[22px] text-ink leading-[1.2] tracking-[-0.02em] mb-2">
+                      {step.title}
+                    </h3>
+                    <p
+                      className="text-[14.5px] lg:text-[15px] text-sand-body leading-[1.55] max-w-prose lsi-prose"
+                      dangerouslySetInnerHTML={{ __html: step.descHtml ?? step.desc }}
+                    />
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </Reveal>
+
+        {/* ─── 04 — Why us ────────────────────────────────────── */}
+        <Reveal as="section" className="bg-cream py-16 lg:py-20">
+          <div className="container-width">
+            <p className="eyebrow-num mb-3">04 — Why us</p>
+            <h2
+              className="font-sans font-medium leading-[1.1] tracking-tightest mb-10 max-w-2xl text-ink"
+              style={{ fontSize: 'clamp(28px, 3.6vw, 44px)' }}
+            >
+              {whyMatchingService.heading}
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-sand max-w-4xl">
+              {whyMatchingService.points.map((p, i) => (
+                <Reveal key={i} delay={i * 75}>
+                  <div className="bg-cream p-6 lg:p-7 flex flex-col gap-3 h-full">
+                    <span className="font-mono text-[10px] tracking-[0.1em] text-sand-text">
+                      {String(i + 1).padStart(2, '0')}
+                    </span>
+                    <h3 className="font-sans font-medium text-[17px] lg:text-[19px] text-ink leading-[1.2] tracking-[-0.02em]">
+                      {p.title}
+                    </h3>
+                    <p
+                      className="text-[14px] text-sand-body leading-[1.55] lsi-prose"
+                      dangerouslySetInnerHTML={{ __html: p.descHtml ?? p.desc }}
+                    />
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </Reveal>
+
+        {/* ─── 05 — Network ───────────────────────────────────── */}
+        <Reveal as="section" className="bg-paper py-16 lg:py-20 border-t border-sand-soft">
+          <div className="container-width">
+            <p className="eyebrow-num mb-3">05 — Network anchors</p>
+            <h2
+              className="font-sans font-medium leading-[1.1] tracking-tightest mb-3 max-w-2xl text-ink"
+              style={{ fontSize: 'clamp(28px, 3.6vw, 44px)' }}
+            >
+              Partner surgeries we work with in Enfield
+            </h2>
+            <p className="text-[15px] text-sand-body leading-[1.55] mb-10 max-w-2xl">
+              Named partner sites we route to alongside the wider matched-dentist network. Our matching service draws from a verified pool of GDC-registered Enfield practices. These are the recognisable names within it.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-sand max-w-5xl">
+              {PARTNERS.map((p, i) => (
+                <Reveal key={p.id} delay={i * 80}>
+                  <div className="bg-paper p-6 lg:p-7 flex flex-col gap-3 h-full">
+                    <span className="font-mono uppercase text-[10px] tracking-[0.18em] text-brand-600">
+                      {p.area}{p.postcode ? ` · ${p.postcode}` : ''}
+                    </span>
+                    <h3 className="font-sans font-medium text-[19px] lg:text-[20px] text-ink leading-[1.2] tracking-[-0.02em]">
+                      {p.name}
+                    </h3>
+                    <p className="text-[14px] text-sand-body leading-[1.55] flex-grow">
+                      {p.description}
+                    </p>
                     <Link
                       href={`/location/${p.areaSlug}/`}
-                      className="text-[12px] font-bold text-brand-600 inline-flex items-center gap-1 hover:text-brand-700"
+                      className="text-[12px] font-medium text-brand-600 inline-flex items-center gap-1.5 hover:text-brand-700 mt-auto group/link"
                     >
-                      See {p.area} coverage <ArrowRight size={11} />
+                      See {p.area} coverage <ArrowRight size={11} className="transition-transform group-hover/link:translate-x-0.5" />
                     </Link>
-                    {p.website && (
-                      <a
-                        href={p.website}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-[12px] font-bold text-ink/60 hover:text-ink inline-flex items-center gap-1"
-                      >
-                        Visit {p.name.split(' ')[0]} website ↗
-                      </a>
-                    )}
                   </div>
-                </div>
+                </Reveal>
               ))}
             </div>
 
-            <p className="mt-6 text-[13px] text-ink/55 max-w-2xl leading-relaxed italic">
-              The matched dentist for any particular enquiry depends on availability, your specific situation, and travel distance from your stated location. Named partners are part of the network, not the only practices we route to.
+            <p className="mt-6 text-[13px] text-sand-text max-w-2xl leading-[1.55] italic">
+              The matched dentist for any particular enquiry depends on availability, your specific situation, and travel distance from your stated location. The named partners above are part of the network, not the only practices we route to.
             </p>
           </div>
-        </section>
+        </Reveal>
 
-        {/* ─── Areas band ────────────────────────────────────────── */}
-        <section className="bg-paper py-16 lg:py-24">
+        {/* ─── 06 — Coverage ─────────────────────────────────── */}
+        <Reveal as="section" className="bg-cream py-16 lg:py-20">
           <div className="container-width">
-            <div className="mb-10">
-              <p className="eyebrow mb-3">— Coverage</p>
-              <h2 className="font-display text-[30px] lg:text-[42px] leading-tight text-ink mb-3">
-                Enfield neighbourhoods we cover
-              </h2>
-              <p className="text-[15px] text-ink/65 max-w-2xl leading-relaxed">
-                All Enfield neighbourhoods plus the surrounding CM-postcode towns most often served by Enfield dentists.
-              </p>
-            </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
-              {AREA_HUBS.map(a => (
-                <Link key={a.slug} href={`/location/${a.slug}/`} className="card p-4 group">
-                  <div className="flex items-center gap-2 mb-1.5">
-                    <MapPin size={14} className="text-brand-500 flex-shrink-0" />
-                    <span className="font-bold text-[14px] text-ink group-hover:text-brand-600 transition-colors">{a.name}</span>
-                  </div>
-                  <p className="text-[11px] font-mono text-ink/50">{a.postcode}</p>
-                </Link>
+            <p className="eyebrow-num mb-3">06 — Coverage</p>
+            <h2
+              className="font-sans font-medium leading-[1.1] tracking-tightest mb-3 max-w-2xl text-ink"
+              style={{ fontSize: 'clamp(28px, 3.6vw, 44px)' }}
+            >
+              Enfield neighbourhoods we cover
+            </h2>
+            <p className="text-[15px] text-sand-body leading-[1.55] mb-8 max-w-2xl">
+              All Enfield Borough neighbourhoods plus the surrounding EN/N postcode areas most often served by Enfield dentists.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-sand max-w-5xl">
+              {AREA_HUBS.map((a, i) => (
+                <Reveal key={a.slug} delay={Math.min(i * 30, 240)}>
+                  <Link
+                    href={`/location/${a.slug}/`}
+                    className="group bg-cream px-4 py-3.5 flex items-center gap-3 hover:bg-paper transition-colors h-full"
+                  >
+                    <span className="font-mono uppercase text-[10px] tracking-[0.1em] text-sand-text whitespace-nowrap min-w-[64px]">
+                      {a.postcode}
+                    </span>
+                    <span className="flex items-center gap-2 text-[14px] font-medium text-ink group-hover:text-brand-600 transition-colors">
+                      <MapPin size={13} className="text-brand-500 flex-shrink-0" />
+                      {a.name}
+                    </span>
+                  </Link>
+                </Reveal>
               ))}
             </div>
-            <Link href="/location/" className="inline-flex items-center gap-1 mt-6 text-[13px] font-bold text-brand-600 hover:text-brand-700">
-              View all areas <ArrowRight size={12} />
+
+            <Link href="/location/" className="inline-flex items-center gap-1.5 mt-7 text-[13px] font-medium text-brand-600 hover:text-brand-700 border-b border-ink pb-1 group">
+              View all areas <ArrowRight size={12} className="transition-transform group-hover:translate-x-0.5" />
             </Link>
           </div>
-        </section>
+        </Reveal>
 
-        {/* ─── FAQ ───────────────────────────────────────────────── */}
-        <section className="bg-cream py-16 lg:py-24">
+        {/* ─── 07 — Common questions ─────────────────────────── */}
+        <Reveal as="section" className="bg-paper py-16 lg:py-20 border-y border-sand-soft">
           <div className="container-width max-w-4xl">
-            <p className="eyebrow mb-3">— Common questions</p>
+            <p className="eyebrow-num mb-3">07 — Common questions</p>
             <FAQ faqs={FAQS_HOME} title={faqSectionTitle} />
           </div>
-        </section>
+        </Reveal>
 
-        {/* ─── Bottom CTA ────────────────────────────────────────── */}
-        <section className="bg-brand-600 py-16 lg:py-24 text-center text-white">
-          <div className="container-width max-w-3xl">
-            <h2 className="font-display text-[30px] lg:text-[44px] leading-tight mb-4">
+        {/* ─── Bottom CTA ────────────────────────────────────── */}
+        <Reveal as="section" className="bg-ink text-ink-soft-text py-16 lg:py-24">
+          <div className="container-width max-w-3xl text-center">
+            <p className="eyebrow-on-dark mb-4">— Get matched</p>
+            <h2
+              className="font-sans font-medium leading-[1.05] tracking-tightest mb-5"
+              style={{ fontSize: 'clamp(28px, 4.4vw, 48px)' }}
+            >
               {ctaSection.heading}
             </h2>
-            <p className="text-[15px] lg:text-[17px] text-white/85 leading-relaxed mb-8 max-w-2xl mx-auto">
+            <p className="text-[15px] lg:text-[17px] text-ink-mute leading-[1.6] mb-9 max-w-2xl mx-auto">
               {ctaSection.subheading}
             </p>
-            <button onClick={() => setModal(true)} className="btn-on-dark text-[15px] px-7 py-3.5">
-              Match me with a dentist <ArrowRight size={14} />
+            <button onClick={() => setModal(true)} className="btn-on-dark text-[15px] px-7 py-4 group">
+              Match me with a dentist <ArrowRight size={14} className="transition-transform group-hover:translate-x-0.5" />
             </button>
-            <p className="mt-6 text-[12px] text-white/60 max-w-xl mx-auto">
+            <p className="mt-7 font-mono uppercase text-[10px] tracking-[0.12em] text-ink-mute/80 max-w-xl mx-auto">
               {siteConfig.serviceArea} · GDC-registered network · Free to patients
             </p>
           </div>
-        </section>
+        </Reveal>
       </main>
 
       <Footer />

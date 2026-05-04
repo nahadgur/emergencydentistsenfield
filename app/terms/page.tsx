@@ -24,7 +24,7 @@ export default function TermsPage() {
           <div className="container-width pt-10 pb-14">
             <Breadcrumbs dark items={[{ label: 'Terms' }]} />
             <p className="text-[10px] font-mono uppercase tracking-[0.22em] text-brand-300 mt-6 mb-4">— Legal · Terms of use</p>
-            <h1 className="font-display text-[34px] lg:text-[46px] leading-tight max-w-2xl mb-5">Terms of use</h1>
+            <h1 className="font-sans font-medium text-[34px] lg:text-[46px] leading-tight max-w-2xl mb-5">Terms of use</h1>
             <p className="text-[15px] text-white/80 max-w-2xl leading-relaxed mb-3">
               The rules that apply when you use this site or submit an enquiry through the matching service. Plain English wherever possible.
             </p>
@@ -147,7 +147,7 @@ export default function TermsPage() {
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section>
-      <h2 className="font-display text-[22px] lg:text-[28px] text-ink leading-tight mb-4">{title}</h2>
+      <h2 className="font-sans font-medium text-[22px] lg:text-[28px] text-ink leading-tight mb-4">{title}</h2>
       <div className="space-y-4 [&_a]:text-brand-600 [&_a]:underline [&_a:hover]:text-brand-700 [&_strong]:text-ink [&_strong]:font-semibold [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-2">
         {children}
       </div>

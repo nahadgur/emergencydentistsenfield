@@ -5,10 +5,11 @@ import { Footer } from '@/components/Footer';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { siteConfig } from '@/data/site';
 
+// Title under 60 chars, description under 160 chars.
 export const metadata: Metadata = {
-  title: 'About the matching service',
+  title: 'About Our Enfield Emergency Dentist Matching',
   description:
-    'Emergency Dentists Enfield is a free matching service connecting Enfield residents with vetted GDC-registered emergency dentists. We are not a clinical service — we introduce patients to qualified professionals.',
+    'How our free matching service connects Enfield patients with vetted, GDC-registered emergency dentists. Independent referrer, not a clinical practice.',
   alternates: { canonical: '/about/' },
   robots: { index: true, follow: true },
 };
@@ -22,7 +23,7 @@ export default function AboutPage() {
           <div className="container-width pt-10 pb-14">
             <Breadcrumbs dark items={[{ label: 'About' }]} />
             <p className="text-[10px] font-mono uppercase tracking-[0.22em] text-brand-300 mt-6 mb-4">— About the service</p>
-            <h1 className="font-display text-[34px] lg:text-[48px] leading-tight max-w-2xl mb-5">
+            <h1 className="font-sans font-medium text-[34px] lg:text-[48px] leading-tight max-w-2xl mb-5">
               How we match Enfield patients with emergency dentists
             </h1>
             <p className="text-[15px] lg:text-[17px] text-white/80 max-w-2xl leading-relaxed">
@@ -114,7 +115,7 @@ export default function AboutPage() {
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <section>
-      <h2 className="font-display text-[22px] lg:text-[28px] text-ink leading-tight mb-4">{title}</h2>
+      <h2 className="font-sans font-medium text-[22px] lg:text-[28px] text-ink leading-tight mb-4">{title}</h2>
       <div className="space-y-4 [&_a]:text-brand-600 [&_a]:underline [&_a:hover]:text-brand-700 [&_strong]:text-ink [&_strong]:font-semibold [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-2 [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:space-y-2">
         {children}
       </div>

@@ -12,12 +12,17 @@ export interface AreaContent {
   patientProfile: { heading: string; points: string[] };
   commonTriggers: string[];
   localContext: string;
+  metaTitle: string;        // <=60 chars
+  metaDescription: string;  // <=155 chars
   faqOverride?: { question: string; answer: string }[];
 }
 
 export const areaContent: Record<string, AreaContent> = {
 
   'enfield-town': {
+    metaTitle: 'Emergency Dentist Enfield Town (EN1, EN2)',
+    metaDescription:
+      'Same-day emergency dental matching for Enfield Town residents. Densest practice cluster in the borough; central EN1 and EN2 catchment.',
     heroHeading: 'Emergency dentists in Enfield Town (EN1, EN2)',
     heroParagraph:
       'Enfield Town is the historic and commercial heart of the borough — Tudor church, Saturday market, and the highest density of dental practices anywhere in Enfield. We match Enfield Town residents and the immediate EN1 / EN2 catchment with vetted GDC-registered dentists, usually within 60 minutes during opening hours.',
@@ -51,6 +56,9 @@ export const areaContent: Record<string, AreaContent> = {
   },
 
   'bush-hill-park': {
+    metaTitle: 'Emergency Dentist Bush Hill Park (EN1)',
+    metaDescription:
+      'Emergency dental matching for Bush Hill Park residents. Conservation Area east of the railway, period villas, longer-tenured restorative patients.',
     heroHeading: 'Emergency dentists for Bush Hill Park (EN1)',
     heroParagraph:
       'Bush Hill Park is the railway-era conservation village just south of Enfield Town — Bush Hill Park overground station on the Liverpool Street to Cheshunt line, the green expanse of the Park itself, and a quietly settled residential character distinct from the busier centre. We match EN1 residents here with vetted GDC-registered dentists, usually in central Enfield Town (a 4-minute drive up Lavender Hill) or along Carterhatch Lane.',
@@ -84,6 +92,9 @@ export const areaContent: Record<string, AreaContent> = {
   },
 
   'enfield-highway': {
+    metaTitle: 'Emergency Dentist Enfield Highway (EN3)',
+    metaDescription:
+      'Emergency dental matching for Enfield Highway residents. Working-age EN3 demographic along the Hertford Road corridor; sports trauma covered same-day.',
     heroHeading: 'Emergency dentists for Enfield Highway (EN3)',
     heroParagraph:
       'Enfield Highway is the eastern part of the borough centred on the Hertford Road corridor and the historic Lock — mixed residential, light industrial, and a strong working-age demographic. We match EN3 residents with vetted Enfield dentists, typically in central Enfield Town or along the Hertford Road itself.',
@@ -117,6 +128,9 @@ export const areaContent: Record<string, AreaContent> = {
   },
 
   'ponders-end': {
+    metaTitle: 'Emergency Dentist Ponders End (EN3)',
+    metaDescription:
+      'Emergency dental matching for Ponders End residents. EN3 shift-work demographic, Aylward Academy and Middlesex Uni catchment, NHS-stretched access.',
     heroHeading: 'Emergency dentists for Ponders End (EN3)',
     heroParagraph:
       'Ponders End is the working-Enfield neighbourhood between Edmonton Green and Enfield Lock — a Liverpool Street-line overground station, the long-running Ponders End High Street, and the major Middlesex University Ponders End campus. We match EN3 residents with vetted GDC-registered dentists, typically in central Enfield Town or the Edmonton Green cluster, with the route usually shorter via the A1010 than people expect.',
@@ -150,6 +164,9 @@ export const areaContent: Record<string, AreaContent> = {
   },
 
   'edmonton': {
+    metaTitle: 'Emergency Dentist Edmonton (N9, N18)',
+    metaDescription:
+      'Emergency dental matching for Edmonton residents. N9 and N18 multilingual demographic; Turkish-, Polish-, Romanian-speaking dentists available.',
     heroHeading: 'Emergency dentists for Edmonton (N9, N18)',
     heroParagraph:
       'Edmonton is one of north London\'s most diverse and densely-populated neighbourhoods — high-volume retail along Fore Street, the major Edmonton Green shopping centre and bus interchange, and a strongly multicultural community. We match Edmonton residents with vetted GDC-registered dentists across the N9 and N18 postcodes.',
@@ -183,6 +200,9 @@ export const areaContent: Record<string, AreaContent> = {
   },
 
   'palmers-green': {
+    metaTitle: 'Emergency Dentist Palmers Green (N13)',
+    metaDescription:
+      'Emergency dental matching for Palmers Green residents. N13 Greek-Cypriot community heart on Green Lanes; Greek-speaking dentists available.',
     heroHeading: 'Emergency dentists for Palmers Green (N13)',
     heroParagraph:
       'Palmers Green is the heart of the Greek and Cypriot community in north London — Green Lanes lined with Cypriot bakeries, restaurants, and grocers, alongside settled family residential. We match Palmers Green residents with vetted GDC-registered dentists, often with Greek-speaking practitioners available.',
@@ -216,6 +236,9 @@ export const areaContent: Record<string, AreaContent> = {
   },
 
   'winchmore-hill': {
+    metaTitle: 'Emergency Dentist Winchmore Hill (N21)',
+    metaDescription:
+      'Emergency dental matching for Winchmore Hill residents. Conservation-area N21 affluent demographic; private routing for faster slots.',
     heroHeading: 'Emergency dentists for Winchmore Hill (N21)',
     heroParagraph:
       'Winchmore Hill is one of north London\'s most desirable residential suburbs — a conservation-area village green, period properties, and a settled affluent family demographic. We match Winchmore Hill residents with vetted Enfield emergency dentists, with most appointments achievable within a 10-minute drive.',
@@ -249,6 +272,9 @@ export const areaContent: Record<string, AreaContent> = {
   },
 
   'southgate': {
+    metaTitle: 'Emergency Dentist Southgate (N14)',
+    metaDescription:
+      'Emergency dental matching for Southgate residents. N14 Piccadilly-line family suburb, Saturday slots prioritised for City commuters.',
     heroHeading: 'Emergency dentists for Southgate (N14)',
     heroParagraph:
       'Southgate is the western anchor of the borough — Charles Holden\'s iconic Piccadilly line tube station, the Southgate Circus shopping centre, and a strong family-suburb character. We match Southgate residents with vetted GDC-registered Enfield dentists, typically with travel times under 10 minutes.',
@@ -282,6 +308,9 @@ export const areaContent: Record<string, AreaContent> = {
   },
 
   'cockfosters': {
+    metaTitle: 'Emergency Dentist Cockfosters (EN4)',
+    metaDescription:
+      'Emergency dental matching for Cockfosters residents. EN4 Piccadilly terminus, Trent Park edge, established affluent demographic, broad emergency mix.',
     heroHeading: 'Emergency dentists for Cockfosters (EN4)',
     heroParagraph:
       'Cockfosters is the western edge of the borough — Piccadilly line terminus, leafy residential, and the entrance to Trent Park. We match Cockfosters residents with vetted Enfield emergency dentists across the EN4 postcode area.',
@@ -315,6 +344,9 @@ export const areaContent: Record<string, AreaContent> = {
   },
 
   'hadley-wood': {
+    metaTitle: 'Emergency Dentist Hadley Wood (EN4)',
+    metaDescription:
+      'Emergency dental matching for Hadley Wood residents. Exclusive EN4 conservation enclave, weekend cover for residents whose central London practice is closed.',
     heroHeading: 'Emergency dentists for Hadley Wood (EN4)',
     heroParagraph:
       'Hadley Wood is one of London\'s most exclusive residential enclaves — gated estates, period villas, and the highest property values anywhere in the borough. We match Hadley Wood residents with vetted Enfield and adjacent-area emergency dentists, typically via Cockfosters or central Enfield.',

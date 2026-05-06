@@ -7,10 +7,10 @@ import { services } from '@/data/services';
 
 interface Props { area?: string; service?: string; }
 
-// Lead destination — Google Apps Script URL set up later. Until then, the
-// form posts to this placeholder which falls back to a "we'll be in touch"
-// success state via the catch handler. Replace with the live URL when ready.
-const GAS_URL = '';
+// Lead destination — Google Apps Script web app for the Enfield site.
+// Each row appended to the linked sheet; redeploy the script as a NEW
+// version on every edit (Manage Deployments -> pencil -> New version).
+const GAS_URL = 'https://script.google.com/macros/s/AKfycbyoA9ZFFYK5zIogC5nlo_N2asFJXGkgKEXqWvEgX-3pmbK7G9Q-X02P0tfh7wUfYwfazw/exec';
 
 export function HeroLeadForm({ area, service }: Props) {
   const [submitting, setSubmitting] = useState(false);
@@ -18,18 +18,42 @@ export function HeroLeadForm({ area, service }: Props) {
   const [error,      setError]      = useState('');
   const formRef = useRef<HTMLFormElement>(null);
 
+  function fieldIdForError(msg: string): string | null {
+    const m = msg.toLowerCase();
+    if (m.includes('name')) return 'hlf-name';
+    if (m.includes('email')) return 'hlf-email';
+    if (m.includes('phone')) return 'hlf-phone';
+    if (m.includes('service') || m.includes('emergency')) return 'hlf-svc';
+    if (m.includes('area') || m.includes('where')) return 'hlf-area';
+    if (m.includes('message') || m.includes('notes')) return 'hlf-msg';
+    return null;
+  }
+
+  function pulseField(el: HTMLElement | null) {
+    if (!el) return;
+    el.classList.remove('field-pulse');
+    void el.offsetWidth;
+    el.classList.add('field-pulse');
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    setTimeout(() => el.focus({ preventScroll: true }), 200);
+  }
+
   async function submit(e: React.FormEvent) {
     e.preventDefault();
 
     const form = formRef.current!;
-    const consent = (form.querySelector('#hlf-consent') as HTMLInputElement)?.checked;
-    if (!consent) {
-      setError('Please confirm your consent to continue.');
+    setError('');
+
+    if (!form.checkValidity()) {
+      const firstInvalid = form.querySelector(':invalid') as HTMLElement | null;
+      pulseField(firstInvalid);
+      const labelText =
+        firstInvalid && (firstInvalid as HTMLInputElement).labels?.[0]?.textContent?.replace(/\*$/, '').trim();
+      setError(labelText ? `Please complete: ${labelText}` : 'Please fill in the highlighted field.');
       return;
     }
 
     setSubmitting(true);
-    setError('');
 
     const payload = {
       name:    (form.querySelector('#hlf-name')    as HTMLInputElement).value.trim(),
@@ -44,22 +68,23 @@ export function HeroLeadForm({ area, service }: Props) {
 
     try {
       if (GAS_URL) {
-        await fetch(GAS_URL, {
+        const res = await fetch(GAS_URL, {
           method: 'POST',
-          mode: 'no-cors',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload),
+          body: new URLSearchParams(payload as Record<string, string>),
         });
+        const json = await res.json().catch(() => ({ ok: false, error: 'Bad response' }));
+        if (!json.ok) throw new Error(json.error || `HTTP ${res.status}`);
       } else {
-        // Lead destination not yet configured — log to console so dev can
-        // verify the payload structure. Show success to user regardless so
-        // the form is functional during pre-launch development.
         // eslint-disable-next-line no-console
         console.warn('GAS_URL not configured — payload:', payload);
       }
       setDone(true);
-    } catch {
-      setError('Something went wrong. Please try again.');
+    } catch (err) {
+      console.error('Lead submission failed:', err);
+      const msg = err instanceof Error ? err.message : 'Something went wrong. Please try again.';
+      setError(msg);
+      const fieldId = fieldIdForError(msg);
+      if (fieldId) pulseField(form.querySelector(`#${fieldId}`) as HTMLElement | null);
     } finally {
       setSubmitting(false);
     }
@@ -95,7 +120,7 @@ export function HeroLeadForm({ area, service }: Props) {
         Matched within 60 minutes during opening hours. First thing the next morning otherwise.
       </p>
 
-      <form ref={formRef} onSubmit={submit} noValidate className="flex flex-col gap-3">
+      <form ref={formRef} onSubmit={submit} className="flex flex-col gap-3">
         <div>
           <label htmlFor="hlf-name" className={labelClass}>Your name *</label>
           <input id="hlf-name" type="text" required className={fieldClass} placeholder="e.g. Sarah Johnson" autoComplete="name" />

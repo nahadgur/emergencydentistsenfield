@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { services } from '@/data/services';
 import { AREA_HUBS } from '@/data/locations';
 import { siteConfig } from '@/data/site';
@@ -16,7 +17,7 @@ export function Footer() {
       <div className="container-width pt-12 pb-8">
         {/* Brand block */}
         <div className="flex items-center gap-2.5 mb-4">
-          <ToothMark size={26} color="#ffffff" />
+          <Image src="/logo-mark-white.svg" alt="" width={26} height={26} />
           <div className="flex flex-col leading-[1.2]">
             <span className="text-[15px] font-bold text-white">Emergency Dentists</span>
             <span className="text-[11px] text-[#a8b1c2]">Enfield</span>
@@ -95,13 +96,3 @@ export function Footer() {
   );
 }
 
-function ToothMark({ size = 26, color = '#ffffff' }: { size?: number; color?: string }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <path
-        d="M7 2.5C5 2.5 3.5 4 3.5 6.5c0 2 .8 3 1.4 4.8.5 1.6.4 3 .8 5.2.5 2.6 1.2 4.5 2.3 4.5 1.3 0 1.4-2.5 2-4.5.4-1.3.7-2 2-2s1.6.7 2 2c.6 2 .7 4.5 2 4.5 1.1 0 1.8-1.9 2.3-4.5.4-2.2.3-3.6.8-5.2.6-1.8 1.4-2.8 1.4-4.8C20.5 4 19 2.5 17 2.5c-1.6 0-2.5.8-3.5 1.5-.7.5-1.1.7-1.5.7s-.8-.2-1.5-.7C9.5 3.3 8.6 2.5 7 2.5z"
-        fill={color}
-      />
-    </svg>
-  );
-}

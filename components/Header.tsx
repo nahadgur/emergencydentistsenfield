@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 import { Menu, X, Clock, Shield } from 'lucide-react';
 
@@ -41,7 +42,7 @@ export function Header({ onOpenModal }: Props) {
           on the right (or hamburger on mobile). */}
       <nav className="container-width flex items-center justify-between py-3.5" aria-label="Site navigation">
         <Link href="/" className="flex items-center gap-2.5">
-          <ToothMark size={28} />
+          <Image src="/logo-mark.svg" alt="" width={28} height={28} priority />
           <span className="flex flex-col leading-[1.15]">
             <span className="text-[15px] font-bold text-ink tracking-[-0.01em]">
               Emergency Dentists
@@ -103,14 +104,3 @@ export function Header({ onOpenModal }: Props) {
   );
 }
 
-// Tooth-mark logo. Custom SVG matching the design's brand glyph.
-function ToothMark({ size = 28, color = '#0a6cb8' }: { size?: number; color?: string }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <path
-        d="M7 2.5C5 2.5 3.5 4 3.5 6.5c0 2 .8 3 1.4 4.8.5 1.6.4 3 .8 5.2.5 2.6 1.2 4.5 2.3 4.5 1.3 0 1.4-2.5 2-4.5.4-1.3.7-2 2-2s1.6.7 2 2c.6 2 .7 4.5 2 4.5 1.1 0 1.8-1.9 2.3-4.5.4-2.2.3-3.6.8-5.2.6-1.8 1.4-2.8 1.4-4.8C20.5 4 19 2.5 17 2.5c-1.6 0-2.5.8-3.5 1.5-.7.5-1.1.7-1.5.7s-.8-.2-1.5-.7C9.5 3.3 8.6 2.5 7 2.5z"
-        fill={color}
-      />
-    </svg>
-  );
-}

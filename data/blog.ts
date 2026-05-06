@@ -120,7 +120,7 @@ export const blogArticles: BlogArticle[] = [
   },
 
   {
-    slug: 'nhs-vs-private-emergency-dental-harlow',
+    slug: 'nhs-vs-private-emergency-dental-enfield',
     title: 'NHS vs private emergency dental in Enfield — the practical difference',
     metaTitle: 'NHS vs Private Emergency Dentist in Enfield (2026)',
     metaDescription:

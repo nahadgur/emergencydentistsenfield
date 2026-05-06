@@ -173,7 +173,7 @@ export function LeadFormModal({ isOpen, onClose, defaultService = '', defaultAre
 
               <div>
                 <label htmlFor="m-area" className={labelClass}>Where in Enfield? *</label>
-                <input id="m-area" type="text" required className={fieldClass} placeholder="e.g. Old Enfield, Church Langley" defaultValue={defaultArea} />
+                <input id="m-area" type="text" required className={fieldClass} placeholder="e.g. Enfield Town, Edmonton, Palmers Green" defaultValue={defaultArea} />
               </div>
 
               <div>

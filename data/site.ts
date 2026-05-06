@@ -54,24 +54,24 @@ export const TRUST_BADGES = [
 
 export const FAQS_HOME = [
   {
-    question: 'How quickly can you match me with an emergency dentist in Enfield?',
+    question: 'How quickly can I see an emergency dentist in Enfield?',
     answer:
-      'During clinic opening hours (typically 8am–6pm Monday to Friday and limited Saturday hours) we aim to make an introduction within 60 minutes of receiving your enquiry. For out-of-hours enquiries (evenings, Sundays, bank holidays) we match first thing the next working morning. If your situation is genuinely life-threatening — uncontrolled bleeding, facial swelling spreading to your eye, throat or neck, or any breathing difficulty — call 999 or NHS 111 rather than waiting for our match.',
+      'Most enquiries received between 8am and 6pm Monday to Friday get an introduction within an hour, with the appointment itself usually scheduled the same day or first thing the next morning. North-of-the-borough enquiries (Cockfosters, Hadley Wood, Southgate) often resolve faster because the practice density is higher there; Edmonton and Ponders End sometimes take a little longer because we route to fewer practices with NHS-and-private mixed lists. Out-of-hours enquiries (evenings, Sundays, bank holidays) are matched first thing the next working morning. For uncontrolled bleeding, facial swelling spreading toward the eye or throat, or any breathing difficulty, call 999 or NHS 111 — do not wait on the form.',
   },
   {
-    question: 'What does an emergency dental appointment in Enfield typically cost?',
+    question: 'What does an emergency appointment cost in Enfield?',
     answer:
-      'Private emergency consultations in Enfield typically run £80–£180 for the appointment itself (slightly higher than outer-zone London averages, in line with prime-zone north London pricing), with treatment costed on top depending on what is needed. NHS emergency appointments cost £27.40 (Band 1) for examination and any necessary urgent treatment to relieve pain. The matched dentist provides a clear quote before any treatment begins so you know what you are agreeing to.',
+      'Private emergency consultations across the borough sit roughly £80–£180 for the visit itself, with the variance reflecting the inside/outside-North-Circular split: practices in Cockfosters, Hadley Wood, Southgate and Winchmore Hill tend to price toward the upper end (closer to North London / Hampstead averages), while Enfield Town, Edmonton, Palmers Green and Ponders End cluster lower. Treatment is costed on top — a written quote always comes before any work starts. NHS emergency appointments are £27.40 at Band 1 for assessment plus any pain-relieving treatment in the same visit.',
   },
   {
-    question: 'Is the matching service really free?',
+    question: 'Is the matching service actually free?',
     answer:
-      'Yes — completely free for patients. Dentists in our network pay us a small referral fee when an introduction leads to a booked appointment. We are never paid by the patient at any stage and we add no markup to the dentist\'s quoted fee.',
+      'Yes — the service costs nothing to the patient. The matched practice pays us a small referral fee only if the introduction turns into a booked appointment; we add zero markup to the dentist\'s quoted fee, and you pay the practice directly for treatment. We exist to clear the bottleneck of "I need a dentist now and don\'t know who to call" — not to insert an extra cost into it.',
   },
   {
-    question: 'Can you help with NHS emergency dental access in Enfield?',
+    question: 'Can you help me get an NHS emergency dentist in Enfield?',
     answer:
-      'Many dentists in our network see both NHS and private patients. Where NHS emergency access is your preference, we will prioritise dentists with NHS availability. NHS access in Enfield specifically can be tight — North London NHS dental capacity has been under pressure for several years — but emergency NHS slots booked through NHS 111 (free, 24/7) remain accessible regardless of registration status.',
+      'Honestly: NHS dental access in Enfield is tight and has been since 2020. North Central London ICB capacity has not recovered, several Enfield practices closed their NHS lists during the pandemic and have not reopened, and the genuine NHS emergency route runs through NHS 111 — call 111 free, they triage and book into whichever NHS-contracted Urgent Dental Centre has a slot (often Whittington, North Middlesex, or one of the borough\'s remaining NHS practices). We will route NHS-preference enquiries to network practices with NHS availability where it exists, but if it doesn\'t we will tell you straight, and discuss what a private emergency visit costs so you can decide.',
   },
 ];
 

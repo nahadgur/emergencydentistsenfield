@@ -53,34 +53,34 @@ export const areaContent: Record<string, AreaContent> = {
   'bush-hill-park': {
     heroHeading: 'Emergency dentists for Bush Hill Park (EN1)',
     heroParagraph:
-      'Bush Hill Park is the conservation-area village just south of Enfield Town — established Edwardian residential streets, period properties, and longer-tenured families. We match Bush Hill Park residents with vetted GDC-registered dentists, typically in nearby Enfield Town (a 4-minute drive) or central Enfield.',
+      'Bush Hill Park is the railway-era conservation village just south of Enfield Town — Bush Hill Park overground station on the Liverpool Street to Cheshunt line, the green expanse of the Park itself, and a quietly settled residential character distinct from the busier centre. We match EN1 residents here with vetted GDC-registered dentists, usually in central Enfield Town (a 4-minute drive up Lavender Hill) or along Carterhatch Lane.',
     introHeading: 'Emergency dental matching for Bush Hill Park residents',
     introParagraphs: [
-      'Bush Hill Park\'s residential character — period Edwardian housing, conservation streets, longer-established families — produces a slightly different emergency dental presentation mix than the more transient parts of Enfield. We see a higher proportion of crown and bridge failures (older restorations finally giving up after 20+ years), root-canal pain in heavily restored teeth, and trauma from gardening and household DIY rather than from sport.',
-      'No dental practice sits physically inside the small Bush Hill Park village core — most matched dentists are in central Enfield Town (5-minute drive) or along the Hertford Road corridor. Saturday morning slots are particularly relevant here given the longer-tenured working demographic.',
-      'For serious presentations — facial swelling, knocked-out adult tooth, severe pain unrelieved by painkillers — the matching service prioritises Bush Hill Park enquiries to ensure same-day appointments. For non-urgent presentations (lost filling, mild ache), the matched dentist may book within the working week at standard rates.',
+      'The Bush Hill Park catchment splits into two distinct halves geographically: the Conservation Area east of the railway (laid out in the 1880s by the Bush Hill Park Estate Company, with the original villas around Park Avenue, Queen Anne\'s Place and the streets fanning off Village Road) and the larger inter-war and post-war estates west of the line running up toward the A10. The dental presentation mix differs accordingly — the Conservation Area side tends toward established adult patients and older residents with extensive crown-and-bridge history; the western estates skew younger and more family-oriented.',
+      'No dental practice sits inside the small village core itself — Bush Hill Park functions as a residential pocket, not a high street. Matched practices are most commonly in central Enfield Town (around Church Street and Baker Street, 4–6 minutes by car), with smaller capacity along the Hertford Road in EN3. The overground station is a useful access point for patients without cars who can change for a bus at Edmonton Green or Liverpool Street.',
+      'Bush Hill Park has reasonable NHS dental access compared to the borough average — several Enfield Town practices retain partial NHS lists and the matching form lets you indicate NHS preference. For genuinely urgent presentations (knocked-out adult tooth, spreading swelling, severe pain unrelieved by stacked painkillers) we route same-day; for non-urgent issues (lost filling without pulp exposure, asymptomatic chip) we book within the working week.',
     ],
     whySpecialistMatters:
-      'Bush Hill Park\'s building stock means many patients here have wells of dental history — multiple crowns, bridges, and historical fillings dating back decades. Treating an emergency in a heavily restored mouth is more nuanced than in a young patient with virgin teeth. Matched dentists with restorative experience produce better outcomes when the underlying tooth structure is already compromised.',
+      'Patients in the Conservation Area frequently bring decades of cumulative dental history — heavily restored mouths, multiple crowns approaching end-of-life, occasional historic root-treated teeth that have started to fail. Emergency repair on a tooth that has already had three previous interventions is a different judgement call from emergency repair on a structurally intact tooth. Matched dentists with restorative depth read this kind of mouth correctly and avoid the trap of patching a tooth that needs more than another patch.',
     patientProfile: {
       heading: 'Patients we typically match in Bush Hill Park',
       points: [
-        'Long-established residents in period Edwardian properties with substantial historical restorations',
-        'Older patients with crown or bridge failures requiring re-cementation or replacement',
-        'Families dealing with paediatric trauma (knocked-out baby teeth, mouth injuries from playgrounds)',
-        'Local professionals working from home and needing same-day cover during working hours',
-        'Residents in the surrounding streets who do not have a dentist physically inside the village',
+        'Conservation Area residents with long restorative history',
+        'Families on the western estates with school-age children at Lavender Primary or Bush Hill Park Primary',
+        'Bush Hill Park overground commuters into Liverpool Street needing slots that fit the working week',
+        'Older residents whose mobility makes the Hertford Road corridor inaccessible — we route to the closer central Enfield practices',
+        'EN1 residents who use the pharmacy on Village Road and want a practice within walking or short driving distance',
       ],
     },
     commonTriggers: [
-      'A long-standing crown finally coming off after 15–25 years of service',
-      'Severe ache from a heavily restored tooth where decay has reached the pulp',
-      'Falling at home (pavement trips, ladder slips during DIY) producing chipped or broken front teeth',
-      'Acute pericoronitis on an erupting wisdom tooth in late teens or early twenties',
-      'Lost filling in residents who use the pharmacy on Village Road',
+      'A long-standing crown finally giving up after 15–25 years',
+      'Sensitivity flaring on a heavily restored back tooth where decay has worked under the existing filling',
+      'Trips on the uneven Conservation Area pavements (the older streets have notoriously poor pavement repair) producing chipped front teeth',
+      'School-age incisor injuries from the local primaries and Bush Hill Park itself',
+      'Pericoronitis flares in twenties-residents living in the converted period properties around Queen Anne\'s Place',
     ],
     localContext:
-      'Bush Hill Park has a distinct conservation-area character within Enfield — a Victorian and Edwardian planned development built between 1872 and 1907, much of which retains its original architectural integrity. The area was developed as a "garden suburb" before that term existed, and the residents (then and now) skew older, more established, and more dentally-restored than the surrounding postcodes.',
+      'Bush Hill Park was laid out from the 1880s by the Bush Hill Park Estate Company on land previously belonging to the Bush Hill estate. The Conservation Area east of the railway retains much of its original Victorian and Edwardian villa stock, including the rare survival of original communal garden frontages on Queen Anne\'s Place. The Park itself (originally part of the estate, opened to the public in 1903) is a defining local landmark, and the railway station on the Liverpool Street line is one of the older overground stations in the borough — these geographic anchors shape how residents move within the area and which dental practices are practically reachable.',
   },
 
   'enfield-highway': {
@@ -119,34 +119,34 @@ export const areaContent: Record<string, AreaContent> = {
   'ponders-end': {
     heroHeading: 'Emergency dentists for Ponders End (EN3)',
     heroParagraph:
-      'Ponders End is the southern part of east Enfield, sitting between Edmonton and Enfield Highway along the Lee Valley. We match Ponders End residents with vetted Enfield emergency dentists, typically in central Enfield Town or the Edmonton catchment.',
+      'Ponders End is the working-Enfield neighbourhood between Edmonton Green and Enfield Lock — a Liverpool Street-line overground station, the long-running Ponders End High Street, and the major Middlesex University Ponders End campus. We match EN3 residents with vetted GDC-registered dentists, typically in central Enfield Town or the Edmonton Green cluster, with the route usually shorter via the A1010 than people expect.',
     introHeading: 'Emergency dental matching for Ponders End residents',
     introParagraphs: [
-      'Ponders End has a long-established residential character — predominantly mid-density family housing along Lincoln Road, Wharf Road, and the surrounding streets. The dental emergency mix is broadly typical of established residential Enfield: a mix of established-family crown maintenance, school-age trauma from the surrounding family demographic, and the occasional out-of-hours wisdom-tooth flare.',
-      'The closest dental practices are in central Enfield Town (7 minutes via the Hertford Road) and Edmonton Green (5 minutes south). For urgent same-day matching we consider both depending on availability and your specific emergency type.',
-      'Many Ponders End residents work in central London or the Lee Valley industrial areas, making working-day matching the dominant pattern. Saturday slots are available through the matched dentists for genuine weekend emergencies.',
+      'Ponders End covers the older industrial heart of EN3 — Wharf Road and the Lee Navigation to the east, the High Street commercial spine running north-south, and the dense residential streets around South Street and the new-build developments at Electric Quarter. The dental emergency mix is heavily working-age and family-dominated: shift workers from the warehousing and logistics belt along the Mollison Avenue corridor, students from Middlesex University Ponders End, and families with children at Aylward Academy and the cluster of primaries around Lincoln Road.',
+      'There is no major dental cluster directly inside Ponders End — the closest practical practices are in central Enfield Town (7 minutes north via Carterhatch Lane) and Edmonton Green (5 minutes south on the A1010). For overground-only patients without cars, the Liverpool Street line into Edmonton Green or up to Enfield Town is usually quicker than buses. Saturday morning slots are particularly important here given the borough\'s highest concentration of shift-work occupations.',
+      'NHS access in EN3 is among the tightest in the borough — the post-2020 contraction of NHS lists has hit east Enfield disproportionately because the existing NHS-list practices were already stretched. The matching form lets you flag NHS preference and we route to the practices still holding any NHS slots, but in many cases the realistic answer is a private appointment at NHS-comparable cost (the matched dentist will quote upfront before you commit).',
     ],
     whySpecialistMatters:
-      'Ponders End patients tend to be longer-tenured Enfield residents who may have had the same dentist for many years. Matched emergency dentists understand the value of continuity — the emergency visit is often the first introduction, and many Ponders End patients prefer to continue with the matched practice for routine care if the emergency experience is positive.',
+      'Ponders End presentations include a meaningful share of patients who have not seen a dentist in 18+ months because they could not get a routine NHS slot — by the time they present as an emergency, the underlying problem has progressed further than it would have done at first detection. Matched dentists are briefed to handle these "long-deferred" presentations without judgement and with realistic phased treatment plans rather than expecting the patient to fix everything at the emergency visit.',
     patientProfile: {
       heading: 'Patients we typically match in Ponders End',
       points: [
-        'Established families with school-age children needing paediatric emergency cover',
-        'Older residents with substantial restorative history requiring crown re-cementation or repair',
-        'Working-age adults needing fast same-day pain relief during the working week',
-        'Parents of teenagers with sports-related dental trauma',
-        'Lee Valley workers and Edmonton-Enfield commuters',
+        'Shift workers from the Mollison Avenue logistics and warehousing corridor needing Saturday or early-morning slots',
+        'Middlesex University Ponders End campus students with their first independent dental emergency',
+        'Families with children at Aylward Academy and the primaries around Lincoln Road',
+        'Long-tenured Liverpool Street-line commuters in the older terraced streets',
+        'Electric Quarter new-build residents needing first-time emergency access in the area',
       ],
     },
     commonTriggers: [
-      'Crown loss in older residents with restoration history dating back to the 1990s',
-      'Severe ache from a heavily filled tooth where decay has progressed beyond the existing repair',
-      'Sports trauma from school-age and teenage children',
-      'Lost filling that has been ignored for a few days and finally produced sensitivity',
-      'Pericoronitis flares in the late-teens-to-early-twenties demographic',
+      'Severe toothache that has been managed with painkillers for weeks because the patient could not get a routine NHS appointment',
+      'Lost filling in shift workers who do not have time during clinic opening hours',
+      'School-age incisor injuries from primary school playground falls',
+      'Wisdom-tooth pain in late-teen and twenty-something Middlesex Uni students',
+      'Sports trauma from local football and basketball at the Lee Valley playing fields',
     ],
     localContext:
-      'Ponders End sits at the Lee Valley\'s western edge — historically a working-class residential area developed alongside the late-Victorian and Edwardian industrial expansion of the valley. The Lee Valley regeneration has brought some residential investment, but the area remains predominantly traditional family housing rather than the new-build apartment developments seen elsewhere in north London.',
+      'Ponders End grew through the 19th and 20th centuries around the Lee Navigation and the Royal Small Arms / Edison Bell / Ediswan industries that lined it — the area\'s working-class character was set by that industrial period and has persisted through the post-industrial decades. The Electric Quarter regeneration around the former Ediswan factory site has brought significant new residential capacity in the last few years, and the Middlesex University Ponders End campus (formerly the Cat Hill site) anchors a younger demographic alongside the long-tenured residential population. The dental practice landscape inside EN3 itself is thin — most matched dentists for Ponders End enquiries are reached by short journeys north or south rather than within the immediate area.',
   },
 
   'edmonton': {

@@ -16,76 +16,76 @@
 export const heroContent = {
   eyebrow: 'Free matching · Vetted Enfield emergency dentists',
   titleHtml:
-    '<strong>Severe toothache</strong>, <strong>knocked-out tooth</strong>, or <strong>broken filling</strong>?',
+    '<strong>Severe toothache</strong>, <strong>knocked-out tooth</strong>, or sudden <strong>swelling on the gum</strong>?',
   subtitleHtml:
-    'Tell us what is wrong and we will match you with a vetted Enfield <strong>emergency dental appointment</strong> within 60 minutes during opening hours, first thing the next morning otherwise. <strong>GDC-registered dentist</strong>, <strong>professional indemnity insurance</strong>, free to patients.',
+    'Tell us what happened and where in the borough you are. We match you with a vetted Enfield <strong>emergency dental appointment</strong> within 60 minutes in working hours, first thing the next morning otherwise. <strong>GDC-registered</strong>, <strong>indemnity-insured</strong>, free to patients.',
 };
 
 // Plain-text aliases for legacy consumers.
 export const heroContentPlain = {
-  title: 'Severe toothache, knocked-out tooth, or broken filling?',
+  title: 'Severe toothache, knocked-out tooth, or sudden swelling on the gum?',
   subtitle:
-    'Tell us what is wrong and we will match you with a vetted Enfield emergency dental appointment within 60 minutes during opening hours, first thing the next morning otherwise. GDC-registered, professional indemnity insured, free to patients.',
+    'Tell us what happened and where in the borough you are. We match you with a vetted Enfield emergency dental appointment within 60 minutes in working hours, first thing the next morning otherwise. GDC-registered, indemnity-insured, free to patients.',
 };
 
 export const problemFraming = {
-  heading: 'Three categories of dental emergency we handle every day',
+  heading: 'Three categories of dental emergency we triage every day in Enfield',
   paragraphsHtml: [
-    'A <strong>dental emergency</strong> is anything where waiting two weeks for the next routine appointment will make the situation materially worse: pain that does not respond to over-the-counter painkillers, a broken or <a href="/services/knocked-out-tooth/" class="lsi-link">knocked-out tooth</a>, an infection causing facial swelling, a <strong>lost filling</strong> or <strong>lost crown</strong> leaving the underlying tooth exposed. The <strong>dental matching service</strong> exists because finding a dentist with same-day capacity in Enfield is genuinely hard outside of established patient relationships.',
-    'Critical presentations: <strong>avulsed tooth</strong> (knocked-out adult teeth), spreading facial swelling, uncontrolled bleeding. These are routed for same-hour attention, or referred immediately to NHS 111 / 999 if the situation is genuinely a medical rather than dental emergency. Spreading <strong>orofacial infection</strong> that involves the eye, throat, or neck is a hospital problem, not a dental one, and we will tell you so. We classify this as <strong>dental trauma</strong> with a hospital-first triage path.',
-    'Urgent presentations: <strong>severe toothache</strong>, <a href="/services/dental-abscess/" class="lsi-link">dental abscess</a>, painful <strong>broken tooth</strong> (or chipped tooth), <strong>acute pericoronitis</strong> from <a href="/services/wisdom-tooth-pain/" class="lsi-link">wisdom-tooth pain</a>. These are matched for <strong>same-day appointments</strong> during opening hours. <strong>Out-of-hours dental care</strong> for severe pain that you can manage with painkillers until morning is matched first thing the next working day. Lost fillings, lost crowns, and asymptomatic chips are matched within the working week.',
+    'A <strong>dental emergency</strong> is anything where waiting a fortnight for a routine slot makes the outcome materially worse: pain that doesn\'t respond to ibuprofen and paracetamol stacked properly, a broken or <a href="/services/knocked-out-tooth/" class="lsi-link">knocked-out tooth</a>, infection visible as a gum boil or facial swelling, or a <strong>lost filling</strong> / <strong>lost crown</strong> exposing nerve. The matching service exists because, since 2020, finding same-day capacity at an Enfield practice — particularly NHS — has stopped being something you can do by ringing round. North Central London ICB capacity has been under sustained pressure and several borough practices have closed their NHS lists.',
+    '<strong>Critical presentations</strong> route to a hospital, not a dentist. <strong>Avulsed adult tooth</strong> (knocked completely out), uncontrolled post-extraction bleeding, or a swelling spreading toward the eye, neck or floor of the mouth — that\'s a North Middlesex A&E or 999 problem, immediately. The matched dentist will say so on first contact. We will not book a paid private appointment for something that needs a hospital that day. Most Enfield-residents who need this go to North Mid (N18) for facial trauma; Chase Farm (EN2) is a planned-care site and not the right destination for an acute emergency.',
+    '<strong>Urgent presentations</strong> are what most enquiries actually are: <strong>severe toothache</strong>, <a href="/services/dental-abscess/" class="lsi-link">dental abscess</a> with localised gum swelling, painful <strong>broken tooth</strong>, <strong>acute pericoronitis</strong> from a partially erupted <a href="/services/wisdom-tooth-pain/" class="lsi-link">lower wisdom tooth</a>. These match for <strong>same-day appointments</strong> in working hours. Persistent severe pain you can hold with painkillers until morning is matched first thing the next working day. Lost fillings without nerve exposure, lost crowns on intact stumps, and asymptomatic chips are matched within the working week — usually with the practice closest to your specific Enfield postcode rather than just whichever has next-day capacity.',
   ],
 };
 
 export const howItWorks = {
-  heading: 'How the matching works',
+  heading: 'How the matching works in Enfield',
   steps: [
     {
       step: '1',
-      title: 'Describe the emergency',
-      desc: 'Fill in the matching form with your name, contact details, where in Enfield you are (or which postcode), what is happening with your tooth, and how soon you can attend. Takes under two minutes.',
+      title: 'Describe what is happening',
+      desc: 'Tell us your name, a phone or email we can reach you on, where in the borough you are (a neighbourhood like Edmonton, Palmers Green, or Cockfosters is fine — postcode is even better), what happened with the tooth and when, and how soon you can travel. Two minutes, no account, no pressure.',
     },
     {
       step: '2',
-      title: 'We triage and introduce',
+      title: 'We triage and route to the right Enfield practice',
       descHtml:
-        'A real person reads every enquiry and runs a <strong>dental triage</strong>. Critical cases (avulsion, spreading infection) bypass the queue. <strong>Urgent cases</strong> match within the hour. We confirm an Enfield practice with availability that matches your situation.',
-      desc: 'A real person reads every enquiry and runs a dental triage. Critical cases (avulsion, spreading infection) bypass the queue. Urgent cases match within the hour. We confirm an Enfield practice with availability that matches your situation.',
+        'A real person reads every enquiry. <strong>Critical cases</strong> (avulsion, spreading infection, uncontrolled bleeding) get NHS-111 or A&E redirection within minutes — North Mid for facial trauma if you\'re EN3 / N9 / N18, NHS 111 for the rest. <strong>Urgent cases</strong> get matched within the hour to a practice with current capacity, factoring travel time from your postcode (we don\'t send a Cockfosters resident to Edmonton when there\'s a Southgate slot open). Specific clinical needs route specifically — paediatric trauma, sedation requirement, Turkish-speaking preference for the Palmers Green / Edmonton communities, a known dental phobia.',
+      desc: 'A real person reads every enquiry. Critical cases (avulsion, spreading infection, uncontrolled bleeding) get NHS-111 or A&E redirection within minutes — North Mid for facial trauma if you are EN3 / N9 / N18, NHS 111 for the rest. Urgent cases get matched within the hour to a practice with current capacity, factoring travel time from your postcode. Specific clinical needs route specifically — paediatric trauma, sedation requirement, Turkish-speaking preference for the Palmers Green / Edmonton communities, a known dental phobia.',
     },
     {
       step: '3',
-      title: 'Attend the emergency appointment',
+      title: 'Attend the appointment, get pain controlled',
       descHtml:
-        'The matched dentist provides immediate <strong>dental pain relief</strong>, takes any necessary X-rays, and quotes any treatment beyond the consultation itself. You decide whether to proceed.',
-      desc: 'The matched dentist provides immediate dental pain relief, takes any necessary X-rays, and quotes any treatment beyond the consultation itself. You decide whether to proceed.',
+        'The matched practice provides immediate <strong>dental pain relief</strong> at the first visit (drainage, temporary dressing, prescription antibiotics where indicated), takes any necessary X-rays, and quotes treatment beyond the consultation up front. You decide whether to proceed. We don\'t take a follow-up cut and the practice doesn\'t price differently because you came through us.',
+      desc: 'The matched practice provides immediate dental pain relief at the first visit (drainage, temporary dressing, prescription antibiotics where indicated), takes any necessary X-rays, and quotes treatment beyond the consultation up front. You decide whether to proceed. We do not take a follow-up cut and the practice does not price differently because you came through us.',
     },
   ],
 };
 
 export const whyMatchingService = {
-  heading: 'Why use a matching service rather than calling round?',
+  heading: 'Why use a matching service rather than calling round Enfield practices',
   points: [
     {
-      title: 'Same-hour answer',
+      title: 'Same-hour answer in a borough where access is genuinely tight',
       descHtml:
-        'Calling round Enfield practices yourself can take an afternoon and still produce no slot. NHS dental capacity in Enfield has been under pressure for several years. We know which practices have current capacity for an <strong>emergency dental appointment</strong> and which dentists handle which kinds of emergency best. <a href="/location/" class="lsi-link">Browse our covered Enfield neighbourhoods</a> to see local options.',
-      desc: 'Calling round Enfield practices yourself can take an afternoon and still produce no slot. NHS dental capacity in Enfield has been under pressure for several years. We know which practices have current capacity for an emergency dental appointment and which dentists handle which kinds of emergency best.',
+        'Calling round yourself burns an afternoon and often still gets you "we can fit you in next Wednesday." NHS dental access across the North Central London ICB area (Enfield, Barnet, Camden, Haringey, Islington) has been under sustained strain since 2020 — multiple Enfield practices closed their NHS lists during the pandemic and have not reopened. We know which practices currently have private same-day capacity, which still hold any NHS slots, and which handle specific emergency types (avulsion versus abscess versus paediatric trauma versus sedation cases) competently. <a href="/location/" class="lsi-link">Browse our covered Enfield neighbourhoods</a> for area-specific options.',
+      desc: 'Calling round yourself burns an afternoon and often still gets you "we can fit you in next Wednesday." NHS dental access across the North Central London ICB area has been under sustained strain since 2020 — multiple Enfield practices closed their NHS lists during the pandemic and have not reopened. We know which practices currently have private same-day capacity, which still hold any NHS slots, and which handle specific emergency types competently.',
     },
     {
-      title: 'GDC-verified network',
+      title: 'GDC-verified, indemnity-insured, no exceptions',
       descHtml:
-        'Every dentist in our network is verified annually for current <strong>GDC registration</strong> and <strong>professional indemnity insurance</strong>. You are not introduced to anyone who is not legitimately registered to practise.',
-      desc: 'Every dentist in our network is verified annually for current GDC registration and professional indemnity insurance. You are not introduced to anyone who is not legitimately registered to practise.',
+        'Every dentist we route to is checked annually for current <strong>GDC registration</strong> and live <strong>professional indemnity insurance</strong>. You are not introduced to anyone who is not legitimately registered to practise in the UK — including nobody operating under "associate cover" without their own indemnity, and nobody whose registration is suspended pending a Fitness to Practise hearing.',
+      desc: 'Every dentist we route to is checked annually for current GDC registration and live professional indemnity insurance. You are not introduced to anyone who is not legitimately registered to practise in the UK — including nobody operating under "associate cover" without their own indemnity, and nobody whose registration is suspended pending a Fitness to Practise hearing.',
     },
     {
-      title: 'Honest medical-vs-dental triage',
+      title: 'Honest about what is dental and what is hospital',
       descHtml:
-        'Some presentations belong with NHS 111 or A&E rather than a dentist. We tell you which is which rather than booking everything as a paid appointment. <a href="/about/" class="lsi-link">Read about how the matching service works</a>.',
-      desc: 'Some presentations belong with NHS 111 or A&E rather than a dentist. We tell you which is which rather than booking everything as a paid appointment.',
+        'Spreading facial cellulitis below the jawline, post-extraction bleeding that hasn\'t stopped after 30 minutes of firm pressure, or a tooth knocked out more than 60 minutes ago and dry — those belong at North Middlesex A&E or NHS 111, not a private dental chair. We tell you that on first contact rather than booking and billing. <a href="/about/" class="lsi-link">Read more about how the matching service works</a>.',
+      desc: 'Spreading facial cellulitis below the jawline, post-extraction bleeding that has not stopped after 30 minutes of firm pressure, or a tooth knocked out more than 60 minutes ago and dry — those belong at North Middlesex A&E or NHS 111, not a private dental chair. We tell you that on first contact rather than booking and billing.',
     },
     {
-      title: 'Free to patients, always',
-      desc: 'Dentists in our network pay us a small fee when an introduction leads to an appointment. You pay only the dentist for the treatment. We add no markup, charge no commission, and never share your data outside the matched practice.',
+      title: 'Free to the patient, no exceptions',
+      desc: 'The matched practice pays us a small referral fee when an introduction turns into a booked appointment. You pay only the practice, only for the treatment you agree to. No markup, no commission inside the dentist\'s quote, no upsell to extras you didn\'t ask for. Your contact details go to one practice — the one that matches — never to a list.',
     },
   ],
 };
@@ -95,5 +95,5 @@ export const faqSectionTitle = 'Common questions about emergency dental access i
 export const ctaSection = {
   heading: 'Get matched with an Enfield emergency dentist',
   subheading:
-    'Free, no obligation, GDC-verified network. Submit the form below. We triage every enquiry within the hour during opening hours.',
+    'Free, no obligation, GDC-verified network across all Enfield postcodes — EN1, EN2, EN3, N9, N13, N14, N18, N21. Submit the form. We read every enquiry and triage within the hour in working hours.',
 };

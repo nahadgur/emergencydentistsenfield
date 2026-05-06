@@ -126,7 +126,7 @@ export function HeroLeadForm({ area, service }: Props) {
         {!area && (
           <div>
             <label htmlFor="hlf-area" className={labelClass}>Where in Enfield? *</label>
-            <input id="hlf-area" type="text" required className={fieldClass} placeholder="e.g. Old Enfield, Church Langley" />
+            <input id="hlf-area" type="text" required className={fieldClass} placeholder="e.g. Enfield Town, Edmonton, Palmers Green" />
           </div>
         )}
 

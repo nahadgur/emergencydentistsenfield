@@ -2,8 +2,7 @@
 //
 // 2026-05-05 — Enfield design tokens from the Claude Design handoff.
 // Medical-trust blue on a clean white surface, soft 12px rounded
-// cards, single accent (Inter only — no serif italics). Distinct from
-// the Harlow rebuild's warm cream/coral aesthetic.
+// cards, single accent (Inter only — no serif italics).
 module.exports = {
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}',

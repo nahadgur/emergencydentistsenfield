@@ -33,6 +33,9 @@ export const metadata: Metadata = {
     'Free same-day matching with vetted, GDC-registered emergency dentists across Enfield Borough. Toothache, abscess, knocked-out tooth, broken tooth.',
   alternates: { canonical: siteConfig.url },
   robots: { index: true, follow: true },
+  verification: {
+    google: 'UC7QnX5JEKov3zVFokmiHzfCnb0Sp_l3lheDZP-rF0o',
+  },
   icons: {
     icon: [
       { url: '/favicon.ico' },

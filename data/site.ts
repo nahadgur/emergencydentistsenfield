@@ -10,7 +10,7 @@ export const siteConfig = {
   serviceArea: 'London Borough of Enfield',
   // Google Analytics tracking ID — placeholder until set up. ConsentBanner
   // only loads GA when this is non-empty AND consent has been granted.
-  gaId: '',
+  gaId: 'G-8XQD8LQGLK',
   // Phone disclaimer — we are NOT inbound-phone. The matched dentist
   // calls back. NHS 111 is for genuine medical emergencies (uncontrolled
   // bleeding, facial swelling spreading to eye/throat/neck, breathing

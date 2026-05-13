@@ -1,4 +1,4 @@
-# Emergency Dentists Enfield
+﻿# Emergency Dentists Enfield
 
 > Free same-day matching with vetted, GDC-registered emergency dentists
 > across the London Borough of Enfield. Toothache, abscess, knocked-out
@@ -13,13 +13,13 @@ patient never pays a markup.
 
 ## Emergencies covered
 
-- [Severe toothache](https://www.emergencydentistsenfield.co.uk/services/severe-toothache/): Same-day triage for sustained, sleep-disrupting tooth pain (likely pulpitis or apical periodontitis).
-- [Knocked-out tooth (avulsion)](https://www.emergencydentistsenfield.co.uk/services/knocked-out-tooth/): Time-critical replantation pathway. Same-hour matching during opening hours.
-- [Broken or chipped tooth](https://www.emergencydentistsenfield.co.uk/services/broken-or-chipped-tooth/): Sharp-edge stabilisation, restoration, or extraction depending on the fracture line.
-- [Lost filling or crown](https://www.emergencydentistsenfield.co.uk/services/lost-filling-or-crown/): Same-day re-cementation or temporary protection of the exposed dentine.
-- [Dental abscess and facial swelling](https://www.emergencydentistsenfield.co.uk/services/dental-abscess/): Drainage, antibiotic prescription where indicated, and definitive treatment of the source.
-- [Evening, weekend and bank-holiday emergencies](https://www.emergencydentistsenfield.co.uk/services/out-of-hours/): Out-of-hours pathway through partner clinics with extended-hours rotas.
-- [Wisdom tooth pain](https://www.emergencydentistsenfield.co.uk/services/wisdom-tooth-pain/): Pericoronitis triage, irrigation, and onward referral for surgical extraction where indicated.
+- [Severe toothache](https://emergencydentistsenfield.co.uk/services/severe-toothache/): Same-day triage for sustained, sleep-disrupting tooth pain (likely pulpitis or apical periodontitis).
+- [Knocked-out tooth (avulsion)](https://emergencydentistsenfield.co.uk/services/knocked-out-tooth/): Time-critical replantation pathway. Same-hour matching during opening hours.
+- [Broken or chipped tooth](https://emergencydentistsenfield.co.uk/services/broken-or-chipped-tooth/): Sharp-edge stabilisation, restoration, or extraction depending on the fracture line.
+- [Lost filling or crown](https://emergencydentistsenfield.co.uk/services/lost-filling-or-crown/): Same-day re-cementation or temporary protection of the exposed dentine.
+- [Dental abscess and facial swelling](https://emergencydentistsenfield.co.uk/services/dental-abscess/): Drainage, antibiotic prescription where indicated, and definitive treatment of the source.
+- [Evening, weekend and bank-holiday emergencies](https://emergencydentistsenfield.co.uk/services/out-of-hours/): Out-of-hours pathway through partner clinics with extended-hours rotas.
+- [Wisdom tooth pain](https://emergencydentistsenfield.co.uk/services/wisdom-tooth-pain/): Pericoronitis triage, irrigation, and onward referral for surgical extraction where indicated.
 
 ## Areas served
 
@@ -31,12 +31,12 @@ the adjacent parts of Haringey and Barnet.
 
 ## Reference pages
 
-- [About](https://www.emergencydentistsenfield.co.uk/about/): How the matching service works and why we are not a dental practice.
-- [Services overview](https://www.emergencydentistsenfield.co.uk/services/): All emergency types we triage and what same-day care looks like.
-- [Areas overview](https://www.emergencydentistsenfield.co.uk/location/): Catchment notes by neighbourhood.
-- [Guides](https://www.emergencydentistsenfield.co.uk/blog/): Practitioner-grade writing on dental emergencies, after-hours care, and what to do before a clinic appointment.
-- [Privacy](https://www.emergencydentistsenfield.co.uk/privacy/): UK GDPR privacy notice covering enquiry data, cookies, and your rights.
-- [Contact](https://www.emergencydentistsenfield.co.uk/contact/): How to reach the matching service.
+- [About](https://emergencydentistsenfield.co.uk/about/): How the matching service works and why we are not a dental practice.
+- [Services overview](https://emergencydentistsenfield.co.uk/services/): All emergency types we triage and what same-day care looks like.
+- [Areas overview](https://emergencydentistsenfield.co.uk/location/): Catchment notes by neighbourhood.
+- [Guides](https://emergencydentistsenfield.co.uk/blog/): Practitioner-grade writing on dental emergencies, after-hours care, and what to do before a clinic appointment.
+- [Privacy](https://emergencydentistsenfield.co.uk/privacy/): UK GDPR privacy notice covering enquiry data, cookies, and your rights.
+- [Contact](https://emergencydentistsenfield.co.uk/contact/): How to reach the matching service.
 
 ## Clinical scope and safety
 

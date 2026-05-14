@@ -1,17 +1,29 @@
 // middleware.ts
 //
-// Infrastructure for the cull-and-deepen pattern. Currently no culls
-// configured — the site is brand new. When pages are retired in
-// future, add their slugs to the appropriate set below to start
-// returning HTTP 410 with a branded HTML body.
+// Two responsibilities:
 //
-// 410 is more decisive than 404 — Google drops 410s from the index
-// promptly, while 404s sit in soft-404 limbo for weeks.
+// 1. Canonical-host enforcement (301 apex to www). Without this, the
+//    GSC "URL not allowed for a Sitemap at this location" error fires:
+//    Google fetches the sitemap from one host and finds URLs for the
+//    other host inside, so it rejects every entry. The site canonical
+//    is www.emergencydentistsenfield.co.uk; the bare apex 301s here.
+//    Submit the sitemap in GSC at the www property only.
 //
-// DO NOT redirect retired URLs to / — that creates the soft-404
-// problem (every dead URL looks like a duplicate of the homepage).
+// 2. Cull-and-deepen 410 infrastructure. Currently no culls configured —
+//    the site is brand new. When pages are retired, add their slugs to
+//    the appropriate set below to start returning HTTP 410 with a
+//    branded HTML body.
+//
+//    410 is more decisive than 404 — Google drops 410s from the index
+//    promptly, while 404s sit in soft-404 limbo for weeks.
+//
+//    DO NOT redirect retired URLs to / — that creates the soft-404
+//    problem (every dead URL looks like a duplicate of the homepage).
 
 import { NextRequest, NextResponse } from 'next/server';
+
+const CANONICAL_HOST = 'www.emergencydentistsenfield.co.uk';
+const APEX_HOST = 'emergencydentistsenfield.co.uk';
 
 // Add slugs here as pages are retired.
 const REMOVED_AREA_SLUGS = new Set<string>([]);
@@ -67,6 +79,18 @@ function gone() {
 }
 
 export function middleware(req: NextRequest) {
+  // Strip the port if present (e.g. when running locally on :3000).
+  const host = (req.headers.get('host') || '').toLowerCase().split(':')[0];
+
+  // 1. Canonical-host enforcement. Only runs on the production apex
+  //    host; leaves localhost and Vercel preview deploys alone.
+  if (host === APEX_HOST) {
+    const url = req.nextUrl.clone();
+    url.host = CANONICAL_HOST;
+    return NextResponse.redirect(url, 301);
+  }
+
+  // 2. 410 handling for retired pages.
   const { pathname } = req.nextUrl;
 
   const areaMatch = pathname.match(/^\/location\/([^\/]+)\/?$/);
@@ -82,6 +106,12 @@ export function middleware(req: NextRequest) {
   return NextResponse.next();
 }
 
+// Matcher must cover everything except Next.js internals and static
+// assets — in particular it MUST cover /sitemap.xml, /robots.txt, and
+// / so the canonical-host redirect fires on those paths too. That's
+// the whole point of the sitemap-host fix.
 export const config = {
-  matcher: ['/location/:path*', '/services/:path*'],
+  matcher: [
+    '/((?!_next/static|_next/image|favicon\\.ico|favicon-|apple-touch|images/|fonts/|api/).*)',
+  ],
 };

@@ -2,7 +2,7 @@
 export const siteConfig = {
   name: 'Emergency Dentists Enfield',
   tagline: 'Same-day matching with vetted Enfield emergency dentists',
-  url: 'https://www.emergencydentistsenfield.co.uk',
+  url: 'https://www.emergencydenstistsenfield.co.uk',
   description:
     'Free matching service for urgent dental care in Enfield. Severe toothache, knocked-out tooth, broken tooth, abscess, lost filling — matched within an hour during opening hours, next-morning otherwise. GDC-registered dentists across EN1, EN2, EN3, N9, N13, N14, N18, N21.',
   // Geographic service area (used in schema). Centralised so organisation/

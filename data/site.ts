@@ -8,9 +8,9 @@ export const siteConfig = {
   // Geographic service area (used in schema). Centralised so organisation/
   // service schemas don't depend on string-parsing the site name.
   serviceArea: 'London Borough of Enfield',
-  // Google Analytics tracking ID — placeholder until set up. ConsentBanner
-  // only loads GA when this is non-empty AND consent has been granted.
-  gaId: 'G-8XQD8LQGLK',
+  // Google Analytics tracking ID. ConsentBanner only loads GA when this is
+  // non-empty AND consent has been granted (UK PECR).
+  gaId: 'G-DR4D3ERD2N',
   // Phone disclaimer — we are NOT inbound-phone. The matched dentist
   // calls back. NHS 111 is for genuine medical emergencies (uncontrolled
   // bleeding, facial swelling spreading to eye/throat/neck, breathing

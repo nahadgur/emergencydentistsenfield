@@ -26,6 +26,14 @@
 @layer components {
   .container-width { @apply max-w-7xl mx-auto px-5 sm:px-6 lg:px-10; }
 
+  /* Skip-to-content link — off-screen until keyboard-focused (WCAG 2.4.1). */
+  .skip-link {
+    @apply absolute left-3 top-3 z-[100] -translate-y-24 rounded-md bg-ink px-4 py-2 text-[13px] font-medium text-white shadow-lg transition-transform;
+  }
+  .skip-link:focus {
+    @apply translate-y-0 outline-none ring-2 ring-brand-500;
+  }
+
   /* ---- CTAs ----
      Primary is the filled blue with the design's signature soft blue
      shadow. Secondary is the white button with a 1.5px blue border.

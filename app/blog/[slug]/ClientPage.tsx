@@ -73,6 +73,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
     headline: article.title,
     description: article.metaDescription,
     datePublished: article.publishDate,
+    dateModified: article.updatedDate ?? article.publishDate,
     author: { '@type': 'Organization', '@id': `${siteConfig.url}/#organization` },
     publisher: { '@id': `${siteConfig.url}/#organization` },
     mainEntityOfPage: `${siteConfig.url}/blog/${article.slug}/`,
@@ -86,7 +87,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
       <LeadFormModal isOpen={modal} onClose={() => setModal(false)} />
       <Header onOpenModal={() => setModal(true)} />
 
-      <main className="flex-grow bg-cream">
+      <main id="main" className="flex-grow bg-cream">
 
         <section className="bg-ink text-white">
           <div className="container-width pt-10 pb-12">

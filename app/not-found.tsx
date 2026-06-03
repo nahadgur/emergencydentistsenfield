@@ -17,7 +17,7 @@ export default function NotFound() {
   return (
     <>
       <Header />
-      <main className="flex-grow bg-cream flex items-center justify-center py-24 lg:py-32 px-5">
+      <main id="main" className="flex-grow bg-cream flex items-center justify-center py-24 lg:py-32 px-5">
         <div className="max-w-2xl text-center">
           <p className="font-sans font-medium italic text-[120px] lg:text-[180px] leading-none text-brand-600 mb-2">
             404

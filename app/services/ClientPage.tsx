@@ -27,7 +27,7 @@ export default function ServicesIndexPage() {
       <LeadFormModal isOpen={modal} onClose={() => setModal(false)} />
       <Header onOpenModal={() => setModal(true)} />
 
-      <main className="flex-grow bg-cream">
+      <main id="main" className="flex-grow bg-cream">
 
         {/* Hero, single-column. Lead form removed from this page; the
             bottom CTA opens the global LeadFormModal instead. */}

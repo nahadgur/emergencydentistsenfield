@@ -76,7 +76,7 @@ export default function AreaPage({ params }: { params: { area: string } }) {
       <LeadFormModal isOpen={modal} onClose={() => setModal(false)} defaultArea={hub.name} />
       <Header onOpenModal={() => setModal(true)} />
 
-      <main className="flex-grow bg-cream">
+      <main id="main" className="flex-grow bg-cream">
 
         {/* Hero with above-fold form */}
         <section className="bg-ink text-white">

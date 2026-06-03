@@ -34,7 +34,7 @@ export default function LocationsIndexPage() {
       <LeadFormModal isOpen={modal} onClose={() => setModal(false)} />
       <Header onOpenModal={() => setModal(true)} />
 
-      <main className="flex-grow bg-cream">
+      <main id="main" className="flex-grow bg-cream">
 
         {/* Hero is single-column. Lead form removed; bottom CTA opens
             the global LeadFormModal. */}

@@ -37,9 +37,14 @@ export function EmergencyDisclaimer({ variant = 'inline' }: Props) {
               <span className="inline-flex items-center gap-1.5 font-bold text-urgent-700">
                 <Phone size={14} /> 999 — life-threatening
               </span>
-              <span className="inline-flex items-center gap-1.5 font-bold text-urgent-700">
+              <a
+                href="https://111.nhs.uk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 font-bold text-urgent-700 underline decoration-urgent-300 underline-offset-2 hover:decoration-urgent-600"
+              >
                 <Phone size={14} /> NHS 111 — urgent advice (free, 24/7)
-              </span>
+              </a>
             </div>
           </div>
         </div>

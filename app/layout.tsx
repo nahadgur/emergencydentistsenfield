@@ -3,6 +3,7 @@ import { Inter, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import { siteConfig } from '@/data/site';
 import { ConsentBanner } from '@/components/ConsentBanner';
+import { AttributionCapture } from '@/components/AttributionCapture';
 
 // 2026-05-05 — Enfield design from the Claude Design handoff uses Inter
 // only across the entire system. JetBrains Mono retained for any code-
@@ -153,6 +154,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       </head>
       <body className="min-h-screen flex flex-col">
+        <a href="#main" className="skip-link">Skip to content</a>
+        <AttributionCapture />
         <ConsentBanner gaId={siteConfig.gaId} />
         {children}
       </body>

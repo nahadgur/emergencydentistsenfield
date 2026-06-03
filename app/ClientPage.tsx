@@ -38,7 +38,7 @@ export default function HomePage() {
       <LeadFormModal isOpen={modal} onClose={() => setModal(false)} />
       <Header onOpenModal={() => setModal(true)} />
 
-      <main className="flex-grow bg-bg">
+      <main id="main" className="flex-grow bg-bg">
 
         {/* ─── Hero ────────────────────────────────────────────
             Status pill, h1, subhead on the left; lead form on the

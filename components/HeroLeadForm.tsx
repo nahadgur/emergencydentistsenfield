@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useRef, useState } from 'react';
 import { CheckCircle } from 'lucide-react';
 import { services } from '@/data/services';
+import { getAttribution } from '@/lib/attribution';
 
 interface Props { area?: string; service?: string; }
 
@@ -64,6 +65,7 @@ export function HeroLeadForm({ area, service }: Props) {
       message: (form.querySelector('#hlf-msg')     as HTMLTextAreaElement).value.trim(),
       page:    typeof window !== 'undefined' ? window.location.pathname : '',
       source:  'hero-form',
+      ...getAttribution(),
     };
 
     try {

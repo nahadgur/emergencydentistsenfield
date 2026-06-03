@@ -16,6 +16,8 @@ export interface BlogArticle {
   metaDescription: string;
   category: 'Emergency basics' | 'Trauma & first aid' | 'Pain management' | 'Local';
   publishDate: string;
+  /** Optional last-reviewed date; falls back to publishDate in schema. */
+  updatedDate?: string;
   excerpt: string;
   content: ContentBlock[];
 }

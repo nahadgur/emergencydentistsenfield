@@ -19,7 +19,7 @@ export default function TermsPage() {
   return (
     <>
       <Header />
-      <main className="flex-grow bg-cream">
+      <main id="main" className="flex-grow bg-cream">
         <section className="bg-ink text-white">
           <div className="container-width pt-10 pb-14">
             <Breadcrumbs dark items={[{ label: 'Terms' }]} />

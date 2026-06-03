@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { X, CheckCircle } from 'lucide-react';
 import { services } from '@/data/services';
+import { getAttribution } from '@/lib/attribution';
 
 interface Props {
   isOpen: boolean;
@@ -105,6 +106,7 @@ export function LeadFormModal({ isOpen, onClose, defaultService = '', defaultAre
       message: (form.querySelector('#m-msg')     as HTMLTextAreaElement).value.trim(),
       page:    window.location.pathname,
       source:  'modal',
+      ...getAttribution(),
     };
 
     try {
@@ -151,7 +153,7 @@ export function LeadFormModal({ isOpen, onClose, defaultService = '', defaultAre
           <div>
             <p className="text-[10px] font-mono uppercase tracking-[0.2em] text-brand-600 mb-1">Free matching · GDC-verified</p>
             <h2 id="modal-title" className="font-display text-[20px] text-ink leading-tight">
-              Find a Enfield emergency dentist
+              Find an Enfield emergency dentist
             </h2>
           </div>
           <button onClick={onClose} aria-label="Close" className="p-1 -mt-1 -mr-1 text-ink/45 hover:text-ink">

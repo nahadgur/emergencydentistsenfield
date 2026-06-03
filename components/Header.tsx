@@ -45,7 +45,7 @@ export function Header({ onOpenModal }: Props) {
           <Image src="/logo-mark.svg" alt="" width={28} height={28} priority />
           <span className="flex flex-col leading-[1.15]">
             <span className="text-[15px] font-bold text-ink tracking-[-0.01em]">
-              Emergency Dentists
+              Emergency Dentist
             </span>
             <span className="text-[11px] font-medium text-ink-mute tracking-[0.02em]">
               Enfield

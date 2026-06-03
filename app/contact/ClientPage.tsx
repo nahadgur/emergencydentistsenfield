@@ -23,7 +23,7 @@ export default function ContactPage() {
             <Breadcrumbs dark items={[{ label: 'Contact' }]} />
             <p className="text-[10px] font-mono uppercase tracking-[0.22em] text-brand-300 mt-6 mb-4">Get in touch</p>
             <h1 className="font-sans font-medium text-[34px] lg:text-[46px] leading-tight max-w-2xl mb-5">
-              How to reach Emergency Dentists Enfield
+              How to reach Emergency Dentist Enfield
             </h1>
             <p className="text-[15px] lg:text-[17px] text-white/80 max-w-2xl leading-relaxed">
               The fastest route for a current dental emergency is the matching form, on the right. Other channels (general questions, GDPR, network partners) are listed below.

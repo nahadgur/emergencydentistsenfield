@@ -8,7 +8,7 @@ import { siteConfig } from '@/data/site';
 export const metadata: Metadata = {
   title: 'Privacy notice',
   description:
-    'How Emergency Dentists Enfield collects, uses, and protects personal data submitted through our matching service. UK GDPR notice covering enquiry data, cookies, and your rights.',
+    'How Emergency Dentist Enfield collects, uses, and protects personal data submitted through our matching service. UK GDPR notice covering enquiry data, cookies, and your rights.',
   alternates: { canonical: '/privacy/' },
   robots: { index: true, follow: true },
 };

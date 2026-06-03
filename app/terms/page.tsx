@@ -8,7 +8,7 @@ import { siteConfig } from '@/data/site';
 export const metadata: Metadata = {
   title: 'Terms of use',
   description:
-    'Terms of use for Emergency Dentists Enfield — a free matching service connecting Enfield residents with vetted GDC-registered dentists. The rules of using this site and the limits of our liability.',
+    'Terms of use for Emergency Dentist Enfield — a free matching service connecting Enfield residents with vetted GDC-registered dentists. The rules of using this site and the limits of our liability.',
   alternates: { canonical: '/terms/' },
   robots: { index: true, follow: true },
 };

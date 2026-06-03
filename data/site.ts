@@ -1,6 +1,6 @@
 // data/site.ts
 export const siteConfig = {
-  name: 'Emergency Dentists Enfield',
+  name: 'Emergency Dentist Enfield',
   tagline: 'Same-day matching with vetted Enfield emergency dentists',
   url: 'https://www.emergencydentistsenfield.co.uk',
   description:

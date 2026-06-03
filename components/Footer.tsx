@@ -19,7 +19,7 @@ export function Footer() {
         <div className="flex items-center gap-2.5 mb-4">
           <Image src="/logo-mark-white.svg" alt="" width={26} height={26} />
           <div className="flex flex-col leading-[1.2]">
-            <span className="text-[15px] font-bold text-white">Emergency Dentists</span>
+            <span className="text-[15px] font-bold text-white">Emergency Dentist</span>
             <span className="text-[11px] text-[#a8b1c2]">Enfield</span>
           </div>
         </div>

@@ -61,9 +61,17 @@ export default function AboutPage() {
             </ul>
           </Section>
 
-          <Section title="The dentists we route to">
+          <Section title="Partner surgery we work with">
             <p>
-              Every dentist in the network is GDC-registered and verified before we route an enquiry to them. The matched dentist for any particular enquiry depends on availability, your specific situation, and travel distance from your stated location across the EN postcodes. We publish a named partner practice here only once a referral agreement is confirmed.
+              The matching network includes a named partner surgery alongside the wider matched-dentist pool. The current visible network anchor is:
+            </p>
+            <ul>
+              <li>
+                <strong>Enfield Smiles</strong> (Ponders End, EN3): established dental practice on Ponders End High Street. Takes NHS and private patients, and is routed for emergency presentations across north and east Enfield, including Edmonton, Palmers Green and the surrounding EN postcodes.
+              </li>
+            </ul>
+            <p>
+              Every dentist in the network is GDC-registered and verified before we route an enquiry to them. The matched dentist for any particular enquiry depends on availability, your specific situation, and travel distance from your stated location. The named partner is part of the network, not the only practice we route to.
             </p>
           </Section>
 

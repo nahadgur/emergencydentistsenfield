@@ -27,13 +27,17 @@ export interface Partner {
   website?: string;
 }
 
-// No named partner is published until a referral agreement with a real
-// GDC-registered practice is confirmed for this site. The previous
-// "Enfield Smiles" entry was removed: the agreement could not be verified
-// and the stated area (Enfield Town / EN1) did not match the practice on
-// record. Listing an unverified partner is a DMCCA and YMYL risk. Re-add
-// here only with a confirmed agreement and the correct area.
-export const PARTNERS: Partner[] = [];
+export const PARTNERS: Partner[] = [
+  {
+    id: 'enfield-smiles',
+    name: 'Enfield Smiles',
+    area: 'Ponders End',
+    areaSlug: 'ponders-end',
+    description:
+      'Established dental practice on Ponders End High Street (EN3). Takes NHS and private patients, and is routed for emergency presentations across north and east Enfield, including Edmonton, Palmers Green and the surrounding EN postcodes.',
+    postcode: 'EN3',
+  },
+];
 
 export const getPartnerById = (id: string): Partner | undefined =>
   PARTNERS.find(p => p.id === id);

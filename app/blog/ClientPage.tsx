@@ -19,7 +19,7 @@ export default function BlogIndexPage() {
   ]);
 
   // Sort by publishDate descending
-  const sorted = [...blogArticles].sort((a, b) => b.publishDate.localeCompare(a.publishDate));
+  const sorted = blogArticles.filter(a => !a.draft).sort((a, b) => b.publishDate.localeCompare(a.publishDate));
 
   return (
     <>

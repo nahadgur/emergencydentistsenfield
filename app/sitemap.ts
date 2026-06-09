@@ -8,7 +8,8 @@ import type { MetadataRoute } from 'next';
 import { services } from '@/data/services';
 import { AREA_HUBS } from '@/data/locations';
 import { siteConfig } from '@/data/site';
-import { blogArticles } from '@/data/blog';
+import { getPublishedArticles } from '@/data/blog';
+import { guides } from '@/data/guides';
 
 const SITE_LAUNCH = '2026-05-04';
 const LAST_CONTENT_UPDATE = '2026-05-04';
@@ -21,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     { url: `${base}/`,         lastModified: LAST_CONTENT_UPDATE, changeFrequency: 'weekly',  priority: 1.0 },
     { url: `${base}/services/`, lastModified: LAST_CONTENT_UPDATE, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${base}/guides/`,   lastModified: LAST_CONTENT_UPDATE, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${base}/location/`, lastModified: LAST_CONTENT_UPDATE, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/blog/`,     lastModified: LAST_CONTENT_UPDATE, changeFrequency: 'weekly',  priority: 0.7 },
     { url: `${base}/about/`,    lastModified: SITE_LAUNCH,         changeFrequency: 'yearly',  priority: 0.5 },
@@ -43,12 +45,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  const blogPages: MetadataRoute.Sitemap = blogArticles.map(article => ({
+  const guidePages: MetadataRoute.Sitemap = guides.map(g => ({
+    url: `${base}/guides/${g.slug}/`,
+    lastModified: g.updatedDate,
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }));
+
+  // Draft spokes are excluded from the sitemap until published.
+  const blogPages: MetadataRoute.Sitemap = getPublishedArticles().map(article => ({
     url: `${base}/blog/${article.slug}/`,
     lastModified: article.publishDate,
     changeFrequency: 'monthly' as const,
     priority: 0.6,
   }));
 
-  return [...staticPages, ...servicePages, ...areaPages, ...blogPages];
+  return [...staticPages, ...servicePages, ...guidePages, ...areaPages, ...blogPages];
 }

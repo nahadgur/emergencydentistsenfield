@@ -61,18 +61,9 @@ export default function AboutPage() {
             </ul>
           </Section>
 
-          <Section title="Partner surgery we work with">
+          <Section title="The dentists we route to">
             <p>
-              The matching network includes a named partner surgery alongside the wider matched-dentist pool. The current visible network anchor is:
-            </p>
-            <ul>
-              <li>
-                <strong>Enfield Smiles</strong> (Enfield Town, EN1) — established Enfield Town dental practice serving the central EN1 / EN2 catchment. Routed for routine emergency presentations across the borough — severe toothache, broken teeth, lost crowns, paediatric trauma — with both NHS and private appointment availability where capacity allows. Practice website: {' '}
-                <a href="https://www.enfieldsmiles.co.uk" target="_blank" rel="noopener noreferrer">enfieldsmiles.co.uk</a>.
-              </li>
-            </ul>
-            <p>
-              The matched dentist for any particular enquiry depends on availability, your specific situation, and travel distance from your stated location. The named partner is part of the network, not the only practice we route to.
+              Every dentist in the network is GDC-registered and verified before we route an enquiry to them. The matched dentist for any particular enquiry depends on availability, your specific situation, and travel distance from your stated location across the EN postcodes. We publish a named partner practice here only once a referral agreement is confirmed.
             </p>
           </Section>
 

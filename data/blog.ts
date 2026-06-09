@@ -15,24 +15,31 @@ export interface BlogArticle {
   metaTitle: string;
   metaDescription: string;
   category: 'Emergency basics' | 'Trauma & first aid' | 'Pain management' | 'Local';
+  /** Parent guide-hub slug. */
+  hub: string;
+  /** draft:true 404s and is excluded from /blog, hub grids and the sitemap. */
+  draft: boolean;
   publishDate: string;
   /** Optional last-reviewed date; falls back to publishDate in schema. */
   updatedDate?: string;
   excerpt: string;
+  faqs?: { question: string; answer: string }[];
   content: ContentBlock[];
 }
 
 export const blogArticles: BlogArticle[] = [
   {
     slug: 'what-to-do-if-you-knock-out-a-tooth',
-    title: 'What to do if you knock out a tooth — the first 60 minutes',
+    hub: 'knocked-out-tooth-enfield',
+    draft: false,
+    title: 'What to do if you knock out a tooth: the first 60 minutes',
     metaTitle: 'Knocked-out Tooth: First 60 Minutes Guide (UK)',
     metaDescription:
       'Step-by-step guide for what to do in the first hour after a knocked-out adult tooth. How to pick up, store, and re-implant for the best chance of saving the tooth.',
     category: 'Trauma & first aid',
     publishDate: '2026-05-04',
     excerpt:
-      'A knocked-out adult tooth is one of the few true dental emergencies where every minute counts. Here is exactly what to do in the first 60 minutes — and what to avoid.',
+      'A knocked-out adult tooth is one of the few true dental emergencies where every minute counts. Here is exactly what to do in the first 60 minutes, and what to avoid.',
     content: [
       { type: 'p', text: 'A completely knocked-out adult permanent tooth (an "avulsion" in clinical terms) is one of the few dental emergencies where the first 60 minutes determine the outcome. The cells on the root surface that allow the tooth to re-attach to the jaw bone start dying within minutes of being out of the socket. By 30 minutes the success rate is dropping. By 60 minutes it has dropped sharply. By two hours, long-term success is rare.' },
       { type: 'p', text: 'The good news: re-implantation is straightforward in concept. A correctly preserved adult tooth, brought to a dentist within the hour, has an excellent chance of long-term survival. Here is exactly what to do.' },
@@ -70,6 +77,8 @@ export const blogArticles: BlogArticle[] = [
 
   {
     slug: 'managing-severe-toothache-before-you-can-be-seen',
+    hub: 'severe-toothache-enfield',
+    draft: false,
     title: 'Managing severe toothache before you can be seen',
     metaTitle: 'Severe Toothache: Pain Relief Guide Before Dentist',
     metaDescription:
@@ -123,7 +132,9 @@ export const blogArticles: BlogArticle[] = [
 
   {
     slug: 'nhs-vs-private-emergency-dental-enfield',
-    title: 'NHS vs private emergency dental in Enfield — the practical difference',
+    hub: 'out-of-hours-emergency-dentist-enfield',
+    draft: false,
+    title: 'NHS vs private emergency dental in Enfield: the practical difference',
     metaTitle: 'NHS vs Private Emergency Dentist in Enfield (2026)',
     metaDescription:
       'Practical comparison of NHS and private emergency dental access in Enfield. Costs, waiting times, what is and is not covered, and how to use NHS 111.',
@@ -169,6 +180,8 @@ export const blogArticles: BlogArticle[] = [
 
   {
     slug: 'recognising-a-dental-abscess-vs-routine-toothache',
+    hub: 'dental-abscess-enfield',
+    draft: false,
     title: 'Recognising a dental abscess vs routine toothache',
     metaTitle: 'Dental Abscess vs Toothache: Symptoms Guide',
     metaDescription:
@@ -176,7 +189,7 @@ export const blogArticles: BlogArticle[] = [
     category: 'Emergency basics',
     publishDate: '2026-05-04',
     excerpt:
-      'Most toothache is just toothache. A dental abscess is a different category — the same underlying problem (infection) but with the potential to escalate fast. Here are the warning signs.',
+      'Most toothache is just toothache. A dental abscess is a different category, the same underlying problem (infection) but with the potential to escalate fast. Here are the warning signs.',
     content: [
       { type: 'p', text: 'Most toothache is uncomfortable but not dangerous. A dental abscess is uncomfortable AND can become dangerous — the same underlying pathology (bacterial infection of the pulp or surrounding tissue) but with a meaningful risk of spreading to facial spaces where it becomes a hospital problem rather than a dental one. Telling the difference matters.' },
 
@@ -231,4 +244,12 @@ export const blogArticles: BlogArticle[] = [
 export const getArticleBySlug = (slug: string): BlogArticle | undefined =>
   blogArticles.find(a => a.slug === slug);
 
-export const getAllBlogSlugs = (): string[] => blogArticles.map(a => a.slug);
+// Draft gate: draft spokes 404 and are excluded from /blog, hub grids and the
+// sitemap until the publisher flips them live.
+export const getPublishedArticles = (): BlogArticle[] =>
+  blogArticles.filter(a => !a.draft);
+
+export const getArticlesByHub = (hub: string): BlogArticle[] =>
+  blogArticles.filter(a => a.hub === hub && !a.draft);
+
+export const getAllBlogSlugs = (): string[] => getPublishedArticles().map(a => a.slug);

@@ -10,7 +10,8 @@ interface Props { onOpenModal?: () => void; }
 const navLinks = [
   { href: '/services/', label: 'Emergencies' },
   { href: '/location/', label: 'Areas' },
-  { href: '/blog/',     label: 'Guides' },
+  { href: '/guides/',   label: 'Guides' },
+  { href: '/blog/',     label: 'Articles' },
   { href: '/about/',    label: 'About' },
 ];
 

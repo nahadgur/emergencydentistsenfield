@@ -27,18 +27,13 @@ export interface Partner {
   website?: string;
 }
 
-export const PARTNERS: Partner[] = [
-  {
-    id: 'enfield-smiles',
-    name: 'Enfield Smiles',
-    area: 'Enfield Town',
-    areaSlug: 'enfield-town',
-    description:
-      'Established Enfield Town dental practice serving the central EN1 / EN2 catchment. Routed for routine emergency presentations across the borough — severe toothache, broken teeth, lost crowns, paediatric trauma — with both NHS and private appointment availability where capacity allows.',
-    postcode: 'EN1',
-    website: 'https://www.enfieldsmiles.co.uk',
-  },
-];
+// No named partner is published until a referral agreement with a real
+// GDC-registered practice is confirmed for this site. The previous
+// "Enfield Smiles" entry was removed: the agreement could not be verified
+// and the stated area (Enfield Town / EN1) did not match the practice on
+// record. Listing an unverified partner is a DMCCA and YMYL risk. Re-add
+// here only with a confirmed agreement and the correct area.
+export const PARTNERS: Partner[] = [];
 
 export const getPartnerById = (id: string): Partner | undefined =>
   PARTNERS.find(p => p.id === id);

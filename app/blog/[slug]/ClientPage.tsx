@@ -4,7 +4,8 @@ import { useState } from 'react';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowRight, Clock, AlertCircle } from 'lucide-react';
-import { getArticleBySlug, blogArticles, ContentBlock } from '@/data/blog';
+import { getArticleBySlug, getArticlesByHub, getPublishedArticles, ContentBlock } from '@/data/blog';
+import { getGuideBySlug } from '@/data/guides';
 import { siteConfig } from '@/data/site';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -13,6 +14,7 @@ import { HeroLeadForm } from '@/components/HeroLeadForm';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { EmergencyDisclaimer } from '@/components/EmergencyDisclaimer';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
+import { editorialAuthorJsonLd, buildMedicalWebPageSchema, buildFaqPageSchema, AUTHOR_ID } from '@/lib/schema';
 
 function renderBlock(block: ContentBlock, i: number) {
   switch (block.type) {
@@ -57,9 +59,18 @@ function renderBlock(block: ContentBlock, i: number) {
 export default function BlogPost({ params }: { params: { slug: string } }) {
   const [modal, setModal] = useState(false);
   const article = getArticleBySlug(params.slug);
-  if (!article) notFound();
+  if (!article || article.draft) notFound();
 
-  const others = blogArticles.filter(a => a.slug !== article.slug).slice(0, 3);
+  const url = `${siteConfig.url}/blog/${article.slug}/`;
+  const dateModified = article.updatedDate ?? article.publishDate;
+  const hub = getGuideBySlug(article.hub);
+
+  // Related = live spokes in the same hub, falling back to other published spokes.
+  const hubSiblings = getArticlesByHub(article.hub).filter(a => a.slug !== article.slug);
+  const others = (hubSiblings.length > 0
+    ? hubSiblings
+    : getPublishedArticles().filter(a => a.slug !== article.slug)
+  ).slice(0, 3);
 
   const breadcrumbSchema = buildBreadcrumbSchema([
     { name: 'Guides',     url: '/blog/' },
@@ -69,20 +80,35 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    '@id': `${siteConfig.url}/blog/${article.slug}/#article`,
+    '@id': `${url}#article`,
     headline: article.title,
     description: article.metaDescription,
     datePublished: article.publishDate,
-    dateModified: article.updatedDate ?? article.publishDate,
-    author: { '@type': 'Organization', '@id': `${siteConfig.url}/#organization` },
+    dateModified,
+    author: { '@id': AUTHOR_ID },
+    reviewedBy: { '@id': AUTHOR_ID },
     publisher: { '@id': `${siteConfig.url}/#organization` },
-    mainEntityOfPage: `${siteConfig.url}/blog/${article.slug}/`,
+    mainEntityOfPage: url,
     inLanguage: 'en-GB',
   };
 
+  const medicalSchema = buildMedicalWebPageSchema({
+    url,
+    headline: article.title,
+    description: article.metaDescription,
+    datePublished: article.publishDate,
+    dateModified,
+    about: hub?.about,
+  });
+
+  const faqSchema = article.faqs && article.faqs.length > 0 ? buildFaqPageSchema(article.faqs) : null;
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(editorialAuthorJsonLd()) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalSchema) }} />
+      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <LeadFormModal isOpen={modal} onClose={() => setModal(false)} />
       <Header onOpenModal={() => setModal(true)} />
@@ -111,6 +137,14 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
         <div className="container-width py-12 lg:py-16">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-14">
             <article className="lg:col-span-2">
+              {hub && (
+                <p className="text-[13px] text-ink/70 mb-6">
+                  Part of our guide:{' '}
+                  <Link href={`/guides/${hub.slug}/`} className="font-bold text-brand-600 hover:text-brand-700">
+                    {hub.title}
+                  </Link>
+                </p>
+              )}
               {article.content.map(renderBlock)}
 
               <div className="mt-12">

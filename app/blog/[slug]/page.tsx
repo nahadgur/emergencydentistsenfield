@@ -13,7 +13,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = getArticleBySlug(params.slug);
-  if (!article) return { title: 'Not Found' };
+  if (!article || article.draft) return { title: 'Not Found' };
 
   const canonical = `${siteConfig.url}/blog/${article.slug}/`;
   return {

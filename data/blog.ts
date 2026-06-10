@@ -239,6 +239,84 @@ export const blogArticles: BlogArticle[] = [
       ] },
     ],
   },
+  {
+    slug: 'what-to-do-if-you-break-a-tooth',
+    hub: 'broken-chipped-tooth-enfield',
+    draft: true,
+    title: 'What to do if you break a tooth before you can be seen',
+    metaTitle: "Broken Tooth: Safe First Aid Before You're Seen",
+    metaDescription:
+      'Broke a tooth in Enfield? Safe first-aid steps for a broken tooth, how to ease the pain, when to call 999 or NHS 111, and how to be seen the same day.',
+    category: 'Trauma & first aid',
+    publishDate: '2026-06-10',
+    updatedDate: '2026-06-10',
+    excerpt:
+      'A broken tooth is rarely life-threatening, but it needs prompt care, and the first aid is simple. Here is what to do in Enfield before a dentist can see you, and the warning signs that mean hospital instead.',
+    faqs: [
+      {
+        question: 'Is a broken tooth a dental emergency?',
+        answer:
+          'A broken tooth that is painful, has a sharp edge cutting your tongue or cheek, exposes the inner tooth, or follows a blow to the face counts as urgent and is worth same-day care. A small chip with no pain and no sharp edge can usually wait a few days for a routine appointment, but still have it checked, because damage below the surface is not always visible.',
+      },
+      {
+        question: 'Should I keep the piece that broke off?',
+        answer:
+          'Yes. If a sizeable fragment has come away, keep it and bring it with you. Store a large piece in milk or in your own saliva, the same way you would a knocked-out tooth, because in some cases a dentist can bond a clean fragment back on. Small splinters of enamel are not usually reusable, but there is no harm in keeping them for the dentist to assess.',
+      },
+      {
+        question: 'How do I stop a broken tooth hurting until I am seen?',
+        answer:
+          'Take paracetamol or ibuprofen at the dose on the packet, provided they are safe for you, and rinse gently with warm salt water. Hold a cold compress against the outside of your cheek for swelling. Do not place an aspirin tablet directly against the gum, as this burns the tissue. Avoid very hot, very cold, or hard foods, and chew on the other side.',
+      },
+      {
+        question: 'When should I go to A&E instead of a dentist for a broken tooth?',
+        answer:
+          'Go to A&E or call 999 if the broken tooth came with a heavy blow to the head or face and you have any sign of a jaw fracture, were knocked out, have uncontrolled bleeding, or have difficulty breathing or swallowing. For Enfield, the nearest major A&E is North Middlesex University Hospital in Edmonton. Chase Farm Hospital runs an urgent treatment centre rather than a full A&E.',
+      },
+      {
+        question: 'Can I get an emergency dentist in Enfield at the weekend?',
+        answer:
+          'Yes. Out of hours you can call NHS 111, which can direct you to urgent dental services across north London, or use our same-day matching to be connected with a vetted Enfield emergency dentist. We are a matching service and do not treat you ourselves, but we can usually arrange an introduction quickly, including at weekends and on bank holidays.',
+      },
+    ],
+    content: [
+      { type: 'p', text: 'Breaking a tooth is alarming, but most broken teeth are not a danger to your health, and the first aid is simple. The aim before you are seen is to protect the tooth, protect the soft tissue around it from any sharp edge, control pain and swelling, and avoid anything that makes the damage worse. A dentist then decides whether the tooth needs smoothing, a filling or bonding, a crown, root canal treatment, or in some cases extraction. Acting promptly gives the best chance of saving the tooth.' },
+      { type: 'note', text: 'Call 999 or go to A&E if the broken tooth followed a heavy blow to the head or face and you were knocked out, have uncontrolled bleeding, suspect a broken jaw, or have any difficulty breathing or swallowing. For out-of-hours dental help in Enfield, call NHS 111. For same-day matching with a vetted Enfield emergency dentist, use the form on this page.' },
+
+      { type: 'h2', text: 'First aid for a broken tooth, step by step' },
+      { type: 'p', text: 'Work through these calmly. None of them needs anything you would not already have at home.' },
+      { type: 'list', items: [
+        'Rinse your mouth gently with warm salt water to clean the area and clear any small fragments.',
+        'If there is bleeding from the gum or lip, press a clean piece of gauze or a folded tissue against it for ten minutes until it stops.',
+        'Find and keep any sizeable piece that has broken off. Store a large fragment in milk or in saliva, not in water, and bring it with you.',
+        'If the broken tooth has a sharp edge, cover it with a piece of sugar-free chewing gum or dental wax from a pharmacy so it does not cut your tongue or cheek.',
+        'Hold a cold compress, a cloth-wrapped ice pack or a bag of frozen peas, against the outside of your cheek to ease swelling.',
+        'Take paracetamol or ibuprofen at the dose on the packet if they are safe for you to use.',
+        'Avoid chewing on that side, and steer clear of very hot, very cold, hard or sticky food until you are seen.',
+      ] },
+
+      { type: 'h2', text: 'Why you should keep the broken piece' },
+      { type: 'p', text: 'People often throw the fragment away, but it is worth keeping. When a clean, reasonably sized piece of a front tooth breaks off in one part, a dentist can sometimes bond it back into place, which gives a better colour and shape match than rebuilding the tooth from filling material. Treat a large fragment the way you would a knocked-out tooth: handle it by the outer surface rather than the broken edge, and store it in a small pot of milk, or tucked inside your cheek if you are an adult and there is no risk of swallowing it. Small slivers of enamel are rarely reusable, but bring them anyway so the dentist can judge.' },
+
+      { type: 'h2', text: 'Easing the pain safely' },
+      { type: 'p', text: 'How much a broken tooth hurts depends on how deep the break goes. A chip of the outer enamel may not hurt at all. A break that reaches the softer dentine underneath is often sensitive to air, hot and cold. A break that exposes the nerve in the middle of the tooth can be sharply painful and needs same-day attention. For pain relief, paracetamol and ibuprofen taken as directed are the sensible first choice, and they can be taken together within their separate limits if both are safe for you. Never hold an aspirin tablet or any painkiller directly against the gum, because it burns the soft tissue and creates a second problem. The Oral Health Foundation is a useful independent source if you want to read more about caring for a damaged tooth, and it will not contradict this advice.' },
+      { type: 'p', text: 'If you have a broken tooth with no pain at all, do not assume it is fine and ignore it. Damage can run below the gum line or into the root where you cannot see it, and an untreated crack can let bacteria into the tooth and lead to an abscess weeks later. Have it looked at even when it is comfortable.' },
+
+      { type: 'h2', text: 'When a broken tooth is a hospital problem, not a dental one' },
+      { type: 'p', text: 'Most broken teeth are a job for a dentist. A small number are a job for A&E first. The tooth itself is rarely the danger, what matters is how the injury happened and what else it affected. Treat it as a medical emergency and call 999 or go to A&E if any of the following apply:' },
+      { type: 'list', items: [
+        'A heavy blow to the head or face, especially with loss of consciousness, confusion, repeated vomiting or a severe headache.',
+        'Signs of a broken jaw: your teeth no longer meet correctly, you cannot open or close your mouth properly, or there is numbness across the jaw.',
+        'Bleeding from the mouth that you cannot control with ten minutes of pressure.',
+        'Any difficulty breathing or swallowing.',
+      ] },
+      { type: 'p', text: 'For people in Enfield, the nearest major A&E is North Middlesex University Hospital on Sterling Way in Edmonton (N18). Chase Farm Hospital in Enfield runs an urgent treatment centre rather than a full twenty-four-hour A&E, so for a serious facial injury head to North Middlesex or call 999. Barnet Hospital A&E is the next nearest for residents on the western side of the borough. If you are unsure how serious it is, NHS 111 can assess your symptoms and tell you where to go.' },
+
+      { type: 'h2', text: 'Getting seen quickly across Enfield' },
+      { type: 'p', text: 'Once the immediate first aid is done, the priority is being seen by a dentist. During normal hours your own dentist should be your first call if you have one. If you do not, or you cannot get through, our service matches you with a vetted emergency dentist covering the Enfield area, from Enfield Town and Bush Hill Park in the EN1 and EN2 postcodes through to Enfield Highway, Ponders End and Brimsdown in EN3, and the southern neighbourhoods around Edmonton and Palmers Green. We are an independent matching service and do not treat you ourselves, but most introductions happen within the hour.' },
+      { type: 'p', text: 'Out of hours, at the weekend or on a bank holiday, NHS 111 is the route to urgent NHS dental care across north London and can advise when no dentist is immediately available. You can also use the same-day matching form on this page at any time, and we will connect you with a dentist who can assess the broken tooth, ease the pain, and put a lasting repair in place.' },
+    ],
+  },
 ];
 
 export const getArticleBySlug = (slug: string): BlogArticle | undefined =>

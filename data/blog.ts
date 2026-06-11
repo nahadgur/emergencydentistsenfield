@@ -398,6 +398,90 @@ export const blogArticles: BlogArticle[] = [
       { type: 'p', text: 'Out of hours, at the weekend or on a bank holiday, NHS 111 is the route to urgent NHS dental care across north London. You can also use the same-day matching form on this page at any time, and we will connect you with a dentist who can clean out the cavity, check for decay underneath, and place a lasting filling so the tooth is properly sealed again.' },
     ],
   },
+  {
+    slug: 'dry-socket-after-tooth-extraction',
+    hub: 'wisdom-tooth-emergency-enfield',
+    draft: true,
+    title: 'Dry socket after a tooth extraction',
+    metaTitle: 'Dry Socket After Extraction: Safe First Aid Guide',
+    metaDescription:
+      'Throbbing pain a few days after a tooth out in Enfield? How to spot dry socket, the safe first aid that eases it, what to avoid, and how to be seen quickly.',
+    category: 'Pain management',
+    publishDate: '2026-06-11',
+    updatedDate: '2026-06-11',
+    excerpt:
+      'Pain that flares up a few days after an extraction, often after a lower wisdom tooth, can be dry socket. Here is how to recognise it, the safe first aid that takes the edge off, what to avoid, and how to be seen quickly across Enfield.',
+    faqs: [
+      {
+        question: 'How do I know if it is dry socket or normal healing pain?',
+        answer:
+          'Ordinary healing pain is worst in the first day or two and then steadily eases. Dry socket tends to do the opposite: the socket feels better at first, then a deep, throbbing ache sets in around three to five days after the extraction, often spreading to the ear, eye or neck on that side. A bad taste, bad breath, and an empty-looking socket where the blood clot should be are the other tell-tale signs. If the pain is getting worse rather than better several days on, it is worth being seen.',
+      },
+      {
+        question: 'How soon after an extraction does dry socket happen?',
+        answer:
+          'It usually appears three to five days after the tooth is removed, once the protective blood clot over the socket has broken down or been dislodged before the gum has healed over it. It is more common after lower back teeth and wisdom teeth, and in people who smoke. It does not come on within the first 24 hours, so very early pain is normally just the extraction settling rather than dry socket.',
+      },
+      {
+        question: 'Can I treat dry socket at home?',
+        answer:
+          'Home care helps you cope, but it does not cure dry socket. Gentle warm salt-water rinses after meals, keeping the area clean, and over-the-counter painkillers such as paracetamol or ibuprofen at the dose on the packet, if they are safe for you, will take the edge off. The lasting relief comes from a dentist cleaning the socket and placing a soothing medicated dressing, which most people find settles the pain quickly. Home measures are for bridging the gap until you are seen.',
+      },
+      {
+        question: 'Does dry socket need antibiotics?',
+        answer:
+          'Usually not. Dry socket is not primarily an infection, it is an exposed, inflamed socket where the clot has been lost, so antibiotics are not normally needed and the dressing is what relieves it. A dentist may consider antibiotics only if there are separate signs of spreading infection, such as a fever or facial swelling. Do not start leftover antibiotics yourself, and do not pack painkiller tablets into the socket.',
+      },
+      {
+        question: 'How long does dry socket last?',
+        answer:
+          'Left alone it can ache for around a week to ten days as the socket slowly heals over. Once a dentist cleans and dresses the socket the pain typically eases within a day, and the dressing may be refreshed once or twice over the following week. Because it tends to recur until the socket has healed, do not assume a quiet day means it has gone, keep up the gentle rinses and avoid smoking until it has fully settled.',
+      },
+    ],
+    content: [
+      { type: 'p', text: 'Most tooth extractions heal quietly, with the soreness fading day by day. Dry socket is the common exception. It happens when the blood clot that should protect the empty socket is lost or breaks down too early, leaving the bone and nerve endings underneath exposed. The result is a deep, throbbing pain that often arrives a few days after the tooth came out, just when you expected to be over the worst. It is most common after lower wisdom teeth and back teeth. This guide explains how to recognise it and ease it safely, and sits within our fuller advice on [wisdom tooth and gum emergencies in Enfield](/guides/wisdom-tooth-emergency-enfield/).' },
+      { type: 'note', text: 'Dry socket itself is painful but not a 999 emergency. Call 999 or go to A&E only if you have swelling spreading towards your eye, cheek, neck or the floor of your mouth, difficulty breathing or swallowing, or a high fever with shaking chills, as these point to a spreading infection rather than dry socket. For dental pain out of hours in Enfield, call NHS 111. To be matched with a vetted Enfield dentist, use the form on this page.' },
+
+      { type: 'h2', text: 'What dry socket is, and when it shows up' },
+      { type: 'p', text: 'After an extraction, a blood clot forms in the socket like a natural plaster, sealing the wound and protecting the bone and nerves while new tissue grows underneath. Dry socket, known clinically as alveolar osteitis, is when that clot is dislodged, dissolves, or never forms properly. The socket is left open and the exposed bone becomes inflamed, which is why the pain can be so sharp and persistent.' },
+      { type: 'p', text: 'The timing is the giveaway. Normal healing pain peaks in the first day or two and then settles. Dry socket usually flares three to five days after the extraction, after a period of feeling better. The signs to watch for are:' },
+      { type: 'list', items: [
+        'A deep, throbbing ache in the jaw on the side of the extraction, often radiating up to the ear, eye or temple.',
+        'Pain that is getting worse several days on, rather than easing.',
+        'A socket that looks empty or whitish, where you might expect a dark blood clot.',
+        'A bad taste in the mouth and noticeable bad breath.',
+      ] },
+      { type: 'p', text: 'It is more likely after a difficult or lower wisdom tooth removal, and in people who smoke, because smoking and sucking on a cigarette can pull the clot out. It is not something that happens in the first few hours, so early discomfort right after the extraction is almost always ordinary healing rather than dry socket.' },
+
+      { type: 'h2', text: 'Safe first aid to ease the pain' },
+      { type: 'p', text: 'The aim of home care is to keep the area clean and take the edge off the pain until a dentist can treat the socket properly. These steps are safe and match NHS aftercare advice for extractions:' },
+      { type: 'list', items: [
+        'Rinse gently with warm salt water, about half a teaspoon of salt in a cup of warm water, several times a day and especially after eating, to keep food out of the socket. Let it fall out of your mouth rather than spitting forcefully.',
+        'Take an over-the-counter painkiller such as paracetamol or ibuprofen at the dose on the packet, provided it is safe for you. Ibuprofen helps with the inflammation in particular.',
+        'Keep brushing your other teeth as normal, being gentle around the healing socket.',
+        'Hold a cold compress against the cheek for short spells if the area feels swollen or tender.',
+      ] },
+      { type: 'p', text: 'These measures help you cope, but they do not fix dry socket on their own. The reliable relief comes from a dentist, which is covered below.' },
+
+      { type: 'h2', text: 'What to avoid while it heals' },
+      { type: 'p', text: 'Just as important is what not to do, because several everyday habits can dislodge the clot or irritate the exposed socket and make things worse:' },
+      { type: 'list', items: [
+        'Do not smoke or vape. This is the single biggest risk factor, and stopping even for a few days gives the socket the best chance to heal.',
+        'Do not use straws or rinse and spit vigorously, as the suction and pressure can pull a forming clot out.',
+        'Do not pack aspirin or any painkiller tablet into the socket. It burns the exposed tissue and leaves a chemical ulcer, and it does nothing for the pain.',
+        'Avoid very hot drinks, alcohol, and hard, crunchy or chewy food on that side until the area has settled.',
+      ] },
+      { type: 'p', text: 'No home remedy seals an open socket safely, so resist any urge to plug it with clove oil packed into the hole, cotton wool or DIY filler. A thin dab of clove oil on a cotton bud touched to the gum nearby can be soothing, but it is no substitute for the dressing a dentist places.' },
+
+      { type: 'h2', text: 'Why the dentist visit is the real fix' },
+      { type: 'p', text: 'Dry socket is one of those problems where a quick professional treatment makes a big difference. A dentist will gently clean out the socket to clear any debris, then pack it with a soothing, medicated dressing that covers the exposed bone. Most people feel the throbbing settle within a day, and the dressing may be changed once or twice over the following week as the socket heals. Antibiotics are usually not needed, because dry socket is an inflamed exposed socket rather than an infection, although a dentist will look for any separate signs of infection while you are there.' },
+      { type: 'p', text: 'See a dentist promptly if the pain is severe, getting worse after the first few days, or not controlled by ordinary painkillers. Step the response up to NHS 111, A&E or 999 only if you develop the spreading-infection signs in the box above, such as facial swelling, difficulty swallowing or breathing, or a high fever. For Enfield, the nearest major A&E is North Middlesex University Hospital in Edmonton, while Chase Farm Hospital runs an urgent treatment centre rather than a full A&E. None of this changes the basic point: dry socket is dental work, and a dentist clearing and dressing the socket is what ends the pain.' },
+
+      { type: 'h2', text: 'Getting seen across Enfield' },
+      { type: 'p', text: 'If your pain started days after an extraction and you cannot get back to the dentist who removed the tooth, we can help. Use the same-day matching form on this page and we will connect you with a vetted dentist for [wisdom tooth pain](/services/wisdom-tooth-pain/) and post-extraction problems across the borough, from [Enfield Town](/location/enfield-town/) and Bush Hill Park in EN1 and EN2, through Enfield Highway and Ponders End in EN3, to Edmonton and Palmers Green in the south. We are an independent matching service and do not treat you ourselves, but most introductions happen within the hour.' },
+      { type: 'p', text: 'At the weekend or on a bank holiday, when many practices are shut, NHS 111 can assess you and point you to urgent NHS dental care, and our advice on getting an emergency dentist [out of hours in Enfield](/guides/out-of-hours-emergency-dentist-enfield/) walks through the options. Dry socket will not usually wait comfortably until a routine appointment weeks away, so it is worth using one of these routes to be seen and have the socket dressed.' },
+    ],
+  },
 ];
 
 export const getArticleBySlug = (slug: string): BlogArticle | undefined =>

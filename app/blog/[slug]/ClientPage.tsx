@@ -16,6 +16,33 @@ import { EmergencyDisclaimer } from '@/components/EmergencyDisclaimer';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 import { editorialAuthorJsonLd, buildMedicalWebPageSchema, buildFaqPageSchema, AUTHOR_ID } from '@/lib/schema';
 
+// Lightweight inline-link parser. Renders [label](/internal/path/) as a
+// Next.js <Link>. Backward compatible: plain text with no [..](..) token is
+// returned unchanged. Only internal (leading "/") hrefs are linked.
+function renderText(text: string) {
+  const re = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const nodes: (string | JSX.Element)[] = [];
+  let last = 0;
+  let key = 0;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(text)) !== null) {
+    if (m.index > last) nodes.push(text.slice(last, m.index));
+    const [full, label, href] = m;
+    if (href.startsWith('/')) {
+      nodes.push(
+        <Link key={key++} href={href} className="font-semibold text-brand-600 hover:text-brand-700 underline underline-offset-2">
+          {label}
+        </Link>,
+      );
+    } else {
+      nodes.push(full);
+    }
+    last = m.index + full.length;
+  }
+  if (last < text.length) nodes.push(text.slice(last));
+  return nodes.length === 0 ? text : nodes;
+}
+
 function renderBlock(block: ContentBlock, i: number) {
   switch (block.type) {
     case 'h2':
@@ -33,13 +60,13 @@ function renderBlock(block: ContentBlock, i: number) {
     case 'p':
       return (
         <p key={i} className="text-[15.5px] text-ink/80 leading-relaxed mb-4">
-          {block.text}
+          {renderText(block.text ?? '')}
         </p>
       );
     case 'list':
       return (
         <ul key={i} className="list-disc pl-6 space-y-2 mb-5 text-[15px] text-ink/80 leading-relaxed">
-          {block.items?.map((item, j) => <li key={j}>{item}</li>)}
+          {block.items?.map((item, j) => <li key={j}>{renderText(item)}</li>)}
         </ul>
       );
     case 'note':
@@ -47,7 +74,7 @@ function renderBlock(block: ContentBlock, i: number) {
         <div key={i} className="bg-urgent-50 border-l-4 border-urgent-500 rounded-md p-4 my-6">
           <div className="flex items-start gap-3">
             <AlertCircle size={16} className="text-urgent-600 flex-shrink-0 mt-0.5" />
-            <p className="text-[14px] text-ink/85 leading-relaxed">{block.text}</p>
+            <p className="text-[14px] text-ink/85 leading-relaxed">{renderText(block.text ?? '')}</p>
           </div>
         </div>
       );

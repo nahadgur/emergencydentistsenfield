@@ -317,6 +317,87 @@ export const blogArticles: BlogArticle[] = [
       { type: 'p', text: 'Out of hours, at the weekend or on a bank holiday, NHS 111 is the route to urgent NHS dental care across north London and can advise when no dentist is immediately available. You can also use the same-day matching form on this page at any time, and we will connect you with a dentist who can assess the broken tooth, ease the pain, and put a lasting repair in place.' },
     ],
   },
+  {
+    slug: 'lost-filling-first-aid',
+    hub: 'lost-filling-or-crown-enfield',
+    draft: true,
+    title: 'What to do if a filling falls out',
+    metaTitle: 'Lost a Filling? Safe First Aid Before the Dentist',
+    metaDescription:
+      'Lost a filling in Enfield? Safe first aid for the exposed tooth, temporary measures that genuinely help, the warning signs to act on, and how to be seen fast.',
+    category: 'Emergency basics',
+    publishDate: '2026-06-10',
+    updatedDate: '2026-06-10',
+    excerpt:
+      'A filling coming out is rarely a true emergency, but the tooth is left exposed and tender. Here is the safe first aid before you are seen in Enfield, the temporary measures that actually help, and the signs that mean you should not wait.',
+    faqs: [
+      {
+        question: 'How quickly do I need to see a dentist after losing a filling?',
+        answer:
+          'A lost filling is usually urgent rather than an emergency, so a few days is often acceptable if the tooth is comfortable and the gap is small. See a dentist sooner, within a day or two, if the tooth is painful, very sensitive, has a sharp edge, or the cavity is large, because an open cavity collects food and bacteria and can decay further or lead to an abscess if it is left.',
+      },
+      {
+        question: 'What can I safely put on the tooth until my appointment?',
+        answer:
+          'A pharmacy temporary filling material, sometimes sold as a dental repair paste, can be pressed gently into a clean, dry cavity to shield it for a few days. Sugar-free chewing gum or a little softened dental wax can cover a sharp edge in a pinch. Never use household glue, superglue or filler of any kind, and do not pack the cavity with aspirin or painkiller tablets, as these damage the gum and soft tissue.',
+      },
+      {
+        question: 'Why has the tooth become sensitive or painful?',
+        answer:
+          'A filling seals the inner layers of the tooth. Once it is gone, the dentine underneath is exposed to air, hot, cold and sweet things, which can give a sharp twinge. Mild to moderate sensitivity is common and not alarming. A deep, throbbing or spontaneous ache, pain that wakes you at night, or any swelling suggests the nerve is involved or infected, and that needs prompt dental care rather than a wait.',
+      },
+      {
+        question: 'Can I use a pharmacy temporary filling kit, and how long does it last?',
+        answer:
+          'Yes, an over-the-counter temporary filling kit is a reasonable stop-gap and most Enfield pharmacies stock one. It is designed to last days, not weeks. Packed over hidden decay or used as a long-term fix it can trap bacteria and make matters worse, so it buys time until a dentist places a proper restoration, it does not replace one.',
+      },
+      {
+        question: 'Can I eat normally with a hole where the filling was?',
+        answer:
+          'Try to chew on the other side and avoid hard, sticky, very hot or very cold food while the tooth is exposed, as these can break the weakened tooth further or trigger sensitivity. Rinse with warm water after eating to clear any food trapped in the cavity, and keep brushing gently around the area so it stays clean until you are seen.',
+      },
+    ],
+    content: [
+      { type: 'p', text: 'A filling falling out is one of the most common dental mishaps, and it usually happens at the worst moment, mid-meal or last thing at night. The good news is that a lost filling is rarely a true emergency. The tooth is not in danger in the next few hours, and the first aid is simple. What matters is protecting the now-exposed tooth, keeping the cavity clean, easing any sensitivity, and arranging to be seen before the gap causes a bigger problem. This guide sits within our full advice on a [lost filling or crown in Enfield](/guides/lost-filling-or-crown-enfield/), and focuses on what to do in the first day or two after a filling comes out.' },
+      { type: 'note', text: 'A lost filling on its own is not a 999 emergency. Call 999 or go to A&E only if you have swelling spreading towards your eye, cheek, neck or the floor of your mouth, difficulty breathing or swallowing, or a high fever with shaking chills, as these are signs of a spreading infection. For dental pain or a lost filling out of hours in Enfield, call NHS 111. To be matched with a vetted Enfield dentist, use the form on this page.' },
+
+      { type: 'h2', text: 'First, keep calm and clean the area' },
+      { type: 'p', text: 'In the first few minutes, the aim is simply to clean the tooth and protect it. Work through these steps:' },
+      { type: 'list', items: [
+        'Rinse your mouth gently with warm water, or warm salt water, to clear away the loose filling and any food caught in the cavity.',
+        'If the whole filling came out in one piece you can keep it, but a filling cannot be re-used, so there is no need to store it the way you would a knocked-out tooth.',
+        'Run your tongue or a clean finger over the tooth to feel for a sharp edge, but do not poke at the cavity.',
+        'Keep brushing the tooth gently, including over the open cavity, to stop food and plaque building up in it.',
+      ] },
+      { type: 'p', text: 'Most lost fillings cause a dull ache or sensitivity rather than severe pain. If the tooth is comfortable, you have time to arrange an unhurried appointment. If it is throbbing, that points to something deeper and is covered further down.' },
+
+      { type: 'h2', text: 'Safe temporary measures for the gap' },
+      { type: 'p', text: 'The exposed cavity is vulnerable to food, bacteria and temperature, so a short-term shield helps until a dentist restores the tooth. The safe options are limited but genuinely useful:' },
+      { type: 'list', items: [
+        'A pharmacy temporary filling material, pressed gently into a clean, dry cavity with a clean finger, then bitten down on lightly to settle it. Most Enfield pharmacies stock these dental repair pastes.',
+        'A piece of sugar-free chewing gum moulded over a sharp edge, as an emergency cover only, not packed into a deep cavity.',
+        'Softened dental wax from a pharmacy to blunt a sharp edge that is catching your tongue or cheek.',
+      ] },
+      { type: 'p', text: 'Just as important is what to avoid. Never use household glue, superglue, or any DIY filler to plug the gap, because they are toxic and set hard in the wrong place. Do not rest an aspirin or other painkiller tablet against the gum or in the cavity, as it burns the soft tissue and leaves a chemical ulcer. And treat any repair paste as a stop-gap that lasts days, not weeks. The Oral Health Foundation, an independent UK oral-health charity, gives similar guidance and is a reliable source if you want to read further, and it will not contradict the advice here.' },
+
+      { type: 'h2', text: 'Managing sensitivity and protecting the tooth' },
+      { type: 'p', text: 'Once a filling is gone, the softer dentine beneath is open to the mouth, so a twinge with cold, heat or sweet food is normal. For mild to moderate discomfort, paracetamol or ibuprofen taken at the dose on the packet, provided they are safe for you, is the sensible first choice, and a sensitive-teeth toothpaste rubbed onto the tooth can take the edge off. Chew on the other side, and steer clear of hard, sticky, very hot or very cold food, because a tooth that has lost a filling is weakened and can chip or crack. Rinse with warm water after meals to flush out anything lodged in the cavity.' },
+
+      { type: 'h2', text: 'When a lost filling is more than a nuisance' },
+      { type: 'p', text: 'A filling can come out for a simple reason, ordinary wear, or because decay has formed underneath and undermined it. The symptoms tell you which, and how urgently you need to be seen. Arrange prompt, same-day or next-day care if you notice any of the following:' },
+      { type: 'list', items: [
+        'A deep, throbbing or spontaneous ache, or pain that wakes you at night, which can mean the nerve is inflamed or infected.',
+        'Pain that lingers for more than a few seconds after something hot or cold, rather than a quick twinge.',
+        'A bad taste, a gum boil, or tenderness when you bite, which can signal infection starting.',
+        'A large cavity, a crumbling tooth, or a sharp edge that keeps cutting your tongue or cheek.',
+      ] },
+      { type: 'p', text: 'Step the response up further if a true infection takes hold. Facial swelling, a fever, or feeling generally unwell are signs an abscess may be forming, and that should be treated like an [abscess emergency](/guides/dental-abscess-enfield/) rather than a simple lost filling. If swelling spreads towards your eye, neck or the floor of your mouth, or you have any difficulty breathing or swallowing, call 999 or go to A&E. For Enfield, the nearest major A&E is North Middlesex University Hospital in Edmonton, while Chase Farm Hospital runs an urgent treatment centre rather than a full A&E. Out of hours for dental-only problems, NHS 111 can assess you and point you to urgent care.' },
+
+      { type: 'h2', text: 'Getting seen across Enfield' },
+      { type: 'p', text: 'Once the tooth is clean and protected, the priority is a proper repair. During normal hours your own dentist is the first call if you have one. If you do not, or cannot get an appointment, we can connect you with a vetted dentist for [lost filling and crown repair](/services/lost-filling-or-crown/) across the borough, from [Enfield Town](/location/enfield-town/) and Bush Hill Park in EN1 and EN2 through to Enfield Highway and Ponders End in EN3, and the southern areas around Edmonton and Palmers Green. We are an independent matching service and do not treat you ourselves, but most introductions happen within the hour.' },
+      { type: 'p', text: 'Out of hours, at the weekend or on a bank holiday, NHS 111 is the route to urgent NHS dental care across north London. You can also use the same-day matching form on this page at any time, and we will connect you with a dentist who can clean out the cavity, check for decay underneath, and place a lasting filling so the tooth is properly sealed again.' },
+    ],
+  },
 ];
 
 export const getArticleBySlug = (slug: string): BlogArticle | undefined =>

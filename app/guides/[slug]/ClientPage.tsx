@@ -9,6 +9,7 @@ import { Footer } from '@/components/Footer';
 import { LeadFormModal } from '@/components/LeadFormModal';
 import { HeroLeadForm } from '@/components/HeroLeadForm';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { SpokeHero } from '@/components/SpokeHero';
 import { FAQ } from '@/components/FAQ';
 import { EmergencyDisclaimer } from '@/components/EmergencyDisclaimer';
 
@@ -27,6 +28,13 @@ export default function GuideClient({
 }) {
   const [modal, setModal] = useState(false);
 
+  // No read-time field in the data, so estimate from the body word count.
+  const words = (guide.heroIntro + ' ' + guide.intro.join(' ') + ' ' + guide.sections
+    .map(s => `${s.heading} ${s.body.join(' ')} ${(s.list ?? []).join(' ')}`)
+    .join(' '))
+    .trim().split(/\s+/).length;
+  const readMins = Math.max(3, Math.round(words / 200));
+
   return (
     <>
       <LeadFormModal isOpen={modal} onClose={() => setModal(false)} />
@@ -34,21 +42,25 @@ export default function GuideClient({
 
       <main id="main" className="flex-grow bg-cream">
         {/* Hero */}
-        <section className="bg-ink text-white">
-          <div className="container-width pt-10 pb-12">
-            <Breadcrumbs dark items={[{ label: 'Guides', href: '/guides/' }, { label: guide.title }]} />
-            <div className="max-w-3xl mt-6">
-              <div className="flex items-center gap-3 text-[10px] font-mono uppercase tracking-[0.18em] text-brand-300 mb-4">
+        <section className="bg-cream">
+          <div className="container-width pt-8 pb-2">
+            <Breadcrumbs items={[{ label: 'Guides', href: '/guides/' }, { label: guide.title }]} />
+            <div className="mt-5">
+              <SpokeHero
+                title={guide.title}
+                hubName="Guide"
+                hubSlug={guide.slug}
+                readMins={readMins}
+              />
+              <div className="flex items-center gap-3 text-[10px] font-mono uppercase tracking-[0.18em] text-brand-600 mt-4">
                 <span>{guide.heroEyebrow}</span>
-                <span className="w-1 h-1 rounded-full bg-white/30" />
+                <span className="w-1 h-1 rounded-full bg-ink/20" />
                 <span className="flex items-center gap-1"><Clock size={11} /> Reviewed {guide.updatedDate}</span>
-                <span className="w-1 h-1 rounded-full bg-white/30" />
+                <span className="w-1 h-1 rounded-full bg-ink/20" />
                 <span>By EDE</span>
               </div>
-              <h1 className="font-sans font-medium text-[32px] lg:text-[44px] leading-tight text-white mb-4">
-                {guide.title}
-              </h1>
-              <p className="text-[15px] lg:text-[17px] text-white/75 leading-relaxed">
+              <h1 className="sr-only">{guide.title}</h1>
+              <p className="text-[15px] lg:text-[17px] text-ink/75 leading-relaxed mt-3 max-w-3xl">
                 {guide.heroIntro}
               </p>
             </div>

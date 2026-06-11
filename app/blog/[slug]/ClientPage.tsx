@@ -12,6 +12,7 @@ import { Footer } from '@/components/Footer';
 import { LeadFormModal } from '@/components/LeadFormModal';
 import { HeroLeadForm } from '@/components/HeroLeadForm';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { SpokeHero } from '@/components/SpokeHero';
 import { EmergencyDisclaimer } from '@/components/EmergencyDisclaimer';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 import { editorialAuthorJsonLd, buildMedicalWebPageSchema, buildFaqPageSchema, AUTHOR_ID } from '@/lib/schema';
@@ -92,6 +93,13 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
   const dateModified = article.updatedDate ?? article.publishDate;
   const hub = getGuideBySlug(article.hub);
 
+  // No read-time field in the data, so estimate from the body word count.
+  const words = (article.excerpt + ' ' + article.content
+    .map(b => `${b.text ?? ''} ${(b.items ?? []).join(' ')}`)
+    .join(' '))
+    .trim().split(/\s+/).length;
+  const readMins = Math.max(3, Math.round(words / 200));
+
   // Related = live spokes in the same hub, falling back to other published spokes.
   const hubSiblings = getArticlesByHub(article.hub).filter(a => a.slug !== article.slug);
   const others = (hubSiblings.length > 0
@@ -142,19 +150,23 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
 
       <main id="main" className="flex-grow bg-cream">
 
-        <section className="bg-ink text-white">
-          <div className="container-width pt-10 pb-12">
-            <Breadcrumbs dark items={[{ label: 'Guides', href: '/blog/' }, { label: article.title }]} />
-            <div className="max-w-3xl mt-6">
-              <div className="flex items-center gap-3 text-[10px] font-mono uppercase tracking-[0.18em] text-brand-300 mb-4">
+        <section className="bg-cream">
+          <div className="container-width pt-8 pb-2">
+            <Breadcrumbs items={[{ label: 'Guides', href: '/blog/' }, { label: article.title }]} />
+            <div className="mt-5">
+              <SpokeHero
+                title={article.title}
+                hubName={hub ? hub.title : null}
+                hubSlug={article.hub}
+                readMins={readMins}
+              />
+              <div className="flex items-center gap-3 text-[10px] font-mono uppercase tracking-[0.18em] text-brand-600 mt-4">
                 <span>{article.category}</span>
-                <span className="w-1 h-1 rounded-full bg-white/30" />
+                <span className="w-1 h-1 rounded-full bg-ink/20" />
                 <span className="flex items-center gap-1"><Clock size={11} /> {article.publishDate}</span>
               </div>
-              <h1 className="font-sans font-medium text-[32px] lg:text-[44px] leading-tight text-white mb-4">
-                {article.title}
-              </h1>
-              <p className="text-[15px] lg:text-[17px] text-white/75 leading-relaxed">
+              <h1 className="sr-only">{article.title}</h1>
+              <p className="text-[15px] lg:text-[17px] text-ink/75 leading-relaxed mt-3 max-w-3xl">
                 {article.excerpt}
               </p>
             </div>

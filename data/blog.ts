@@ -482,6 +482,145 @@ export const blogArticles: BlogArticle[] = [
       { type: 'p', text: 'At the weekend or on a bank holiday, when many practices are shut, NHS 111 can assess you and point you to urgent NHS dental care, and our advice on getting an emergency dentist [out of hours in Enfield](/guides/out-of-hours-emergency-dentist-enfield/) walks through the options. Dry socket will not usually wait comfortably until a routine appointment weeks away, so it is worth using one of these routes to be seen and have the socket dressed.' },
     ],
   },
+  {
+    slug: 'can-ae-help-dental-emergency',
+    hub: 'what-counts-as-a-dental-emergency-enfield',
+    draft: true,
+    title: 'Can A&E help with a dental emergency in Enfield?',
+    metaTitle: 'Can A&E Help With a Dental Emergency? (Enfield)',
+    metaDescription:
+      'When A&E is the right place for a dental problem in Enfield and when it is not, what hospitals can and cannot do for teeth, plus the faster route to a dentist.',
+    category: 'Emergency basics',
+    publishDate: '2026-06-11',
+    updatedDate: '2026-06-11',
+    excerpt:
+      'A&E is the right place for some dental emergencies and the wrong place for most. Here is how to tell which is which in Enfield, what a hospital can actually do for a tooth, and the quicker way to reach a dentist.',
+    faqs: [
+      {
+        question: 'Can I go to A&E for severe toothache?',
+        answer:
+          'A&E is not set up to treat toothache. Hospitals very rarely have a dentist on site, so they cannot fill, root-treat or pull the tooth that is causing the pain. For toothache without any danger signs, you will be seen and treated faster by a dentist. Use NHS 111 out of hours, or our same-day matching, rather than spending hours in A&E only to be referred on.',
+      },
+      {
+        question: 'Does A&E have a dentist on site?',
+        answer:
+          'Usually not. A&E departments are staffed by emergency medicine doctors and nurses, not dentists. They can give pain relief, treat a spreading infection or facial injury, and refer urgent cases to the hospital maxillofacial team, but the routine dental work that fixes the underlying problem is done by a dentist, either in the community or at a dental access centre.',
+      },
+      {
+        question: 'When should I call 999 rather than go to A&E myself?',
+        answer:
+          'Call 999 if someone has difficulty breathing or swallowing, a swelling closing the throat, heavy bleeding from the mouth that you cannot control with ten minutes of pressure, or a serious head or facial injury with loss of consciousness, confusion or repeated vomiting. These need an ambulance. If you can travel safely and the situation is urgent but not immediately life-threatening, going straight to A&E is reasonable.',
+      },
+      {
+        question: 'Is Chase Farm Hospital an A&E?',
+        answer:
+          'No. Chase Farm Hospital in Enfield runs an urgent treatment centre for minor injuries and illnesses, not a full twenty-four-hour A&E. For a serious dental or facial emergency in the borough, the nearest major A&E is North Middlesex University Hospital in Edmonton. Barnet Hospital A&E is the next nearest for people on the western side of Enfield.',
+      },
+      {
+        question: 'Will A&E give me antibiotics for a dental abscess?',
+        answer:
+          'A&E may prescribe antibiotics and pain relief if you have a spreading infection or are unwell, and will arrange urgent care for severe facial swelling. Antibiotics calm an infection but do not cure the cause, so you still need a dentist to drain the abscess or treat the tooth. For an abscess without danger signs, a dentist or NHS 111 is the better first call.',
+      },
+    ],
+    content: [
+      { type: 'p', text: 'Many people facing a dental emergency wonder whether to head to the hospital. It is a fair question, because dental pain can be severe and dentists are not always open. The short answer is that A&E is the right place for a small number of dental emergencies and the wrong place for most of them. Knowing which is which saves you a long, uncomfortable wait and gets you to the person who can actually fix the problem. This guide is part of our wider advice on [what counts as a dental emergency in Enfield](/guides/what-counts-as-a-dental-emergency-enfield/).' },
+      { type: 'note', text: 'Call 999 or go to A&E now if you have difficulty breathing or swallowing, a swelling spreading towards your eye, neck or the floor of your mouth, uncontrolled bleeding from the mouth, or a serious head or facial injury. For dental pain, a lost filling, a broken tooth or an abscess without these danger signs, call NHS 111 out of hours or use the same-day matching form on this page to reach a vetted Enfield dentist.' },
+
+      { type: 'h2', text: 'When A&E is the right place' },
+      { type: 'p', text: 'A&E exists for medical emergencies, and a dental problem becomes a medical emergency when it threatens your airway, causes bleeding you cannot stop, or comes with a serious injury. Treat it as a hospital matter and go to A&E, or call 999 if you cannot travel safely, in any of these situations:' },
+      { type: 'list', items: [
+        'Difficulty breathing or swallowing, or a swelling under the jaw or in the floor of the mouth that is getting worse quickly. A dental infection that spreads this way is dangerous and needs hospital care without delay.',
+        'Facial swelling spreading towards the eye or down the neck, especially with a high fever, shaking chills or feeling very unwell.',
+        'Bleeding from the mouth that has not stopped after ten minutes of firm pressure with clean gauze.',
+        'A heavy blow to the head or face with loss of consciousness, confusion, repeated vomiting, or a suspected broken jaw where the teeth no longer meet correctly.',
+      ] },
+      { type: 'p', text: 'In these cases the tooth is not the main concern. What matters is the infection, the bleeding or the injury, and those are jobs for a hospital, not a dental chair.' },
+
+      { type: 'h2', text: 'What A&E can and cannot do for a tooth' },
+      { type: 'p', text: 'It helps to know what to expect if you do go. An A&E department is staffed by emergency doctors and nurses, and very rarely by a dentist. They are excellent at the things hospitals are built for and limited on the things only a dentist can do.' },
+      { type: 'p', text: 'A&E can give strong pain relief, treat or stabilise a spreading infection, manage bleeding, deal with a facial fracture or soft-tissue injury, and refer urgent cases straight to the hospital oral and maxillofacial team. What A&E generally cannot do is the everyday dental work that resolves the cause: filling a tooth, fitting a crown, carrying out root canal treatment, or routinely extracting the tooth that is hurting. That is why someone who arrives with ordinary toothache is often given painkillers and advised to see a dentist, after a long wait. For a problem that is painful but not dangerous, going straight to a dentist is both faster and more useful.' },
+
+      { type: 'h2', text: 'Where to go in Enfield, and where not to' },
+      { type: 'p', text: 'Local geography matters when minutes count, and Enfield has a particular layout worth knowing in advance. The nearest major A&E for most of the borough is North Middlesex University Hospital on Sterling Way in Edmonton (N18), which runs a full twenty-four-hour emergency department. Chase Farm Hospital on The Ridgeway in Enfield (EN2) has an urgent treatment centre for minor injuries and illnesses, not a full A&E, so it is not the place for a serious facial swelling or a major injury. For residents on the western edge of the borough, around Cockfosters and Hadley Wood, Barnet Hospital A&E may be closer.' },
+      { type: 'p', text: 'If you are not sure how serious the problem is, NHS 111 is the safest first step. It is free, open day and night, and a trained adviser will assess your symptoms and tell you whether to manage at home, see an urgent dentist, go to an urgent treatment centre, or head to A&E. Calling first can save you a wasted journey to the wrong place. You can read more about local routing in our guide to finding an emergency dentist [out of hours in Enfield](/guides/out-of-hours-emergency-dentist-enfield/).' },
+
+      { type: 'h2', text: 'The faster route for a dental-only emergency' },
+      { type: 'p', text: 'Most dental emergencies, a bad toothache, a broken tooth, a lost filling or crown, or an abscess without spreading swelling, are best handled by a dentist rather than a hospital. The treatment that ends the problem, cleaning and dressing, a filling, a crown, root canal work or an extraction, can only be done in a dental chair. Going to a dentist first avoids hours in a waiting room and a likely referral back to dental care anyway.' },
+      { type: 'p', text: 'During normal hours your own dentist should be the first call if you have one. If you do not, or cannot get an appointment, we connect you with a vetted dentist for [out-of-hours and emergency dental care](/services/out-of-hours/) across the borough, from [Edmonton](/location/edmonton/) and Palmers Green in the south, through Enfield Town and Bush Hill Park in EN1 and EN2, to Enfield Highway and Ponders End in EN3. We are an independent matching service and do not treat you ourselves, but most introductions happen within the hour. Out of hours, at the weekend or on a bank holiday, NHS 111 is the route to urgent NHS dental care across north London, and you can use the same-day matching form on this page at any time.' },
+    ],
+  },
+  {
+    slug: 'child-toothache-at-night',
+    hub: 'childrens-dental-emergencies-enfield',
+    draft: true,
+    title: 'Child toothache at night: what to do in Enfield',
+    metaTitle: 'Child Toothache at Night: What Helps (Enfield)',
+    metaDescription:
+      'Safe first aid for a child with toothache at night, what pain relief suits children, the danger signs that need urgent care, and how to reach an Enfield dentist.',
+    category: 'Pain management',
+    publishDate: '2026-06-12',
+    updatedDate: '2026-06-12',
+    excerpt:
+      'A child in pain at night is distressing for the whole family. Here is how to settle a child with toothache safely overnight, the warning signs that need urgent care, and how to reach an emergency dentist in Enfield in the morning.',
+    faqs: [
+      {
+        question: 'What can I give my child for toothache at night?',
+        answer:
+          'Children\'s paracetamol or ibuprofen, given at the dose printed on the packet for your child\'s age and weight, is the usual first step for dental pain at home. Never give aspirin to anyone under sixteen, as it carries a rare but serious risk. Do not rub painkilling tablets or adult gels onto the gum, because they can burn the soft tissue. If you are unsure what is suitable for your child, call NHS 111 and a trained adviser will guide you.',
+      },
+      {
+        question: 'How can I ease my child\'s toothache without medicine?',
+        answer:
+          'Help your child rinse gently with warm water and check for any food trapped between the teeth, easing it out carefully with floss rather than anything sharp. A cool, soft pillow and keeping the head slightly raised can take the throb out of lying flat. Offer cool water and soft, lukewarm food, and avoid anything very hot, very cold or sugary until a dentist has seen them.',
+      },
+      {
+        question: 'Is my child\'s toothache an emergency?',
+        answer:
+          'Most toothache is not a same-night emergency and can wait until you can reach a dentist in the morning. Treat it as urgent and seek immediate help if your child has facial swelling that is spreading towards the eye or down the neck, a high temperature with that swelling, difficulty breathing or swallowing, or bleeding from the mouth you cannot stop. Those signs need 999 or A&E, not a wait until morning.',
+      },
+      {
+        question: 'Should I take my child to A&E for toothache in Enfield?',
+        answer:
+          'A&E cannot fill or treat the tooth that is hurting, so for ordinary toothache a dentist is both faster and more useful. A&E is the right place only when there are danger signs such as spreading facial swelling, breathing or swallowing difficulty, or a serious injury. For most of Enfield the nearest full A&E is North Middlesex University Hospital in Edmonton; Chase Farm Hospital runs an urgent treatment centre rather than a full A&E.',
+      },
+      {
+        question: 'Could it be teething rather than toothache?',
+        answer:
+          'In babies and toddlers, sore, swollen gums and dribbling often point to teething rather than a dental problem, and teething settles with a chilled teething ring and comfort. A persistent ache in an older child with a full set of teeth, especially with a hole, a broken tooth or a high fever, is more likely a problem that needs a dentist. If you are unsure, NHS 111 can help you decide whether it can wait until morning.',
+      },
+    ],
+    content: [
+      { type: 'p', text: 'Toothache always seems to peak at night, and in a child it can turn into a long, distressing few hours for the whole household. The good news is that most childhood toothache is not a true emergency and can be settled safely at home until you can reach a dentist in the morning. A small number of situations do need urgent care the same night, and the most important thing you can do is know how to tell the difference. This guide is part of our wider advice on [children\'s dental emergencies in Enfield](/guides/childrens-dental-emergencies-enfield/).' },
+      { type: 'note', text: 'Call 999 or go to A&E now if your child has swelling spreading towards the eye or down the neck, difficulty breathing or swallowing, a high temperature alongside facial swelling, or bleeding from the mouth you cannot stop. For toothache without these danger signs, settle your child overnight, call NHS 111 if you are worried out of hours, and use the same-day matching form on this page to reach a vetted Enfield dentist in the morning.' },
+
+      { type: 'h2', text: 'First steps to settle your child tonight' },
+      { type: 'p', text: 'Start by staying calm, because a frightened child feels pain more keenly. Sit them up under a good light and have a gentle look in the mouth to see whether there is an obvious cause, such as food wedged between the teeth, a broken or chipped tooth, or a red, swollen patch of gum. Often a piece of trapped food is the whole problem, and easing it out brings quick relief.' },
+      { type: 'p', text: 'Help your child rinse gently with warm water, and if you can see something stuck between two teeth, ease it out carefully with dental floss rather than a pin, cocktail stick or anything sharp. Keeping the head slightly raised on an extra pillow can take the throb out of lying flat, which is often why the pain feels worse at bedtime. Offer cool water and, if they are hungry, soft lukewarm food, and steer clear of anything very hot, very cold or sugary until a dentist has had a look.' },
+
+      { type: 'h2', text: 'Pain relief that is safe for children' },
+      { type: 'p', text: 'For dental pain at home, children\'s paracetamol or ibuprofen is the usual choice. Give it at the dose printed on the packet for your child\'s age and weight, and never exceed it or double up the two medicines beyond what the labels allow. If your child has asthma or a stomach condition, check the ibuprofen guidance on the packet or with a pharmacist first.' },
+      { type: 'p', text: 'Two rules matter for safety. Never give aspirin to a child under sixteen, because it is linked to a rare but serious condition called Reye\'s syndrome. And never rub painkilling tablets, clove oil or adult numbing gels directly onto the gum or tooth, as these can burn a child\'s soft tissue and make matters worse. The British Dental Association and the [NHS toothache guidance](https://www.nhs.uk/conditions/toothache/) both stress treating the pain gently while you arrange to see a dentist, rather than reaching for stronger remedies. If you are unsure what is suitable, NHS 111 can advise you at any hour.' },
+
+      { type: 'h2', text: 'When a child\'s toothache is an emergency' },
+      { type: 'p', text: 'Pain on its own, even quite bad pain, is usually safe to manage overnight. What turns toothache into a same-night emergency is a spreading infection or an injury. Seek urgent help straight away, by calling 999 or going to A&E, if your child has any of these:' },
+      { type: 'list', items: [
+        'Swelling of the face that is spreading towards the eye, or down under the jaw and into the neck, particularly if it is getting worse quickly.',
+        'A high temperature, shivering or seeming very unwell alongside a swollen face.',
+        'Difficulty breathing or swallowing, or a change in the sound of their voice.',
+        'Bleeding from the mouth that has not stopped after ten minutes of gentle pressure with clean gauze or a clean cloth.',
+        'A heavy blow to the head or face, especially with drowsiness, confusion or repeated vomiting.',
+      ] },
+      { type: 'p', text: 'If none of these apply, the pain is the main issue, and that can wait for a dentist in the morning. When you are simply not sure how serious it is, NHS 111 is the safest first call out of hours. It is free, open day and night, and an adviser will tell you whether to manage at home, see an urgent dentist, or go to hospital. You can read more about local routing in our guide to finding care [out of hours in Enfield](/guides/out-of-hours-emergency-dentist-enfield/).' },
+
+      { type: 'h2', text: 'Could it be teething rather than toothache?' },
+      { type: 'p', text: 'In babies and younger toddlers, what looks like toothache is often teething. Sore, slightly swollen gums, more dribbling than usual, flushed cheeks and a need to chew on things tend to point to a tooth coming through rather than a dental problem. Teething settles with comfort, a clean chilled teething ring rather than a frozen one, and gentle reassurance. A high fever, diarrhoea or a child who is genuinely unwell is not normal teething and should be checked.' },
+      { type: 'p', text: 'In an older child with a full set of teeth, a persistent ache is more likely to be a real dental issue, especially if you can see a hole, a dark spot, a broken tooth or a swollen patch of gum. That is the kind of toothache that needs a dentist to find and treat the cause, because home measures only hold the pain at bay rather than fixing it. The Oral Health Foundation has helpful background on children\'s teeth at [dentalhealth.org](https://www.dentalhealth.org/), and a dentist can tell you for certain what is going on.' },
+
+      { type: 'h2', text: 'Getting your child seen in Enfield' },
+      { type: 'p', text: 'Once your child is settled for the night, the aim is a dental appointment as soon as possible the next day, because a tooth that hurts enough to wake a child usually needs treatment rather than just painkillers. During normal hours your own dentist should be the first call if your child is registered. If you do not have a dentist, or cannot get a same-day appointment, we connect families with a vetted local dentist for [urgent toothache care](/services/severe-toothache/) right across the borough.' },
+      { type: 'p', text: 'We match families from [Enfield Town](/location/enfield-town/) and Edmonton in the south through to Enfield Highway and Ponders End in EN3, and we are an independent matching service rather than a dental practice, so we do not treat your child ourselves. Most introductions happen within the hour during opening times. Out of hours, at the weekend or on a bank holiday, NHS 111 is the route to urgent NHS dental care across north London, and you can submit the same-day matching form on this page at any time so a practice can call you first thing. Bring a note of any painkillers you have given and when, as the dentist will want to know.' },
+    ],
+  },
 ];
 
 export const getArticleBySlug = (slug: string): BlogArticle | undefined =>

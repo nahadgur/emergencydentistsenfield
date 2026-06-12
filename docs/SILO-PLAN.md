@@ -98,12 +98,13 @@ routing, London Borough of Enfield). NEVER paraphrase the Harlow site.
 
 ## 8. Status tracker
 
-10 hubs live (/guides). Spokes: 6 mapped (4 live + 2 draft buffered), target ~80
-(~8/hub), quality-gated. Hubs with a spoke: H1, H2, H3, H4, H5, H7. Last writer run
-2026-06-10: added H4 spoke `lost-filling-first-aid` (draft).
+10 hubs live (/guides). Spokes: 9 mapped (4 live + 5 draft buffered), target ~80
+(~8/hub), quality-gated. Hubs with a spoke: H1, H2, H3, H4, H5, H6, H7, H8, H9. Last writer run
+2026-06-12: added H9 spoke `child-toothache-at-night` (draft). Only H10 (other
+emergencies) still has no spoke.
 ## Slug rules (writer: follow on every spoke)
 
 Kebab-case: lowercase, hyphens only, ASCII only, 3-6 words, under ~60 chars.
 Do NOT: include a year/date; reuse or near-duplicate an existing slug; use a
 reserved head term or the parent hub's head term; keyword-stuff or repeat a word;
-use stop words (a/the/to/for). Never rename or reuse a published slug.
+use stop words (a/the/

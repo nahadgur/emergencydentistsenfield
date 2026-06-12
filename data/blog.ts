@@ -621,17 +621,16 @@ export const blogArticles: BlogArticle[] = [
       { type: 'p', text: 'We match families from [Enfield Town](/location/enfield-town/) and Edmonton in the south through to Enfield Highway and Ponders End in EN3, and we are an independent matching service rather than a dental practice, so we do not treat your child ourselves. Most introductions happen within the hour during opening times. Out of hours, at the weekend or on a bank holiday, NHS 111 is the route to urgent NHS dental care across north London, and you can submit the same-day matching form on this page at any time so a practice can call you first thing. Bring a note of any painkillers you have given and when, as the dentist will want to know.' },
     ],
   },
-];
 
-export const getArticleBySlug = (slug: string): BlogArticle | undefined =>
-  blogArticles.find(a => a.slug === slug);
-
-// Draft gate: draft spokes 404 and are excluded from /blog, hub grids and the
-// sitemap until the publisher flips them live.
-export const getPublishedArticles = (): BlogArticle[] =>
-  blogArticles.filter(a => !a.draft);
-
-export const getArticlesByHub = (hub: string): BlogArticle[] =>
-  blogArticles.filter(a => a.hub === hub && !a.draft);
-
-export const getAllBlogSlugs = (): string[] => getPublishedArticles().map(a => a.slug);
+  {
+    slug: 'bleeding-after-tooth-extraction',
+    hub: 'bleeding-swelling-denture-emergencies-enfield',
+    draft: true,
+    title: 'Bleeding after a tooth extraction: how to stop it safely',
+    metaTitle: 'Bleeding After Tooth Extraction: First Aid (Enfield)',
+    metaDescription:
+      'How to stop bleeding after a tooth extraction, the 20-minute pressure rule, danger signs that need A&E, and same-day help from a vetted Enfield dentist.',
+    category: 'Trauma & first aid',
+    publishDate: '2026-06-12',
+    updatedDate: '2026-06-12',
+    ex

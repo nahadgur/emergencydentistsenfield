@@ -633,4 +633,135 @@ export const blogArticles: BlogArticle[] = [
     category: 'Trauma & first aid',
     publishDate: '2026-06-12',
     updatedDate: '2026-06-12',
-    ex
+    excerpt:
+      'Some oozing after an extraction is normal, but a socket that keeps bleeding is frightening. Here is the pressure technique that stops most bleeds, the danger signs that need A&E, and how to reach urgent dental help in Enfield.',
+    faqs: [
+      {
+        question: 'How long should a tooth extraction bleed for?',
+        answer:
+          'Light oozing mixed with saliva is normal for several hours after an extraction, and a pink tinge on the pillow the next morning is common. Active bleeding, where blood is pooling or dripping rather than just tinting your spit, should stop after 20 minutes of firm, uninterrupted pressure on a gauze pad. If it has not slowed after two rounds of proper pressure, seek urgent help rather than repeating the cycle all evening.',
+      },
+      {
+        question: 'Does biting on a tea bag really stop a bleeding socket?',
+        answer:
+          'It can help, yes. A clean, dampened black-tea bag works like a gauze pad with the added benefit of tannins, which encourage the blood to clot. Wrap it in a single layer of clean gauze or kitchen roll if the bag feels fragile, bite firmly on it over the socket for 20 to 30 minutes, and do not keep removing it to check. It is a useful follow-up if plain gauze has not worked.',
+      },
+      {
+        question: 'I take blood thinners and my extraction will not stop bleeding. What should I do?',
+        answer:
+          'Apply the same firm pressure with gauze or a dampened tea bag for a full 30 minutes, and do not stop or skip a dose of your medication on your own. If the bleeding continues despite two rounds of pressure, contact the practice that removed the tooth, call NHS 111, or go to A&E if it is heavy. Tell whoever treats you exactly which medication you take, including warfarin, apixaban, rivaroxaban or clopidogrel.',
+      },
+      {
+        question: 'Can I go to sleep if my extraction site is still oozing?',
+        answer:
+          'If it is only a slight ooze that tints your saliva, yes. Put an old towel over your pillow, sleep with your head raised on an extra pillow, and expect a little spotting overnight. If blood is actively pooling in your mouth, do not settle for the night until you have controlled it with firm pressure or sought help, because swallowing a steady flow of blood will also make you feel sick.',
+      },
+      {
+        question: 'Should I go to A&E for a bleeding tooth socket in Enfield?',
+        answer:
+          'A&E is the right place if bleeding is heavy and has not responded to two rounds of firm 20-minute pressure, if you feel faint, dizzy or unwell from blood loss, or if you have a bleeding disorder or take anticoagulants and cannot get dental advice quickly. For most of the borough the nearest full A&E is North Middlesex University Hospital in Edmonton. Chase Farm Hospital runs an urgent treatment centre rather than a full A&E, so for heavy bleeding North Middlesex is the safer destination.',
+      },
+    ],
+    content: [
+      { type: 'p', text: 'A socket that keeps bleeding hours after a tooth extraction is one of the more alarming dental problems to deal with at home, but it is usually one of the most fixable. Firm, uninterrupted pressure on the right spot stops the great majority of post-extraction bleeds within 20 minutes. This page covers how to apply that pressure properly, what counts as normal oozing, and the small number of situations that need A&E. It is part of our wider guide to [bleeding, swelling and other dental emergencies in Enfield](/guides/bleeding-swelling-denture-emergencies-enfield/).' },
+      { type: 'note', text: 'Call 999 or go to A&E now if bleeding is heavy and continuous despite firm pressure, if you feel faint, dizzy or short of breath, if you are coughing or vomiting blood, or if swelling in your mouth or neck is making it hard to breathe or swallow. For bleeding that is slowing but will not quite stop, follow the steps below, call NHS 111 if you cannot reach a dentist, and use the matching form on this page for same-day dental help in Enfield.' },
+
+      { type: 'h2', text: 'First, know what normal looks like' },
+      { type: 'p', text: 'Some bleeding after an extraction is expected. For the first few hours the socket will ooze, and because a small amount of blood mixes with a large amount of saliva, it often looks far worse than it is. Pink-tinged spit for the rest of the day, and a few spots on the pillow the next morning, are within the range of normal healing. What you are watching for is active bleeding: blood that pools in the mouth, drips, or soaks through gauze within a few minutes. That is the situation the rest of this page deals with.' },
+
+      { type: 'h2', text: 'The 20-minute pressure technique' },
+      { type: 'p', text: 'Pressure works by holding the blood still long enough for a clot to form in the socket. Most home attempts fail for one of two reasons: the pad is in the wrong place, or it is lifted every few minutes to check. Do it like this:' },
+      { type: 'list', items: [
+        'Roll clean gauze, a clean cotton handkerchief or kitchen roll into a firm pad about the size of your thumb, and dampen it slightly so it does not stick to the clot.',
+        'Place the pad directly over the socket, not the teeth beside it, and bite down firmly. You should feel pressure on the gum where the tooth was.',
+        'Keep biting for a full 20 minutes by the clock. Do not lift the pad to look, talk as little as possible, and stay sitting upright.',
+        'After 20 minutes, remove the pad gently. If the socket is still actively bleeding, repeat once with a fresh pad, or with a dampened black-tea bag, whose tannins help the clot form.',
+      ] },
+      { type: 'p', text: 'If a second full round of pressure has not brought the bleeding under control, stop repeating the cycle and get help: contact the practice that took the tooth out, call NHS 111, or go to A&E if it is heavy. Two failed rounds of proper pressure is the signal to escalate, not to keep trying alone into the night.' },
+
+      { type: 'h2', text: 'Protect the clot once bleeding stops' },
+      { type: 'p', text: 'The clot that forms in the socket is the wound dressing, and losing it restarts the bleeding and can lead to the very painful problem of dry socket a few days later. For the first 24 hours, avoid rinsing, spitting and drinking through straws, all of which create suction or wash the clot away. Avoid alcohol, hot drinks, vigorous exercise and, above all, smoking, which is the biggest single risk to a healing socket. Eat soft, lukewarm food on the other side of the mouth, and from the day after the extraction begin gentle warm salt-water bathing rather than forceful swilling. The Oral Health Foundation publishes good plain-language aftercare advice at [dentalhealth.org](https://www.dentalhealth.org/) if you want a second reference for the days ahead.' },
+
+      { type: 'h2', text: 'Blood thinners and conditions that affect clotting' },
+      { type: 'p', text: 'If you take warfarin, apixaban, rivaroxaban, clopidogrel or another medicine that affects clotting, bleeding after an extraction may be slower to settle, and the pressure technique matters even more. Use a full 30 minutes of pressure rather than 20, and never stop or skip a dose of your medication on your own initiative, because the risk that protects you from is far more serious than a bleeding socket. The same applies if you have a diagnosed bleeding disorder such as haemophilia or von Willebrand disease, or liver problems that affect clotting. In all of these cases, a socket that is still bleeding after two rounds of pressure deserves a lower threshold for seeking help, and the team treating you needs to know exactly what you take.' },
+
+      { type: 'h2', text: 'Where to get help in Enfield, hour by hour' },
+      { type: 'p', text: 'During working hours, your first call should be the practice that removed the tooth, because the dentist who took it out is best placed to pack or stitch the socket, and aftercare for a recent extraction is normally part of the treatment. If you cannot reach them, or the extraction happened elsewhere and you are stuck, we connect people across the borough, from [Edmonton](/location/edmonton/) and Ponders End up to Enfield Town and the EN2 villages, with a vetted local dentist who can see urgent cases the same day. We are an independent matching service rather than a practice, so we do not treat you ourselves, but introductions usually happen within the hour while practices are open.' },
+      { type: 'p', text: 'In the evening, overnight or at the weekend, [NHS 111](https://111.nhs.uk/) is the route into urgent NHS dental care for north London and can book you into an out-of-hours clinic if the socket needs packing. For heavy bleeding that pressure has not controlled, or any faintness or breathing difficulty, go to A&E at North Middlesex University Hospital in Edmonton rather than waiting for a dental appointment. Keep up gentle pressure on the way, stay upright, and bring a list of any medication you take.' },
+    ],
+  },
+
+  {
+    slug: 'sudden-toothache-causes',
+    hub: 'severe-toothache-enfield',
+    draft: true,
+    title: 'Common causes of sudden toothache',
+    metaTitle: 'Sudden Toothache: Common Causes Explained (Enfield)',
+    metaDescription:
+      'Why a toothache can start out of nowhere: decay reaching the nerve, cracked teeth, infection, sinus pressure. Danger signs, and same-day dentist matching in Enfield.',
+    category: 'Emergency basics',
+    publishDate: '2026-06-13',
+    updatedDate: '2026-06-13',
+    excerpt:
+      'A toothache that appears out of nowhere almost always has a cause that has been building quietly. Here are the usual culprits, the warning signs that make sudden tooth pain an emergency, and how to get seen quickly in Enfield.',
+    faqs: [
+      {
+        question: 'Why did my toothache start suddenly when the tooth seemed fine yesterday?',
+        answer:
+          'Most "sudden" toothache is the final stage of a slow process. Decay can tunnel through a tooth for months without symptoms because enamel and dentine have no nerve supply of their own. Pain only arrives when bacteria or temperature changes finally reach the pulp at the centre of the tooth, and at that point it tends to arrive hard and fast. A crack, a failing old filling or an infection at the root tip behave the same way: quiet for a long time, then suddenly very loud.',
+      },
+      {
+        question: 'My sudden toothache disappeared on its own. Is the problem gone?',
+        answer:
+          'Usually not. When severe tooth pain stops abruptly without treatment, the most common explanation is that the nerve inside the tooth has died, so it can no longer send pain signals. The decay or infection that killed it is still there and still progressing, and it frequently returns weeks later as an abscess or facial swelling. A tooth that hurt badly and then went silent still needs a dental examination.',
+      },
+      {
+        question: 'How do I tell sinus pressure from a real toothache?',
+        answer:
+          'Sinusitis tends to make several upper back teeth ache at once rather than one tooth, the ache changes when you bend forward or lie down, and it usually comes with a blocked or runny nose, facial pressure under the eyes, or a recent cold. A genuine dental cause more often picks out one tooth, reacts sharply to hot, cold or biting, and does not care which way your head is tilted. If you cannot tell, a dentist can test the individual teeth and rule the mouth in or out.',
+      },
+      {
+        question: 'Is sudden toothache an emergency or can it wait for a routine appointment?',
+        answer:
+          'Severe pain that paracetamol and ibuprofen cannot control, pain with facial swelling, a bad taste with fever, or a tooth that has cracked and is hurting all justify a same-day appointment. A mild ache or a brief twinge with cold that settles in seconds can usually wait a few days, but should still be checked rather than ignored. If you have swelling spreading towards the eye or neck, difficulty swallowing or breathing, or a high fever, that is beyond a dentist: call 999 or go to A&E.',
+      },
+      {
+        question: 'Why is my sudden toothache so much worse at night?',
+        answer:
+          'Lying flat increases blood pressure in the head, which raises pressure inside an already inflamed tooth, and at night there are no distractions to dilute the signal. Grinding or clenching during sleep can add to it. Propping yourself up on two or three pillows, taking ibuprofen and paracetamol within their stated limits, and avoiding very hot or cold drinks late in the evening usually makes the night survivable until you can be seen the next morning.',
+      },
+    ],
+    content: [
+      { type: 'p', text: 'Toothache that arrives out of nowhere almost never comes from nowhere. The usual causes are decay finally reaching the nerve, a crack or failing filling, an infection brewing at the root, gum problems, or pressure from the sinuses above the upper teeth. This page walks through each cause, the danger signs, and how to get examined quickly in Enfield. It sits within our [Enfield guide to severe toothache and dental pain](/guides/severe-toothache-enfield/).' },
+      { type: 'note', text: 'Call 999 or go to A&E now if you have swelling spreading towards your eye, throat or neck, difficulty swallowing or breathing, or a high fever with feeling very unwell. For severe dental pain without those signs, call NHS 111 (free, 24 hours) if you cannot reach a dentist, or use the matching form on this page for a same-day introduction to a vetted Enfield dentist.' },
+
+      { type: 'h2', text: 'Decay that has reached the nerve' },
+      { type: 'p', text: 'The single most common cause of sudden severe toothache is tooth decay that has finally tunnelled through to the pulp, the bundle of nerves and blood vessels at the centre of the tooth. Enamel and dentine have no pain supply of their own, so a cavity can grow for months in silence. Once bacteria reach the pulp it becomes inflamed inside a rigid chamber that cannot swell, and the result is the throbbing, hot-and-cold-sensitive, worse-when-lying-down pain dentists call irreversible pulpitis. The name is the important part: at this stage the nerve will not recover on its own, and the choices are root canal treatment or extraction. Painkillers buy time, but only a dentist can deal with the cause, which is why this kind of pain justifies a same-day [severe toothache appointment](/services/severe-toothache/) rather than a place on a routine waiting list.' },
+
+      { type: 'h2', text: 'A cracked tooth or a failing filling' },
+      { type: 'p', text: 'A tooth can crack on a stray olive stone, an unpopped popcorn kernel, or simply from years of clenching, and the crack is often invisible. The classic pattern is a sharp pain on biting, especially on release of the bite, with sensitivity to cold, in a tooth that looks normal. Old large fillings are a related culprit: the seal around a filling breaks down over the years, fluid and bacteria leak underneath, and one day the tooth that has been quietly deteriorating announces itself. Heavily filled teeth are also the ones most likely to crack, because less natural tooth structure is holding them together. Cracks do not heal, and biting on one repeatedly can split the tooth beyond saving, so chew on the other side and get it examined within a day or two.' },
+
+      { type: 'h2', text: 'Infection at the root' },
+      { type: 'p', text: 'When the nerve of a tooth dies, the space inside becomes a sheltered home for bacteria, and infection can build at the root tip into a dental abscess. Sudden severe pain with a tooth that feels raised in its socket and is tender to the slightest tap, a foul taste, a bad smell, swelling in the gum or face, or fever alongside the toothache all point this way. An abscess does not settle by itself, and antibiotics alone are at best a holding measure; the infection needs draining and the tooth needs treating. This cause carries the genuine emergencies of dentistry: if swelling spreads towards the eye or down into the neck, or swallowing or breathing becomes difficult, that is a hospital problem, not a dental appointment. The NHS advice on dental abscesses at nhs.uk says the same: see a dentist urgently, and treat spreading facial swelling as an emergency.' },
+
+      { type: 'h2', text: 'Pain that is not coming from a tooth at all' },
+      { type: 'p', text: 'The roots of the upper back teeth sit directly beneath the maxillary sinuses, so a heavy cold or sinusitis can make a whole row of upper teeth ache convincingly. The giveaways are several teeth aching at once, pain that changes when you bend forward, and congestion or facial pressure alongside it. Jaw clenching and grinding, often during sleep and often in stressful weeks, can also produce aching teeth and jaw muscles that feel worse first thing in the morning. Less commonly, gum disease or food packed hard between two teeth produces a localised ache that feels dental but starts in the gum. These causes matter because the treatment is completely different, and a dentist can usually separate them from true tooth pain in one examination by testing the individual teeth.' },
+
+      { type: 'h2', text: 'Finding the cause quickly in Enfield' },
+      { type: 'p', text: 'Working out which of these is behind your pain takes an examination and usually an X-ray, not guesswork. We are an independent matching service, not a practice, and we connect people across the borough, from Enfield Town and Bush Hill Park out to [Palmers Green](/location/palmers-green/) and Edmonton, with vetted local dentists who keep same-day slots for urgent cases. Introductions usually happen within the hour during working hours. In the evening or at the weekend, NHS 111 can book urgent NHS dental care for north London. While you wait to be seen, our guide to [managing severe toothache before you can be seen](/blog/managing-severe-toothache-before-you-can-be-seen/) covers safe pain relief and the mistakes, like aspirin on the gum, that make things worse. The Oral Health Foundation at dentalhealth.org also publishes plain-language advice on toothache and decay. Whatever the cause turns out to be, sudden tooth pain is the tooth telling you something has changed, and it is always worth listening within a day or two rather than waiting for it to shout louder.' },
+    ],
+  },
+];
+
+export const getArticleBySlug = (slug: string): BlogArticle | undefined =>
+  blogArticles.find(a => a.slug === slug);
+
+// Draft gate: draft spokes 404 and are excluded from /blog, hub grids and the
+// sitemap until the publisher flips them live.
+export const getPublishedArticles = (): BlogArticle[] =>
+  blogArticles.filter(a => !a.draft);
+
+export const getArticlesByHub = (hub: string): BlogArticle[] =>
+  blogArticles.filter(a => a.hub === hub && !a.draft);
+
+export const getAllBlogSlugs = (): string[] => getPublishedArticles().map(a => a.slug);

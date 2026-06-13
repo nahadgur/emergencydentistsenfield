@@ -98,14 +98,15 @@ routing, London Borough of Enfield). NEVER paraphrase the Harlow site.
 
 ## 8. Status tracker
 
-10 hubs live (/guides). Spokes: 11 mapped (4 live + 7 draft buffered), target ~80
+10 hubs live (/guides). Spokes: 12 mapped (4 live + 8 draft buffered), target ~80
 (~8/hub), quality-gated. Every hub H1-H10 now has at least one spoke. Last writer
-run 2026-06-13: added H1 second spoke `sudden-toothache-causes` (draft, causes
-intent, distinct from the existing management/pain-relief spoke). Round-robin pass
-two continues at H2 (second spoke per hub, distinct intents only).
+run 2026-06-13: added H2 second spoke `loose-or-displaced-tooth-first-aid` (draft,
+luxation/displacement first-aid intent, distinct from the existing full-avulsion
+spoke `what-to-do-if-you-knock-out-a-tooth`). Round-robin pass two continues at H3
+(second spoke per hub, distinct intents only).
 ## Slug rules (writer: follow on every spoke)
 
 Kebab-case: lowercase, hyphens only, ASCII only, 3-6 words, under ~60 chars.
 Do NOT: include a year/date; reuse or near-duplicate an existing slug; use a
 reserved head term or the parent hub's head term; keyword-stuff or repeat a word;
-use stop words (a/the/to/for). Never rename or reuse a published slug.
+use st

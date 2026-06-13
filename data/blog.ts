@@ -751,6 +751,84 @@ export const blogArticles: BlogArticle[] = [
       { type: 'p', text: 'Working out which of these is behind your pain takes an examination and usually an X-ray, not guesswork. We are an independent matching service, not a practice, and we connect people across the borough, from Enfield Town and Bush Hill Park out to [Palmers Green](/location/palmers-green/) and Edmonton, with vetted local dentists who keep same-day slots for urgent cases. Introductions usually happen within the hour during working hours. In the evening or at the weekend, NHS 111 can book urgent NHS dental care for north London. While you wait to be seen, our guide to [managing severe toothache before you can be seen](/blog/managing-severe-toothache-before-you-can-be-seen/) covers safe pain relief and the mistakes, like aspirin on the gum, that make things worse. The Oral Health Foundation at dentalhealth.org also publishes plain-language advice on toothache and decay. Whatever the cause turns out to be, sudden tooth pain is the tooth telling you something has changed, and it is always worth listening within a day or two rather than waiting for it to shout louder.' },
     ],
   },
+
+  {
+    slug: 'loose-or-displaced-tooth-first-aid',
+    hub: 'knocked-out-tooth-enfield',
+    draft: true,
+    title: 'What to do if a tooth is loose or pushed out of place',
+    metaTitle: 'Loose or Displaced Tooth: Safe First Aid (Enfield)',
+    metaDescription:
+      'A tooth knocked loose or pushed out of place in Enfield needs the right first aid, not force. What to do, what to leave alone, and how to be seen same day.',
+    category: 'Trauma & first aid',
+    publishDate: '2026-06-13',
+    updatedDate: '2026-06-13',
+    excerpt:
+      'A tooth that is loose or pushed out of position after a knock is still attached, and how you handle it matters. Here is the safe first aid before a dentist sees you in Enfield, what to leave well alone, and the signs that mean hospital instead.',
+    faqs: [
+      {
+        question: 'Is a loose or displaced tooth a dental emergency?',
+        answer:
+          'Yes, treat it as a same-day problem. A permanent tooth that has been knocked loose, pushed sideways, driven up into the gum, or moved out of line after a blow has injured the ligament and bone that hold it, and the sooner a dentist repositions and supports it the better the outlook. Use NHS 111 out of hours, or our same-day matching during the day, to be seen quickly.',
+      },
+      {
+        question: 'Should I push a displaced tooth back into position myself?',
+        answer:
+          'Only very gently, and only a tooth that has been pushed outwards and feels like it will slot back with light finger pressure. If it resists, stop. Never force a tooth that has been driven up into the gum or shoved sideways into the bone, and never try to reposition a baby tooth in a child. Forcing a displaced tooth can damage the root and the bone further. Leave it as it is and let a dentist do the repositioning.',
+      },
+      {
+        question: 'What is the difference between a knocked-out tooth and a displaced one?',
+        answer:
+          'A knocked-out tooth has come completely out of the socket and is in your hand or on the floor, which is the most time-critical dental injury. A displaced tooth is still attached but has been loosened, pushed out, or moved out of line. Both need urgent care, but the first aid differs. If the tooth is fully out, follow our guide on [a knocked-out tooth in the first 60 minutes](/blog/what-to-do-if-you-knock-out-a-tooth/) instead.',
+      },
+      {
+        question: 'Can a loosened tooth tighten back up on its own?',
+        answer:
+          'A tooth that was only slightly loosened and is still in its normal position often does firm up over a couple of weeks if you rest it on a soft diet and avoid biting on it. Even so, have it checked, because the nerve can die quietly after an injury and show up later as discolouration or an abscess. A tooth that has actually moved out of line needs a dentist to reposition and splint it; it will not correct itself.',
+      },
+      {
+        question: 'Where can I get an emergency dentist in Enfield for a displaced tooth?',
+        answer:
+          'During the day, call your own dentist first if you have one. If you do not, or cannot get through, our same-day matching connects you with a vetted emergency dentist across the EN postcodes within about an hour. Out of hours, at the weekend, or on a bank holiday, NHS 111 directs you to urgent NHS dental care for north London. For a serious facial injury, A&E or 999 comes first.',
+      },
+    ],
+    content: [
+      { type: 'p', text: 'A tooth that has been knocked loose or pushed out of line after a fall, a sporting knock or a blow to the face is still attached, unlike a tooth that has come fully out. That changes the first aid completely. The aim before you are seen is to leave the tooth roughly where it is, protect it, ease the pain, and get to a dentist the same day, because the ligament and bone holding the tooth recover far better when it is repositioned and supported early. This guide is part of our wider advice on a [knocked-out or dislodged tooth in Enfield](/guides/knocked-out-tooth-enfield/).' },
+      { type: 'note', text: 'Call 999 or go to A&E first if the injury came with a heavy blow to the head and you were knocked out, are confused or vomiting, may have a broken jaw, have bleeding you cannot control with ten minutes of pressure, or any difficulty breathing or swallowing. For out-of-hours dental-only help in Enfield, call NHS 111. For same-day matching with a vetted Enfield emergency dentist, use the form on this page.' },
+
+      { type: 'h2', text: 'The different ways a tooth can be displaced' },
+      { type: 'p', text: 'Dentists group these injuries by how the tooth has moved, and the right first aid depends on which one you are looking at:' },
+      { type: 'list', items: [
+        'Loosened but in place: the tooth is wobbly to the touch but sitting in its normal position. This is the mildest type and often settles with rest.',
+        'Pushed outwards: the tooth looks longer than its neighbours or feels like it is sticking down or up out of the socket.',
+        'Moved sideways: the tooth has been shoved forwards, backwards or to one side and no longer lines up with the others. It is often locked in the new position and feels firm.',
+        'Driven into the gum: the tooth looks shorter than the others because it has been forced up into the bone. This can look deceptively minor.',
+      ] },
+      { type: 'p', text: 'You do not need to name the injury correctly to give good first aid. What matters is knowing when to leave the tooth alone, which is most of the time.' },
+
+      { type: 'h2', text: 'Safe first aid, step by step' },
+      { type: 'p', text: 'Stay calm and work through these. Nothing here needs anything you would not have at home.' },
+      { type: 'list', items: [
+        'Leave the tooth where it is. The one exception is below.',
+        'If the tooth has been pushed outwards and feels like it will move back with very light finger pressure, you can gently guide it towards its normal position. If it resists at all, stop and leave it.',
+        'Never force a tooth that has been pushed sideways or driven up into the gum, and never reposition a baby tooth in a child. Forcing it can harm the root, the bone and, in a child, the adult tooth developing underneath.',
+        'Bite gently on a clean, folded piece of gauze or a clean cloth to steady the tooth and ease any oozing from the gum.',
+        'Hold a cold compress or a cloth-wrapped ice pack against the outside of your cheek for swelling.',
+        'Take paracetamol or ibuprofen at the dose on the packet if they are safe for you. Do not hold a painkiller against the gum, as it burns the tissue.',
+        'Switch to soft, cool foods and chew on the other side until you are seen.',
+      ] },
+
+      { type: 'h2', text: 'Why getting seen quickly matters' },
+      { type: 'p', text: 'A displaced tooth is held by a thin layer of ligament fibres and the surrounding bone, both of which are injured when the tooth moves. A dentist can reposition the tooth accurately and splint it to its neighbours for a couple of weeks so it heals in the right place, and can check whether the nerve has survived. Left out of position, a tooth heals where it lies, which can leave the bite wrong and the tooth harder to save. The NHS advises seeing a dentist as soon as possible after any injury that loosens or moves a tooth, and not waiting for pain to build. Even a tooth that only feels slightly loose deserves a check, because the nerve can die silently and surface weeks later as a darkened tooth or a [dental abscess](/guides/dental-abscess-enfield/).' },
+
+      { type: 'h2', text: 'When it is a hospital problem first' },
+      { type: 'p', text: 'Most loosened and displaced teeth are a job for an emergency dentist, but the way these injuries happen, a fall, a tackle, a collision, means a head or facial injury sometimes comes with them, and that takes priority. Treat it as a medical emergency and call 999 or go to A&E if there was a heavy blow to the head with loss of consciousness, confusion, repeated vomiting or a severe headache, if you suspect a broken jaw because the teeth no longer meet or the jaw will not open and close properly, if there is bleeding you cannot control, or if breathing or swallowing is affected. For people in Enfield, the nearest major A&E is North Middlesex University Hospital on Sterling Way in Edmonton. Chase Farm Hospital in Enfield runs an urgent treatment centre rather than a full A&E, so for a serious facial injury go to North Middlesex or call 999. If you are unsure how serious it is, NHS 111 can assess you and tell you where to go.' },
+
+      { type: 'h2', text: 'Being seen the same day across Enfield' },
+      { type: 'p', text: 'Once the tooth is steadied and the pain is managed, the priority is a dentist. During normal hours your own dentist is the first call if you have one. If you do not, or cannot get an appointment, we connect you with a vetted dentist for a [knocked-out or displaced tooth](/services/knocked-out-tooth/) across the borough, from [Enfield Town](/location/enfield-town/) and Bush Hill Park in EN1 and EN2, through Enfield Highway and Ponders End in EN3, to Edmonton and Palmers Green in the south. We are an independent matching service and do not treat you ourselves, but most introductions happen within the hour.' },
+      { type: 'p', text: 'Out of hours, at the weekend or on a bank holiday, NHS 111 is the route to urgent NHS dental care across north London and can advise when no dentist is immediately available. You can also use the same-day matching form on this page at any time, and we will connect you with a dentist who can reposition the tooth, splint it if needed, and check that it heals in the right place.' },
+    ],
+  },
 ];
 
 export const getArticleBySlug = (slug: string): BlogArticle | undefined =>

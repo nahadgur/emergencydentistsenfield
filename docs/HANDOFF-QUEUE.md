@@ -202,3 +202,11 @@ Code session should remove `.git/index.lock` and commit the two doc files.
   safe-commit.sh misfires here (its live-git-process check evaluates to a multi-line "0"
   and falsely reports a live process, and it relies on `rm`), so committed with plain
   `git` after setting local user.email/name. Push result noted in run report.
+
+## 2026-06-13 09:00 — ede-emergency-writer (emergencydentistsenfield)
+- Sites: emergencydentistsenfield: H1 second spoke `sudden-toothache-causes` written (draft:true), causes intent, distinct from the live management spoke; SILO-PLAN section 8 tracker updated; round-robin next = H2
+- Staged files: data/blog.ts, docs/SILO-PLAN.md
+- Live flips this run: none
+- tsc: pass (link gate: 21 slugs, 0 broken)
+- Commit prompt / git state: committed b0c0a7d on main; push failed (no credentials in sandbox). NOTE: commit accidentally includes .next-dev.log (safe-commit added it; amend blocked by an undeletable stale .git/HEAD.lock). Claude Code: clear the lock, drop .next-dev.log from the commit (and gitignore it), then push.
+- Status: PENDING PUSH

@@ -108,4 +108,4 @@ two continues at H2 (second spoke per hub, distinct intents only).
 Kebab-case: lowercase, hyphens only, ASCII only, 3-6 words, under ~60 chars.
 Do NOT: include a year/date; reuse or near-duplicate an existing slug; use a
 reserved head term or the parent hub's head term; keyword-stuff or repeat a word;
-use s
+use stop words (a/the/to/for). Never rename or reuse a published slug.

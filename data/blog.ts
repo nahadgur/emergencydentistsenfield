@@ -126,7 +126,7 @@ export const blogArticles: BlogArticle[] = [
       { type: 'p', text: 'Spreading orofacial infection is a medical emergency requiring hospital admission, not a paid private dental visit. The matching service is for dental-only emergencies; call 111 or 999 for spreading infection signs.' },
 
       { type: 'h2', text: 'Why the dentist visit matters even after symptoms settle' },
-      { type: 'p', text: 'Severe toothache that "settles by itself" is rarely good news. Most often it means the nerve has died and stopped sending pain signals — the underlying decay or infection is still progressing, just silently. Three weeks later it returns as an abscess or facial swelling. The matching service introduces you to a dentist who will diagnose the cause whether the pain has settled or not.' },
+      { type: 'p', text: 'Severe toothache that "settles by itself" is rarely good news. Most often it means the nerve has died and stopped sending pain signals, while the underlying decay or infection is still progressing, just silently. Three weeks later it returns as an abscess or facial swelling. The matching service introduces you to a dentist who will diagnose the cause whether the pain has settled or not. If the ache came on out of nowhere, our guide to [the common causes of sudden toothache](/blog/sudden-toothache-causes/) explains what is usually behind it.' },
     ],
   },
 
@@ -694,14 +694,14 @@ export const blogArticles: BlogArticle[] = [
   {
     slug: 'sudden-toothache-causes',
     hub: 'severe-toothache-enfield',
-    draft: true,
+    draft: false,
     title: 'Common causes of sudden toothache',
     metaTitle: 'Sudden Toothache: Common Causes Explained (Enfield)',
     metaDescription:
       'Why a toothache can start out of nowhere: decay reaching the nerve, cracked teeth, infection, sinus pressure. Danger signs, and same-day dentist matching in Enfield.',
     category: 'Emergency basics',
-    publishDate: '2026-06-13',
-    updatedDate: '2026-06-13',
+    publishDate: '2026-06-15',
+    updatedDate: '2026-06-15',
     excerpt:
       'A toothache that appears out of nowhere almost always has a cause that has been building quietly. Here are the usual culprits, the warning signs that make sudden tooth pain an emergency, and how to get seen quickly in Enfield.',
     faqs: [
@@ -827,6 +827,351 @@ export const blogArticles: BlogArticle[] = [
       { type: 'h2', text: 'Being seen the same day across Enfield' },
       { type: 'p', text: 'Once the tooth is steadied and the pain is managed, the priority is a dentist. During normal hours your own dentist is the first call if you have one. If you do not, or cannot get an appointment, we connect you with a vetted dentist for a [knocked-out or displaced tooth](/services/knocked-out-tooth/) across the borough, from [Enfield Town](/location/enfield-town/) and Bush Hill Park in EN1 and EN2, through Enfield Highway and Ponders End in EN3, to Edmonton and Palmers Green in the south. We are an independent matching service and do not treat you ourselves, but most introductions happen within the hour.' },
       { type: 'p', text: 'Out of hours, at the weekend or on a bank holiday, NHS 111 is the route to urgent NHS dental care across north London and can advise when no dentist is immediately available. You can also use the same-day matching form on this page at any time, and we will connect you with a dentist who can reposition the tooth, splint it if needed, and check that it heals in the right place.' },
+    ],
+  },
+  {
+    slug: 'cracked-tooth-pain',
+    hub: 'broken-chipped-tooth-enfield',
+    draft: true,
+    title: 'Cracked tooth pain: why it hurts and what to do',
+    metaTitle: 'Cracked Tooth Pain: Causes and Safe First Aid',
+    metaDescription:
+      'Cracked tooth that hurts to bite on in Enfield? Why a crack causes sharp pain, safe first aid, the warning signs, and how to be seen the same day.',
+    category: 'Pain management',
+    publishDate: '2026-06-15',
+    updatedDate: '2026-06-15',
+    excerpt:
+      'A cracked tooth often hurts in a very particular way, a sharp jab as you bite and a twinge as you let go, sometimes with no break you can see. Here is what causes it, how to ease it safely in Enfield, and the signs that mean you need to be seen quickly.',
+    faqs: [
+      {
+        question: 'Why does my cracked tooth only hurt when I bite down?',
+        answer:
+          'A crack lets the two halves of the tooth flex apart slightly under biting pressure, then snap back as you release. That movement irritates the nerve inside, which is why the classic sign of a cracked tooth is a sharp pain on biting and a second twinge as you let go, often worse on hard or chewy food. Pain that comes and goes like this, rather than a constant ache, is typical and is worth getting checked even between flare-ups.',
+      },
+      {
+        question: 'Is a cracked tooth a dental emergency?',
+        answer:
+          'Most cracked teeth are urgent rather than a true emergency. They need a dentist promptly, usually within a day or two, but they are not normally a danger to your health in the next few hours. It becomes more pressing if the pain is constant and throbbing, you have facial or gum swelling, a fever, or the pain wakes you at night, as these suggest the nerve or a deeper split is involved.',
+      },
+      {
+        question: 'I cannot see a crack. Could my tooth still be cracked?',
+        answer:
+          'Yes. Many cracks are hairline and invisible to the eye, which is why dentists sometimes call the symptoms cracked tooth syndrome. A crack can run under a filling or below the gum where you cannot see it. A dentist can find it with a bite test, a dye, magnification or an X-ray. Do not assume your tooth is fine simply because it looks intact.',
+      },
+      {
+        question: 'How do I ease cracked tooth pain until I am seen?',
+        answer:
+          'Chew on the other side, avoid very hot, very cold, hard or sticky food, and take paracetamol or ibuprofen at the dose on the packet if they are safe for you. A cold compress on the outside of the cheek helps any swelling. Never hold an aspirin tablet against the gum, as it burns the tissue. These measures manage the pain but do not fix the crack, so still arrange to be seen.',
+      },
+      {
+        question: 'Can I get a same-day emergency dentist for a cracked tooth in Enfield?',
+        answer:
+          'Often, yes. During normal hours your own dentist is the first call if you have one. If you do not, or cannot get an appointment, our same-day matching connects you with a vetted Enfield emergency dentist, usually within the hour. We are an independent matching service and do not treat you ourselves. Out of hours, at the weekend or on a bank holiday, NHS 111 can direct you to urgent NHS dental care across north London.',
+      },
+    ],
+    content: [
+      { type: 'p', text: 'A cracked tooth often hurts in a very particular way, a sharp jab when you bite down and a second twinge as you release, sometimes with sensitivity to cold and frequently with no break you can see. Most cracked teeth are not a true emergency, but they do need a dentist promptly before the crack deepens. Here is what to do in Enfield while you arrange to be seen.' },
+      { type: 'note', text: 'Call 999 or go to A&E if a cracked tooth followed a heavy blow to the head or face and you were knocked out, have uncontrolled bleeding, suspect a broken jaw, or have any difficulty breathing or swallowing. For out-of-hours dental help in Enfield, call NHS 111. For same-day matching with a vetted Enfield emergency dentist, use the form on this page.' },
+
+      { type: 'h2', text: 'Why a cracked tooth hurts the way it does' },
+      { type: 'p', text: 'A cracked tooth behaves differently from a tooth that has visibly chipped or broken. When a crack runs through the hard outer layers, the two sides can flex apart a fraction under the force of biting and then close again as you let go. That tiny movement disturbs the pulp, the bundle of nerves and blood vessels at the centre of the tooth, which produces the hallmark of a crack: a sharp pain on biting and a distinct second twinge on release. Cold drinks and air can set off the same nerve, so sensitivity often comes alongside it. Because the pain comes in flashes rather than as a constant ache, it is easy to dismiss, but a crack rarely heals on its own and tends to spread over time. This guide sits within our wider advice on [a broken, chipped or cracked tooth in Enfield](/guides/broken-chipped-tooth-enfield/), and focuses on the cracked tooth that hurts without an obvious break.' },
+
+      { type: 'h2', text: 'First aid for a cracked tooth before you are seen' },
+      { type: 'p', text: 'The aim is to calm the nerve, protect the tooth from further flexing, and avoid anything that makes the crack worse. None of this needs anything beyond what you would have at home.' },
+      { type: 'list', items: [
+        'Chew on the opposite side of your mouth, and keep that tooth out of action until a dentist has assessed it.',
+        'Avoid very hot, very cold, hard or sticky food and drink, as temperature changes and pressure both trigger the pain.',
+        'Rinse gently with warm salt water to keep the area clean, especially if the gum around the tooth is tender.',
+        'Take paracetamol or ibuprofen at the dose on the packet if they are safe for you, ibuprofen helps if there is any swelling.',
+        'Hold a cold compress, a cloth-wrapped ice pack or a bag of frozen peas, against the outside of the cheek for swelling.',
+        'If a piece has lifted and left a sharp edge, cover it with dental wax from a pharmacy or a piece of sugar-free chewing gum so it does not cut your tongue.',
+        'Never hold an aspirin tablet or any painkiller directly against the gum. It burns the soft tissue and creates a second, separate problem.',
+      ] },
+
+      { type: 'h2', text: 'Cracked, chipped or broken: telling them apart' },
+      { type: 'p', text: 'It helps to know which problem you have, because the urgency differs. A chip is a small piece of enamel lost from the surface, often painless and rarely urgent, though still worth a check. A tooth that has visibly broken, with a fragment gone and the inner tooth exposed, needs prompt first aid of its own and can be sharply painful. A crack is the one that catches people out: the tooth looks whole, yet it hurts to bite on. Cracks range from a harmless surface line in the enamel to a cracked cusp, a crack reaching the nerve, or in the worst case a tooth split in two. You cannot tell from the outside how deep a crack runs, which is exactly why a dentist needs to examine it rather than you waiting to see if it settles.' },
+
+      { type: 'h2', text: 'Warning signs that mean urgent care' },
+      { type: 'p', text: 'A cracked tooth that only twinges on biting can usually wait a day or two for an appointment. Treat it as more urgent, and aim to be seen the same day, if you notice any of the following, because they suggest the nerve is inflamed or infected or the tooth has split:' },
+      { type: 'list', items: [
+        'A constant, throbbing ache rather than a brief flash of pain when you bite.',
+        'Pain that wakes you at night or that painkillers no longer hold.',
+        'Swelling of the gum around the tooth or of the face or cheek.',
+        'A bad taste, a gum boil, fever or feeling generally unwell, which can mean infection.',
+        'A tooth that now feels loose, or a piece that visibly moves when you press it.',
+      ] },
+      { type: 'p', text: 'Swelling that spreads towards the eye, the neck or the floor of the mouth, or any difficulty breathing or swallowing, is a medical emergency: call 999 or go to A&E. For Enfield, the nearest major A&E is North Middlesex University Hospital on Sterling Way in Edmonton. Chase Farm Hospital in Enfield runs an urgent treatment centre rather than a full twenty-four-hour A&E, so for a serious facial injury head to North Middlesex or call 999. The NHS advises seeing a dentist as soon as possible after any dental injury rather than waiting for the pain to build, and the Oral Health Foundation at dentalhealth.org publishes plain-language advice on cracked and sensitive teeth that does not contradict this guidance. Left untreated, a crack can let bacteria reach the pulp and turn into a painful infection weeks later, so it is worth acting while the problem is still small.' },
+
+      { type: 'h2', text: 'Getting seen quickly across Enfield' },
+      { type: 'p', text: 'Once the pain is settled, the priority is an examination, because only a dentist can find the crack and decide whether the tooth needs a filling, a crown to hold it together, root canal treatment or, for a tooth split below the gum, extraction. Acting early often makes the difference between saving the tooth with a crown and losing it. During normal hours your own dentist is the first call if you have one. If you do not, or cannot get an appointment, we connect you with a vetted dentist for the [repair of a cracked or broken tooth](/services/broken-or-chipped-tooth/) across the borough, from [Enfield Town](/location/enfield-town/) and Bush Hill Park in EN1 and EN2, through Enfield Highway and Ponders End in EN3, to Edmonton and Palmers Green in the south.' },
+      { type: 'p', text: 'We are an independent matching service and do not treat you ourselves, but most introductions happen within the hour during working hours. Out of hours, at the weekend or on a bank holiday, NHS 111 is the route to urgent NHS dental care across north London and can advise when no dentist is immediately available. You can also use the same-day matching form on this page at any time, and we will connect you with a dentist who can find the crack, ease the pain, and put a lasting repair in place before it gets worse.' },
+    ],
+  },
+  {
+    slug: 'lost-crown-first-aid',
+    hub: 'lost-filling-or-crown-enfield',
+    draft: true,
+    title: 'What to do if a crown comes off',
+    metaTitle: 'Lost a Crown? Safe First Aid Before the Dentist',
+    metaDescription:
+      'Lost a crown in Enfield? How to keep it safe, the temporary cement that can hold it back on, the warning signs to act on, and how to be seen fast.',
+    category: 'Emergency basics',
+    publishDate: '2026-06-15',
+    updatedDate: '2026-06-15',
+    excerpt:
+      'A crown coming off is rarely a true emergency, and unlike a filling the crown itself can often be re-cemented. Here is the safe first aid before you are seen in Enfield, how to protect the tooth, and the signs that mean you should not wait.',
+    faqs: [
+      {
+        question: 'Should I keep the crown, and can it be put back on?',
+        answer:
+          'Yes, keep it. Unlike a filling, a crown is a custom-made cap and in many cases a dentist can clean and re-cement the same crown, so it is worth holding on to. Rinse it gently, dry it, and store it somewhere safe such as a small pot or sealed bag. There is no need to keep it in milk the way you would a knocked-out tooth, because it is not living tissue. Bring it to your appointment even if it looks worn, as the dentist will decide whether it can be reused or needs replacing.',
+      },
+      {
+        question: 'Can I cement my crown back on myself until I am seen?',
+        answer:
+          'A pharmacy temporary dental cement, sold for exactly this, can hold a clean, sound crown back on for a few days. Clean and dry both the crown and the tooth, apply a thin layer of the cement inside the crown, seat it the right way round, bite gently to settle it, and wipe away the excess. Only do this if the crown clearly fits back over the tooth without forcing. Never use household glue, superglue or any DIY adhesive, as these are toxic, set hard in the wrong place, and can ruin a crown that could otherwise have been saved.',
+      },
+      {
+        question: 'I swallowed my crown, is that dangerous?',
+        answer:
+          'Swallowing a crown is usually harmless. It will normally pass through naturally over a day or two without causing any problem. The exception is if you think you may have breathed it in rather than swallowed it, or you develop coughing, wheezing, chest pain or any difficulty breathing, in which case you should seek urgent medical help or call 999. Either way the tooth underneath is now exposed and will need a new crown, so still arrange to be seen.',
+      },
+      {
+        question: 'Is a lost crown a dental emergency, and how fast do I need to be seen?',
+        answer:
+          'A lost crown is usually urgent rather than a true emergency, so a few days is often acceptable if the tooth is comfortable. See a dentist sooner, within a day or two, if the tooth is painful or very sensitive, if there is a sharp edge or an exposed post, or if much of the tooth has broken away with the crown. An exposed core can decay or chip quickly, and a tooth that has had root canal treatment can fracture without its crown to protect it.',
+      },
+      {
+        question: 'Why has the tooth become sensitive now the crown is off?',
+        answer:
+          'A crown covers and seals the prepared tooth underneath. Once it is off, that inner surface is open to air, hot, cold and sweet things, which can give a sharp twinge. Mild sensitivity is normal and not alarming. A deep, throbbing or spontaneous ache, pain that wakes you at night, or any swelling suggests the nerve is involved or infected, and that needs prompt dental care rather than a wait.',
+      },
+    ],
+    content: [
+      { type: 'p', text: 'A crown coming off is unsettling, but it is rarely a true emergency, and there is one piece of good news that sets it apart from a lost filling: the crown itself can often be re-cemented. A crown is a custom-made cap that was fitted to your tooth, so where a filling that drops out cannot be reused, a sound crown frequently can. The first aid is simple. The aim before you are seen is to keep the crown safe, protect and clean the exposed tooth, ease any sensitivity, and arrange a proper re-cementing before the open tooth causes a bigger problem. This guide sits within our fuller [advice on a lost filling or crown in Enfield](/guides/lost-filling-or-crown-enfield/) and focuses on what to do in the first day or two after a crown comes off.' },
+      { type: 'note', text: 'A lost crown on its own is not a 999 emergency. Call 999 or go to A&E only if you have swelling spreading towards your eye, cheek, neck or the floor of your mouth, difficulty breathing or swallowing, or a high fever with shaking chills, as these are signs of a spreading infection. For dental pain or a lost crown out of hours in Enfield, call NHS 111. To be matched with a vetted Enfield dentist, use the form on this page.' },
+
+      { type: 'h2', text: 'First, look after the crown and clean the tooth' },
+      { type: 'p', text: 'In the first few minutes, the priority is to protect the crown so it can be reused, and to clean the tooth it came off. Work through these steps:' },
+      { type: 'list', items: [
+        'Take the crown out of your mouth so you do not swallow or inhale it, then rinse it gently under cool water.',
+        'Dry the crown and store it somewhere safe, such as a small pot or a sealed bag. It does not need to be kept in milk, because it is not living tissue.',
+        'Rinse your mouth gently with warm water or warm salt water to clear away any debris around the exposed tooth.',
+        'Run your tongue or a clean finger over the tooth to feel for a sharp edge, but do not poke inside it, and keep brushing the area gently so it stays clean.',
+      ] },
+      { type: 'p', text: 'Most crowns come off cleanly, leaving the prepared tooth or a small post underneath. If the crown is full of old cement or a chunk of tooth has come away inside it, keep it anyway and let the dentist judge whether it can still be used.' },
+
+      { type: 'h2', text: 'Holding a crown back on temporarily' },
+      { type: 'p', text: 'If the crown clearly slots back over the tooth, a pharmacy temporary dental cement can hold it in place for a few days until you are seen. Most Enfield pharmacies stock these small kits. To use one safely:' },
+      { type: 'list', items: [
+        'Clean and dry both the crown and the tooth first, so the cement has a clean surface to grip.',
+        'Apply a thin layer of the temporary cement inside the crown, place it on the tooth the right way round, and bite down gently to seat it.',
+        'Wipe away any cement that squeezes out around the gum, and rinse gently.',
+        'Only do this if the crown seats fully without forcing. If it will not go back cleanly, leave it out, keep it safe, and protect the tooth instead.',
+      ] },
+      { type: 'p', text: 'Just as important is what to avoid. Never use household glue, superglue or any DIY adhesive to stick a crown back on. They are toxic, set hard in the wrong position, and can wreck a crown that a dentist could otherwise have re-cemented properly. Treat any pharmacy cement as a short-term stop-gap that lasts days, not weeks. The Oral Health Foundation, an independent UK oral-health charity, gives similar guidance on caring for a loose or lost crown and is a reliable source if you want to read further, and it will not contradict the advice here.' },
+
+      { type: 'h2', text: 'Protecting the tooth and managing sensitivity' },
+      { type: 'p', text: 'If you cannot or would rather not re-seat the crown, the exposed tooth still needs looking after. The prepared surface underneath a crown is softer and more vulnerable than enamel, so a twinge with cold, heat or sweet food is common. For mild to moderate discomfort, paracetamol or ibuprofen taken at the dose on the packet, provided they are safe for you, is the sensible first choice, and a sensitive-teeth toothpaste rubbed onto the tooth can take the edge off. Chew on the other side, and steer clear of hard, sticky, very hot or very cold food, because a tooth without its crown can chip or, if it has had root canal treatment, fracture. Rinse with warm water after meals to flush out anything lodged around the tooth, and never rest an aspirin or other painkiller tablet against the gum, as it burns the soft tissue.' },
+
+      { type: 'h2', text: 'When a lost crown is more than a nuisance' },
+      { type: 'p', text: 'A crown can come off for a simple reason, such as the cement giving way over time, or because decay has formed in the tooth underneath and loosened it. The symptoms tell you how urgently you need to be seen. Arrange prompt, same-day or next-day care if you notice any of the following:' },
+      { type: 'list', items: [
+        'A deep, throbbing or spontaneous ache, or pain that wakes you at night, which can mean the nerve is inflamed or infected.',
+        'Pain that lingers for more than a few seconds after something hot or cold, rather than a quick twinge.',
+        'A bad taste, a gum boil, or tenderness when you bite, which can signal infection starting.',
+        'Much of the tooth broken away with the crown, a wobbly post, or a sharp edge that keeps catching your tongue.',
+      ] },
+      { type: 'p', text: 'Step the response up further if a true infection takes hold. Facial swelling, a fever, or feeling generally unwell are signs an abscess may be forming, and that should be treated as an urgent infection rather than a simple lost crown. If swelling spreads towards your eye, neck or the floor of your mouth, or you have any difficulty breathing or swallowing, call 999 or go to A&E. For Enfield, the nearest major A&E is North Middlesex University Hospital in Edmonton, while Chase Farm Hospital runs an urgent treatment centre rather than a full A&E. Out of hours for dental-only problems, NHS 111 can assess you and point you to urgent care.' },
+
+      { type: 'h2', text: 'Getting seen across Enfield' },
+      { type: 'p', text: 'Once the crown is safe and the tooth is clean, the priority is a proper re-cementing or, where the crown cannot be reused, a new one. During normal hours your own dentist is the first call if you have one. If you do not, or cannot get an appointment, we can connect you with a vetted dentist for [crown re-cementing and filling repair](/services/lost-filling-or-crown/) across the borough, from [Enfield Town](/location/enfield-town/) and Bush Hill Park in EN1 and EN2, through Enfield Highway and Ponders End in EN3, to Edmonton and Palmers Green in the south. We are an independent matching service and do not treat you ourselves, but most introductions happen within the hour.' },
+      { type: 'p', text: 'Out of hours, at the weekend or on a bank holiday, NHS 111 is the route to urgent NHS dental care across north London. You can also use the same-day matching form on this page at any time, bringing the crown with you, and we will connect you with a dentist who can check the tooth for decay, re-cement a sound crown, or fit a new one so the tooth is properly protected again.' },
+    ],
+  },
+  {
+    slug: 'antibiotics-dental-abscess',
+    hub: 'dental-abscess-enfield',
+    draft: true,
+    title: 'Do Antibiotics Cure a Dental Abscess?',
+    metaTitle: 'Do Antibiotics Cure a Dental Abscess? | Enfield',
+    metaDescription:
+      'Antibiotics can slow a dental abscess but will not cure it. Why the tooth still needs treatment, when they are prescribed, and how to be seen fast in Enfield.',
+    category: 'Emergency basics',
+    publishDate: '2026-06-15',
+    updatedDate: '2026-06-15',
+    excerpt:
+      'Antibiotics can slow a dental abscess, but they do not cure it. Here is where antibiotics fit, why the tooth itself still needs treating, and how to be matched with a vetted Enfield dentist fast.',
+    faqs: [
+      {
+        question: 'Will antibiotics cure a dental abscess on their own?',
+        answer:
+          'No. Antibiotics can slow an infection that is spreading into the surrounding tissue and ease swelling for a while, but they cannot reach into the dead nerve space or the sealed pocket of pus that is feeding the abscess. Once the course finishes, the source is still there and the abscess usually flares again. Curing it means a dentist removing the source, by draining the pus, doing root canal treatment, or taking the tooth out. Antibiotics are support, not a substitute for that.',
+      },
+      {
+        question: 'Can I take leftover or old antibiotics for a tooth abscess?',
+        answer:
+          'No, and it is worth being firm about this. Taking the wrong antibiotic, the wrong dose, or an incomplete course can fail to touch the infection while still driving antibiotic resistance, which makes future infections harder to treat. Old packets may also be out of date or the wrong type for a dental infection altogether. If you genuinely need antibiotics, a dentist or NHS 111 will prescribe the right one. Never self-prescribe from a previous illness or take someone else\'s.',
+      },
+      {
+        question: 'When will a dentist prescribe antibiotics for an abscess?',
+        answer:
+          'Usually only when the infection is spreading beyond the tooth, for example with facial swelling, a fever, or signs of the infection moving into nearby tissue, or when treatment has to be delayed and the infection needs holding in check in the meantime. For an abscess that is still contained, the standard approach is to treat the tooth directly rather than reach for antibiotics. Your dentist decides based on what they find when they examine you.',
+      },
+      {
+        question: 'I am already on antibiotics, do I still need to see a dentist?',
+        answer:
+          'Yes. Feeling better on antibiotics does not mean the abscess is cured, only that the infection has been quietened. The underlying tooth still needs treatment, and if you stop there the problem will almost always return, sometimes worse. Finish the full course exactly as prescribed, do not stop early because the swelling has gone down, and keep your dental appointment so the source can be dealt with properly.',
+      },
+      {
+        question: 'How quickly do antibiotics work, and will they stop the pain?',
+        answer:
+          'If antibiotics are prescribed, any improvement in swelling usually takes a day or two to show, and they are not really a painkiller. For the pain itself, paracetamol or ibuprofen at the dose on the packet, where they are safe for you, tends to do more in the short term. If swelling is spreading towards your eye, neck or the floor of your mouth, or you have any difficulty breathing or swallowing, do not wait for antibiotics to work: call 999 or go to A&E.',
+      },
+    ],
+    content: [
+      { type: 'p', text: 'Antibiotics can slow a dental abscess, but they do not cure it. An abscess is a pocket of infection driven by a problem inside or around a tooth, and that source has to be treated by a dentist before the infection truly clears. This guide, part of our wider advice on [dealing with a dental abscess in Enfield](/guides/dental-abscess-enfield/), explains where antibiotics genuinely help, where they do not, and why being seen still matters even after the pain settles.' },
+      { type: 'note', text: 'Most abscesses are urgent rather than immediately life-threatening, but call 999 or go to A&E if swelling is spreading across your face or towards your eye, neck or the floor of your mouth, if you have difficulty breathing or swallowing, or a high fever with shaking chills. While you wait, painkillers at the packet dose and warm salt-water rinses can ease the pain, but do not squeeze or lance the swelling. For an abscess out of hours in Enfield, call NHS 111, and use the form on this page to be matched with a vetted Enfield dentist.' },
+
+      { type: 'h2', text: 'Why antibiotics alone do not cure an abscess' },
+      { type: 'p', text: 'An abscess forms when bacteria build up and the body walls the infection off into a pocket of pus, usually because the nerve inside a tooth has died or deep gum disease has taken hold. Antibiotics travel in the bloodstream and can slow bacteria spreading into the surrounding tissue, which is why they sometimes reduce swelling and buy a little time. What they cannot do is reach into the dead nerve space or the sealed pocket of pus where the infection is being fed, because there is little or no blood supply there to carry the drug. So when a course of antibiotics ends, the source is still present and the abscess tends to flare again. The NHS is clear that antibiotics are not a replacement for dental treatment of an abscess.' },
+
+      { type: 'h2', text: 'What actually clears the infection' },
+      { type: 'p', text: 'Curing an abscess means removing the source, and only a dentist can do that. Depending on the tooth, it usually involves one of three things:' },
+      { type: 'list', items: [
+        'Draining the pus to relieve the pressure, which often eases the pain quickly.',
+        'Root canal treatment to clean out the dead nerve space and seal the tooth, where the tooth can be saved.',
+        'Removing the tooth if it is too damaged to keep.',
+      ] },
+      { type: 'p', text: 'Once the source is dealt with, the infection has nothing left to feed on and settles for good. This is why an appointment matters even when the swelling has come down. The British Dental Association describes abscess care the same way: treat the cause, and use antibiotics only as support when the infection is spreading or when treatment has to be delayed.' },
+
+      { type: 'h2', text: 'Never rely on leftover or old antibiotics' },
+      { type: 'p', text: 'It can be tempting to reach for a half-used packet from a previous illness, or to ask around for someone else\'s. Do not. Taking the wrong antibiotic, the wrong dose, or an incomplete course can fail to touch the infection while still encouraging antibiotic resistance, which makes future infections harder to treat. Old antibiotics may also be out of date or simply the wrong type for a dental infection. If your dentist or NHS 111 decides you need antibiotics, they will prescribe the right one and tell you to finish the full course. Take them exactly as directed, and do not stop early just because the swelling has gone down.' },
+
+      { type: 'h2', text: 'What helps while you wait to be seen' },
+      { type: 'p', text: 'While you arrange an appointment, the aim is to stay comfortable and watch for the danger signs. Paracetamol or ibuprofen at the dose on the packet, where they are safe for you, manages most abscess pain, and ibuprofen can help with the inflammation. Warm salt-water rinses can ease a gum abscess and help keep the area clean. Stay hydrated and stick to soft food on the other side of your mouth. Do not press, squeeze or try to lance the swelling yourself, and never rest a painkiller tablet against the gum, as it burns the soft tissue. If you are not certain that what you have is an abscess at all, our guide on [telling a dental abscess from an ordinary toothache](/blog/recognising-a-dental-abscess-vs-routine-toothache/) walks through the warning signs.' },
+
+      { type: 'h2', text: 'Getting seen across Enfield' },
+      { type: 'p', text: 'Because an abscess always needs its source treated, the priority is a dental appointment, not just a prescription. During the day, your own dentist is the first call if you have one. If you do not, or cannot get in quickly, we can connect you with a vetted dentist for [urgent abscess and infection care](/services/dental-abscess/) across the borough, from Enfield Town and Bush Hill Park in EN1 and EN2 to Edmonton and Palmers Green in the south. We are an independent matching service and do not treat you ourselves, but most introductions during opening hours happen within the hour.' },
+      { type: 'p', text: 'Out of hours, at the weekend or on a bank holiday, NHS 111 is the route to urgent NHS dental care across north London. If swelling is spreading or you have any difficulty breathing or swallowing, this is no longer just a dental problem: call 999 or go to A&E, the nearest major one being North Middlesex University Hospital in [Edmonton](/location/edmonton/). Use the same-day matching form on this page at any time, and we will connect you with a dentist who can treat the abscess at its source.' },
+    ],
+  },
+
+  {
+    slug: 'pericoronitis-wisdom-tooth-gum-flap',
+    hub: 'wisdom-tooth-emergency-enfield',
+    draft: true,
+    title: 'Pericoronitis and Inflamed Wisdom Tooth Gum Flaps in Enfield',
+    metaTitle: 'Pericoronitis Enfield | Inflamed Wisdom Tooth Gum',
+    metaDescription:
+      'Pericoronitis is an inflamed gum flap over a partly erupted wisdom tooth. Safe relief, the signs that need urgent care, and same-day matching in Enfield.',
+    category: 'Emergency basics',
+    publishDate: '2026-06-16',
+    updatedDate: '2026-06-16',
+    excerpt:
+      'When a wisdom tooth only partly comes through, the gum flap over it can trap food and become inflamed. Here is how to settle pericoronitis safely, the warning signs that need urgent care, and how to be matched with a vetted Enfield dentist.',
+    faqs: [
+      {
+        question: 'What is pericoronitis?',
+        answer:
+          'Pericoronitis is inflammation of the gum that partly covers a tooth which has only come through some of the way, almost always a lower wisdom tooth. The loose flap of gum sitting over the tooth is called an operculum, and food and bacteria collect underneath it where a toothbrush cannot reach. The trapped debris irritates the gum, which swells, throbs and can become tender to bite on. It is one of the most common wisdom-tooth problems in adults in their late teens and twenties.',
+      },
+      {
+        question: 'How do I relieve an inflamed gum flap at home?',
+        answer:
+          'Warm salt-water rinses are the mainstay: dissolve half a teaspoon of salt in a cup of warm water and rinse gently several times a day, especially after eating, to flush debris from under the flap. Keep the area as clean as you can with careful brushing, and take paracetamol or ibuprofen at the dose on the packet where they are safe for you. Stick to softer food and chew on the other side. These steps ease a mild flare-up, but if swelling spreads or you develop a fever you need to be seen.',
+      },
+      {
+        question: 'Is pericoronitis an emergency?',
+        answer:
+          'Most cases are urgent rather than an emergency, meaning they need prompt dental care but not a hospital. It becomes a medical emergency if the swelling spreads across the face or down towards the neck, if you cannot open your mouth properly, or if you have any difficulty swallowing or breathing. Those signs can mean the infection is spreading into the deeper tissues, so call 999 or go to A&E rather than waiting for a dental appointment.',
+      },
+      {
+        question: 'Why does my wisdom tooth gum keep flaring up?',
+        answer:
+          'A partly erupted wisdom tooth leaves a permanent trap for food and bacteria under the gum flap, so once it has flared once it often flares again whenever the area gets irritated, run down or hard to keep clean. Each episode usually settles with cleaning and time, but the underlying gap does not go away on its own. That is why a dentist will want to assess whether the tooth is likely to come through fully, whether the flap can be managed, or whether removing the tooth is the long-term fix.',
+      },
+      {
+        question: 'Can pericoronitis go away on its own?',
+        answer:
+          'A mild flare-up can settle within a few days with salt-water rinses, good cleaning and painkillers, but the problem tends to return because the gum flap is still there. Do not ignore a flare-up that is getting worse, spreading, or coming with a fever, and never rely on leftover antibiotics to ride it out. A dentist can clean under the flap properly and advise on whether the wisdom tooth needs to be removed to stop it recurring.',
+      },
+    ],
+    content: [
+      { type: 'p', text: 'Pericoronitis is the medical name for an inflamed flap of gum over a wisdom tooth that has only partly come through. Food and bacteria collect under the flap, the gum swells and throbs, and biting down can hurt. This guide, part of our wider advice on [wisdom tooth and gum emergencies in Enfield](/guides/wisdom-tooth-emergency-enfield/), covers how to settle it safely and when it needs urgent attention.' },
+      { type: 'note', text: 'Pericoronitis is usually urgent rather than immediately dangerous, but call 999 or go to A&E if the swelling is spreading across your face or towards your neck, if you cannot open your mouth, or if you have any difficulty swallowing or breathing. While you wait, warm salt-water rinses and painkillers at the packet dose help, but do not press or squeeze the swelling. Out of hours in Enfield, call NHS 111, and use the form on this page to be matched with a vetted Enfield dentist.' },
+
+      { type: 'h2', text: 'What pericoronitis is and why it happens' },
+      { type: 'p', text: 'A wisdom tooth often does not have enough room to come through fully, so it stays partly buried with a flap of gum, called an operculum, lying over part of the biting surface. That flap creates a pocket that traps food, plaque and bacteria in a spot a toothbrush simply cannot clean. Over time the trapped debris irritates the gum and it becomes inflamed, which is pericoronitis. It is most common around the lower wisdom teeth and most often affects people in their late teens and twenties, when these teeth are erupting. The Oral Health Foundation lists it among the usual reasons wisdom teeth cause trouble even before they are fully through.' },
+      { type: 'p', text: 'The first sign is usually a dull ache and tenderness at the very back of the lower jaw, often on one side. The gum there may look red and swollen, feel sore when you bite because the upper teeth catch the puffy flap, and leave a bad taste from the trapped debris. A mild episode is uncomfortable rather than alarming, but it is worth dealing with early before it builds.' },
+
+      { type: 'h2', text: 'Safe relief while you wait to be seen' },
+      { type: 'p', text: 'The aim before your appointment is to clean the area gently and keep the inflammation down. Warm salt-water rinses are the single most useful thing you can do, because they flush debris from under the flap and soothe the gum.' },
+      { type: 'list', items: [
+        'Dissolve about half a teaspoon of salt in a cup of warm water and rinse gently several times a day, especially after meals.',
+        'Brush the area carefully even though it is sore, as keeping it clean is what calms the inflammation.',
+        'Take paracetamol or ibuprofen at the dose on the packet, where they are safe for you; ibuprofen also helps with the swelling.',
+        'Stick to softer food and chew on the opposite side to avoid catching the flap.',
+      ] },
+      { type: 'p', text: 'Do not press or squeeze the swelling, and do not rest a painkiller tablet against the gum, which burns the soft tissue. Avoid relying on leftover antibiotics from a previous illness: they will not fix the underlying trap and can drive antibiotic resistance, and the NHS is clear that antibiotics are not a substitute for proper dental treatment of a gum infection.' },
+
+      { type: 'h2', text: 'When pericoronitis becomes urgent or an emergency' },
+      { type: 'p', text: 'Most flare-ups stay local and settle with cleaning and time. The picture changes when the infection starts to spread, and a few signs mean you should stop self-managing and seek help straight away.' },
+      { type: 'list', items: [
+        'Swelling spreading across the cheek, under the jaw or down towards the neck.',
+        'Being unable to open your mouth more than a little way, known as trismus.',
+        'Any difficulty swallowing or breathing, which is a 999 or A&E situation.',
+        'A fever, feeling generally unwell, or swelling that is getting worse by the hour.',
+      ] },
+      { type: 'p', text: 'Difficulty breathing or swallowing, or swelling spreading towards the neck, can mean the infection is moving into the deeper tissues of the floor of the mouth, which is a genuine medical emergency. Do not wait for a dental appointment in that situation: call 999 or go to A&E, the nearest major one for much of the borough being North Middlesex University Hospital in [Edmonton](/location/edmonton/). For a flare-up that is painful but stable, you still need a dentist soon rather than later, because each episode tends to be worse than the last.' },
+
+      { type: 'h2', text: 'What a dentist does, and why it keeps coming back' },
+      { type: 'p', text: 'A dentist will clean thoroughly under the gum flap to remove the trapped debris, which often settles an acute flare-up quickly, and will check whether your bite is making things worse by trapping the flap against an upper tooth. Antibiotics are used only when the infection is spreading, not as a routine fix. The reason pericoronitis so often returns is simple: as long as the wisdom tooth stays partly erupted, the gum flap and the pocket beneath it remain, so the trap is still there once the swelling goes down.' },
+      { type: 'p', text: 'That is why the longer-term decision is about the tooth itself. If the wisdom tooth is likely to come through into a useful position it may be left and monitored, but where it is impacted and the flare-ups keep recurring, removing the tooth is usually the definitive answer. A dentist will weigh this up with you based on x-rays and how often the problem returns, rather than treating each episode in isolation.' },
+
+      { type: 'h2', text: 'Getting seen across Enfield' },
+      { type: 'p', text: 'Because a recurring gum flap rarely resolves for good on its own, a dental assessment is the priority once an acute flare-up is settling. During the day your own dentist is the first call if you have one. If you do not, or cannot get in quickly, we can connect you with a vetted dentist for [urgent wisdom tooth and gum care](/services/wisdom-tooth-pain/) across the borough, from Enfield Town and Bush Hill Park in EN1 and EN2 to Palmers Green and Edmonton in the south. We are an independent matching service and do not treat you ourselves, but most introductions during opening hours happen within the hour.' },
+      { type: 'p', text: 'Out of hours, at the weekend or on a bank holiday, NHS 111 is the route to urgent NHS dental care across north London. If the swelling is spreading, you cannot open your mouth, or you have any difficulty swallowing or breathing, treat it as a medical emergency and call 999 or go to A&E. Use the same-day matching form on this page at any time, and we will connect you with a dentist who can clean the area and advise on whether the wisdom tooth needs to come out.' },
+    ],
+  },
+  {
+    slug: 'emergency-dentist-cost-enfield',
+    hub: 'out-of-hours-emergency-dentist-enfield',
+    draft: false,
+    title: 'How much does an emergency dentist cost in Enfield?',
+    metaTitle: 'Emergency Dentist Cost in Enfield (NHS & Private)',
+    metaDescription:
+      'What an emergency dentist costs in Enfield: the NHS urgent care charge, typical private emergency fees, what drives the price, and when getting help is free.',
+    category: 'Emergency basics',
+    publishDate: '2026-06-22',
+    excerpt:
+      'Worried about the bill before you are even seen? Here is what an emergency dentist costs in Enfield, on the NHS and privately, and what moves the price.',
+    faqs: [
+      { question: 'How much is an emergency dentist on the NHS?', answer: 'Urgent NHS dental care is charged as a single Band 1 fee for the whole course of urgent treatment, whatever is done to get you out of pain. The NHS sets the figure nationally and reviews it each April, so check the NHS dental costs page for the current amount.' },
+      { question: 'How much does a private emergency dentist cost in Enfield?', answer: 'Expect a consultation fee of roughly £80 to £150, with any treatment charged on top, so a simple problem is cheaper than one needing a root canal or an extraction. Ask for the consultation fee and a treatment estimate when you book.' },
+      { question: 'Can I get free emergency dental treatment?', answer: 'Yes. NHS dental treatment, including urgent care, is free if you are under 18, under 19 and in full-time education, pregnant or have had a baby in the last 12 months, or you receive certain low-income benefits.' },
+      { question: 'Is NHS 111 free for a dental problem?', answer: 'Yes. NHS 111 is free and open day and night, and can direct you to urgent dental care, an urgent treatment centre or A&E depending on your symptoms.' },
+    ],
+    content: [
+      { type: 'p', text: "When something goes wrong with a tooth, the first worry is the pain. The second, almost always, is the cost. If you are looking for an emergency dentist in Enfield, it helps to know roughly what you will pay before you pick up the phone, because the figure depends far more on which route you take than on the practice's postcode. This guide sets out the NHS urgent charge, what a private emergency appointment typically costs, and the things that move the price up or down." },
+      { type: 'h2', text: 'The NHS urgent dental charge' },
+      { type: 'p', text: "If you are seen for urgent NHS dental treatment, you pay a single Band 1 charge for the whole course of urgent care, no matter how many problems are dealt with in that visit. That covers the examination, the diagnosis and the urgent treatment needed to get you out of pain, such as a temporary filling, dressing a socket or settling an infection. The NHS reviews its dental charges every April, so for the exact current figure check the [NHS guide to dental costs](https://www.nhs.uk/nhs-services/dentists/dental-costs/), which is the authoritative source. The point that matters is that urgent care is charged once, at the lowest band, rather than per procedure." },
+      { type: 'p', text: "Some people pay nothing at all. NHS dental treatment is free if you are under 18, under 19 and in full-time education, pregnant or have had a baby in the last twelve months, or you receive certain low-income benefits. If any of those apply to you, an urgent NHS appointment costs you nothing." },
+      { type: 'h2', text: 'What a private emergency appointment costs' },
+      { type: 'p', text: "Privately, you are paying for the appointment and then for whatever treatment you need on top, so there is no single figure. As a rough guide, a private emergency consultation in and around Enfield typically runs from about £80 to £150, with any treatment, an extraction, the start of a root canal, a permanent filling, charged separately. A straightforward problem might be settled within the consultation; a complex one can run to several hundred pounds once treatment is added. Always ask the practice for the consultation fee and a treatment estimate when you book, so there are no surprises." },
+      { type: 'p', text: "What you are buying privately is speed and choice of time. Private practices can often see you the same day, including evenings and weekends, where NHS urgent slots are limited and routed through triage. For many people in pain out of hours, that availability is the thing they are paying for." },
+      { type: 'h2', text: 'What changes the price' },
+      { type: 'list', items: [
+        'The route: NHS urgent care is a fixed low charge, while private is a consultation fee plus the cost of treatment.',
+        'The treatment needed: a dressing or temporary filling costs far less than a root canal or an extraction.',
+        'The timing: out-of-hours, evening and weekend appointments often carry a premium privately.',
+        'Your exemption status: NHS treatment is free for under-18s, during and just after pregnancy, and on qualifying low-income benefits.',
+      ] },
+      { type: 'h2', text: 'When getting help costs nothing' },
+      { type: 'p', text: "Before any of this, if you are unsure how urgent the problem is, NHS 111 is free and open day and night. An adviser will assess your symptoms and point you to the right place, which can save you both a wasted journey and an unnecessary private fee. For impartial advice on a dental problem and what treatment might involve, the Oral Health Foundation runs a free, independent [dental helpline](https://www.dentalhealth.org/dental-helpline) that is not tied to any practice." },
+      { type: 'h2', text: 'Cost is only half the decision' },
+      { type: 'p', text: "Whether NHS or private is the right call for your situation depends on more than the headline price. We weigh that up in our guide to [NHS versus private emergency dental care in Enfield](/blog/nhs-vs-private-emergency-dental-enfield/), and if it is the middle of the night or a weekend, our guide to finding an emergency dentist [out of hours in Enfield](/guides/out-of-hours-emergency-dentist-enfield/) walks through how to get seen quickly." },
+      { type: 'p', text: "If you need to be seen now, tell us what is wrong using the form on this page and we will match you with an Enfield emergency dentist who can confirm the cost and the appointment up front. We are an independent matching service and do not treat you ourselves." },
     ],
   },
 ];

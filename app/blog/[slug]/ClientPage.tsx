@@ -35,6 +35,12 @@ function renderText(text: string) {
           {label}
         </Link>,
       );
+    } else if (href.startsWith('http')) {
+      nodes.push(
+        <a key={key++} href={href} target="_blank" rel="noopener noreferrer" className="font-semibold text-brand-600 hover:text-brand-700 underline underline-offset-2">
+          {label}
+        </a>,
+      );
     } else {
       nodes.push(full);
     }

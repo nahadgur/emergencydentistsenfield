@@ -1215,7 +1215,7 @@ export const blogArticles: BlogArticle[] = [
       },
     ],
     content: [
-      { type: 'p', text: 'A dental emergency is stressful at the best of times, and more so when you are pregnant and worried about what is safe for the baby. The reassuring news is that the common dental emergencies, severe toothache, an abscess, a knocked-out or broken tooth, can all be treated safely during pregnancy, and that treating them is almost always safer than leaving them. This guide explains what is safe, which pain relief to use and which to avoid, and how to be seen quickly in Enfield. It sits within our wider advice on [severe toothache and dental pain in Enfield](/guides/severe-toothache-enfield/).' },
+      { type: 'p', text: 'A dental emergency is stressful at the best of times, and more so when you are pregnant and worried about what is safe for the baby. The reassuring news is that the common dental emergencies, severe toothache, an abscess, a knocked-out or broken tooth, can all be treated safely during pregnancy, and that treating them is almost always safer than leaving them. This guide explains what is safe, which pain relief to use and which to avoid, and how to be seen quickly in Enfield.' },
       { type: 'note', text: 'Call 999 or go to A&E now if you are pregnant and have swelling spreading towards your eye, cheek, neck or the floor of your mouth, a high fever with shaking chills, or any difficulty breathing or swallowing. These are signs of a spreading infection and need hospital care. For dental pain or an abscess without these danger signs, call NHS 111 out of hours or use the same-day matching form on this page to reach a vetted Enfield dentist.' },
 
       { type: 'h2', text: 'Why treatment is safer than waiting' },

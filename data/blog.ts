@@ -1174,6 +1174,82 @@ export const blogArticles: BlogArticle[] = [
       { type: 'p', text: "If you need to be seen now, tell us what is wrong using the form on this page and we will match you with an Enfield emergency dentist who can confirm the cost and the appointment up front. We are an independent matching service and do not treat you ourselves." },
     ],
   },
+  {
+    slug: 'dental-emergencies-in-pregnancy-enfield',
+    hub: 'severe-toothache-enfield',
+    draft: false,
+    title: 'Dental Emergencies in Pregnancy: What to Do in Enfield',
+    metaTitle: 'Dental Emergencies in Pregnancy: What to Do | Enfield',
+    metaDescription:
+      'Pregnant with severe toothache, an abscess or a broken tooth in Enfield? What is safe, which painkillers to avoid, why treatment beats waiting, and free NHS care.',
+    category: 'Pain management',
+    publishDate: '2026-06-27',
+    updatedDate: '2026-06-27',
+    excerpt:
+      'A dental emergency during pregnancy is worrying, but treatment is safer than leaving it. Here is what is safe, which pain relief to use and avoid, and how to be seen in Enfield, with NHS dental care free while you are pregnant.',
+    faqs: [
+      {
+        question: 'Is it safe to have emergency dental treatment while pregnant?',
+        answer:
+          'Yes. Routine and emergency dental treatment, including fillings, extractions and draining an abscess, can safely be carried out during pregnancy, and the second trimester is often the most comfortable time. Leaving an infection or severe pain untreated tends to be more of a risk to you and the baby than the treatment itself. Always tell the dentist you are pregnant and how many weeks, so they can tailor care and choose suitable medicines.',
+      },
+      {
+        question: 'Can I have a dental X-ray when I am pregnant?',
+        answer:
+          'Dental X-rays use a very small, tightly focused dose and the abdomen is shielded with a lead apron, so they are considered safe in pregnancy when there is a clear clinical need, such as locating an abscess. Where it makes no difference to your care, a dentist may still choose to delay non-urgent X-rays. Tell the dentist you are pregnant so they can weigh up whether the X-ray is needed now.',
+      },
+      {
+        question: 'Which painkillers are safe for toothache in pregnancy?',
+        answer:
+          'Paracetamol at the recommended dose is the first choice for dental pain in pregnancy. Ibuprofen and other anti-inflammatory painkillers are generally avoided, especially in the third trimester, and you should not take them in pregnancy unless a doctor, midwife or pharmacist has told you to. Avoid aspirin too. If paracetamol is not controlling the pain, contact your dentist, GP, midwife or a pharmacist rather than reaching for stronger tablets.',
+      },
+      {
+        question: 'Is NHS dental treatment free when you are pregnant?',
+        answer:
+          'Yes. NHS dental treatment is free if you are pregnant or have had a baby in the twelve months before treatment starts. You will usually need a valid maternity exemption certificate, which your midwife or doctor can arrange. This covers urgent and emergency care as well as check-ups, so cost should never be a reason to put off being seen for a dental emergency in pregnancy.',
+      },
+      {
+        question: 'Can a dental infection harm my baby?',
+        answer:
+          'An untreated dental infection is best dealt with promptly rather than left. The bigger danger comes from an infection that is allowed to spread, along with the stress and poor sleep that severe pain causes. This is why dentists treat the cause of an abscess in pregnancy rather than waiting. If you have facial swelling, a fever, or any difficulty breathing or swallowing, treat it as urgent and call 999 or NHS 111.',
+      },
+    ],
+    content: [
+      { type: 'p', text: 'A dental emergency is stressful at the best of times, and more so when you are pregnant and worried about what is safe for the baby. The reassuring news is that the common dental emergencies, severe toothache, an abscess, a knocked-out or broken tooth, can all be treated safely during pregnancy, and that treating them is almost always safer than leaving them. This guide explains what is safe, which pain relief to use and which to avoid, and how to be seen quickly in Enfield. It sits within our wider advice on [severe toothache and dental pain in Enfield](/guides/severe-toothache-enfield/).' },
+      { type: 'note', text: 'Call 999 or go to A&E now if you are pregnant and have swelling spreading towards your eye, cheek, neck or the floor of your mouth, a high fever with shaking chills, or any difficulty breathing or swallowing. These are signs of a spreading infection and need hospital care. For dental pain or an abscess without these danger signs, call NHS 111 out of hours or use the same-day matching form on this page to reach a vetted Enfield dentist.' },
+
+      { type: 'h2', text: 'Why treatment is safer than waiting' },
+      { type: 'p', text: 'It is natural to want to avoid any dental work until after the baby arrives, but with a genuine emergency that instinct usually works against you. A toothache rarely settles on its own, and a [dental abscess](/blog/recognising-a-dental-abscess-vs-routine-toothache/) is an infection that tends to grow rather than fade. An infection left to spread, the severe pain itself, and the lost sleep and stress that come with it are more of a concern in pregnancy than the straightforward treatment that fixes the problem. Dentists are very used to caring for pregnant patients, and the standard [NHS advice on dental care in pregnancy](https://www.nhs.uk/conditions/baby/support-and-services/dental-care-in-pregnancy/) is to deal with the cause promptly rather than postpone it.' },
+      { type: 'p', text: 'Whatever the problem, the single most useful thing you can do is tell the dentist you are pregnant and roughly how many weeks along you are. That lets them choose suitable medicines, decide whether any X-ray is genuinely needed now, and pick the most comfortable position and timing for your appointment.' },
+
+      { type: 'h2', text: 'Dental treatment and X-rays during pregnancy' },
+      { type: 'p', text: 'Fillings, extractions, draining an abscess and emergency pain relief can all be carried out while you are pregnant. Many dentists find the second trimester, roughly weeks fourteen to twenty-seven, the most comfortable window for any non-urgent work, simply because lying back is easier then and the early-pregnancy tiredness and nausea have usually eased. A true emergency, though, should not wait for a convenient trimester. If you have severe pain or a spreading infection, it needs treating when it happens, at any stage of pregnancy.' },
+      { type: 'p', text: 'Dental X-rays often worry people, but the dose from a small dental film is very low and tightly aimed at the jaw, and the dentist shields your abdomen with a lead apron. Where an X-ray is needed to locate an abscess or assess a broken tooth, it is considered safe in pregnancy. Where it would make no difference to your immediate care, the dentist may simply choose to delay it. Either way, this is a decision to make together, which is why telling them you are pregnant matters.' },
+
+      { type: 'h2', text: 'Safe pain relief, and what to avoid' },
+      { type: 'p', text: 'Managing the pain safely while you arrange to be seen comes down to a few clear rules:' },
+      { type: 'list', items: [
+        'Paracetamol at the recommended dose is the first-choice painkiller for dental pain throughout pregnancy. Follow the instructions on the packet and do not exceed the stated dose.',
+        'Avoid ibuprofen and other anti-inflammatory painkillers in pregnancy unless a doctor, midwife or pharmacist has specifically advised it, and avoid them in particular in the third trimester. This is different from the usual toothache advice, which combines ibuprofen with paracetamol, so do not follow general pain-relief guidance here.',
+        'Avoid aspirin, including the old trick of holding a tablet against the gum, which burns the soft tissue and does nothing for the tooth.',
+        'Gentle warm salt-water rinses, a teaspoon of salt in a cup of warm water, can soothe a sore or swollen gum and are safe to use.',
+        'A cold compress held against the outside of the cheek can ease swelling and take the edge off.',
+      ] },
+      { type: 'p', text: 'If paracetamol is not controlling the pain, do not reach for stronger tablets on your own. Contact your dentist, GP, midwife or a pharmacist, who can advise on what is safe for you at your stage of pregnancy. Our guide to [managing severe toothache before you can be seen](/blog/managing-severe-toothache-before-you-can-be-seen/) covers the wider self-care steps, but the pregnancy rule on ibuprofen above overrides the combination it describes.' },
+
+      { type: 'h2', text: 'Antibiotics and abscesses in pregnancy' },
+      { type: 'p', text: 'If you have a dental abscess, the infection is being fed by a problem inside or around the tooth, and clearing it means a dentist treating that source, not antibiotics alone. Where antibiotics are needed, for example if the infection is spreading, there are options a dentist can prescribe that are suitable in pregnancy, so do not let worry about medication stop you being seen. What you should not do is take leftover or someone else\'s antibiotics, which may be the wrong type or unsafe for pregnancy. Our guide on whether [antibiotics cure a dental abscess](/blog/antibiotics-dental-abscess/) explains why the tooth itself still needs treating either way.' },
+      { type: 'p', text: 'A note on bleeding gums, which many people first notice in pregnancy: hormonal changes make gums more prone to swelling and bleeding, sometimes called pregnancy gingivitis. This is common and usually settles with good cleaning, and the [Oral Health Foundation](https://www.dentalhealth.org/dental-care-during-pregnancy) covers looking after your gums in pregnancy in more depth. A painful, swollen gum with a bad taste can also be an abscess, though, so if in doubt have it checked rather than assuming it is just pregnancy gums.' },
+
+      { type: 'h2', text: 'NHS dental care is free while you are pregnant' },
+      { type: 'p', text: 'Cost should never be the reason you put off emergency dental care in pregnancy, because for most people there is none. NHS dental treatment, including urgent and emergency care, is free if you are pregnant or have had a baby in the twelve months before your treatment starts. You will usually need a maternity exemption certificate, which your midwife or doctor can arrange for you, and it stays valid for a year after the birth. If you are matched with a dentist who can offer NHS emergency care, bring or mention the certificate and the urgent appointment costs you nothing.' },
+      { type: 'p', text: 'NHS dental access across Enfield can be stretched, so an NHS emergency slot is not always available immediately. If you choose or need a private appointment to be seen quickly, that is a personal decision, but the free NHS route exists and is worth asking about whenever you are pregnant or recently gave birth.' },
+
+      { type: 'h2', text: 'Getting seen quickly in Enfield' },
+      { type: 'p', text: 'Once you have managed the pain safely, the priority is being seen. During normal hours your own dentist is the first call if you have one. If you do not, or cannot get through, we can match you with a vetted emergency dentist across the borough, from Enfield Town and Bush Hill Park in EN1 and EN2 through to Enfield Highway and Ponders End in EN3, and the southern areas around Edmonton and Palmers Green. Tell us you are pregnant when you use the form, so we can flag it to the practice. We are an independent matching service and do not treat you ourselves, but most introductions happen within the hour.' },
+      { type: 'p', text: 'Out of hours, at the weekend or on a bank holiday, NHS 111 is the route to urgent NHS dental care across north London and can advise where to go. For any sign of a spreading infection, facial swelling, a fever, or difficulty breathing or swallowing, do not wait, call 999 or go to A&E, where the nearest major department is North Middlesex University Hospital in Edmonton. A dental emergency in pregnancy is very treatable, and being seen promptly is the safest course for both you and the baby.' },
+    ],
+  },
 ];
 
 export const getArticleBySlug = (slug: string): BlogArticle | undefined =>

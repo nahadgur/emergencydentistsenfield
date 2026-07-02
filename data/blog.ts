@@ -1250,6 +1250,76 @@ export const blogArticles: BlogArticle[] = [
       { type: 'p', text: 'Out of hours, at the weekend or on a bank holiday, NHS 111 is the route to urgent NHS dental care across north London and can advise where to go. For any sign of a spreading infection, facial swelling, a fever, or difficulty breathing or swallowing, do not wait, call 999 or go to A&E, where the nearest major department is North Middlesex University Hospital in Edmonton. A dental emergency in pregnancy is very treatable, and being seen promptly is the safest course for both you and the baby.' },
     ],
   },
+  {
+    slug: 'same-day-emergency-dentist-enfield',
+    hub: 'out-of-hours-emergency-dentist-enfield',
+    draft: true,
+    title: 'How to get seen the same day by an emergency dentist in Enfield',
+    metaTitle: 'Same-Day Emergency Dentist in Enfield: How to Get Seen',
+    metaDescription:
+      'In pain and need a same-day dentist in Enfield? The fastest routes to an appointment today, how NHS 111 urgent booking works, and what to have ready when you call.',
+    category: 'Local',
+    publishDate: '2026-07-02',
+    updatedDate: '2026-07-02',
+    excerpt:
+      'When a tooth flares up in the morning, most people want to be seen the same day, not next week. Here is the fastest way to get a same-day emergency dental appointment in Enfield, and what actually speeds it up.',
+    faqs: [
+      {
+        question: 'Can I get a same-day emergency dentist in Enfield?',
+        answer:
+          'Often yes, especially if you act early in the day. Your own dentist is the quickest route if you are registered, as many keep a few emergency slots each morning. If you have no dentist or cannot get through, NHS 111 can book you into urgent NHS dental care, and our same-day matching connects you with a vetted Enfield private practice, usually within the hour during opening times. Same-day is easier to arrange on a weekday than late on a Sunday.',
+      },
+      {
+        question: 'Does NHS 111 book same-day dental appointments?',
+        answer:
+          'NHS 111 can now book urgent NHS dental appointments directly, and it runs day and night. A clinician assesses your symptoms and, if you meet the urgent threshold, books you into the nearest urgent dental centre with a slot. That slot may be the same day or within a day or two depending on demand, and at busy times such as weekends and bank holidays the wait can be longer, so call as early as you can.',
+      },
+      {
+        question: 'What is the fastest way to be seen if I have no dentist?',
+        answer:
+          'Call NHS 111 for the NHS urgent route, or use the matching form on this page to be connected with a private Enfield emergency dentist. Ringing round practices yourself works but is slow, because most fill their emergency slots first thing. Whichever route you choose, calling before mid-morning gives you the best chance of a same-day appointment.',
+      },
+      {
+        question: 'Can I just walk in to a dentist in Enfield for emergency care?',
+        answer:
+          'Walk-ins are rarely reliable. Most Enfield practices are appointment-only and will ask you to phone first, and there is no dedicated dental walk-in centre in the borough. Chase Farm Hospital has an urgent treatment centre, but that is for medical urgent care, not routine dental problems. Phone ahead or use NHS 111 rather than turning up unannounced.',
+      },
+    ],
+    content: [
+      { type: 'p', text: 'When a tooth flares up first thing in the morning, the question is almost never whether to see a dentist, it is how to be seen today rather than next week. Same-day emergency dental care in Enfield is usually achievable, but how quickly you get in depends far more on which route you take and how early you act than on luck. This guide sets out the fastest ways to secure a same-day appointment, in the order worth trying them.' },
+      { type: 'note', text: 'If you have facial swelling spreading towards your eye or neck, a fever with swelling, or any difficulty breathing or swallowing, this is a medical emergency, not a same-day dental job. Call 999 or go to A&E, where the nearest major department is North Middlesex University Hospital in Edmonton. For urgent but non-emergency dental pain out of hours, call NHS 111. To be matched with a vetted Enfield emergency dentist, use the form on this page.' },
+
+      { type: 'h2', text: 'Start with your own dentist, if you have one' },
+      { type: 'p', text: 'If you are registered with a dentist, they are almost always the quickest route to a same-day appointment, and people forget this in a panic. Most practices hold back a small number of emergency slots each day for their own patients, and they fill early. Phone the moment the practice opens rather than waiting to see whether the pain settles. Even if the receptionist cannot see you that morning, a registered patient in genuine pain is prioritised over someone ringing cold, and they can often fit you in later the same day or first thing the next.' },
+      { type: 'p', text: 'Be clear on the phone about what is wrong and how bad it is. "I have been up all night with throbbing pain and my face is starting to swell" gets a very different response from "my tooth is a bit sore". Describe the pain, any swelling, whether something has broken or come out, and how long it has been going on. The receptionist is triaging, and the more specific you are, the more accurately they can slot you in.' },
+
+      { type: 'h2', text: 'No dentist, or cannot get through? Use NHS 111' },
+      { type: 'p', text: 'If you have no regular dentist, cannot reach yours, or it is outside normal hours, NHS 111 is the route to urgent NHS dental care and it operates day and night. A trained adviser or clinician assesses your symptoms and, where you meet the urgent threshold, can now book you directly into an urgent dental appointment at a centre with capacity. You can start the same assessment online through the [NHS 111 service](https://111.nhs.uk/) if you would rather not sit on the phone. The appointment offered may be the same day or within a day or two, and it will not always be in Enfield itself, because the urgent rota covers a wider slice of north London.' },
+      { type: 'p', text: 'Be realistic about timing. A weekday morning gives you the best chance of a same-day NHS slot, while Sunday afternoons and bank holidays are the hardest, because the on-call rota is thin and demand peaks. If you are in significant pain, calling early matters more here than anywhere, because same-day capacity is finite and goes quickly. NHS 111 is free, and if your problem turns out to need a hospital rather than a dentist, they will redirect you.' },
+
+      { type: 'h2', text: 'The private same-day route' },
+      { type: 'p', text: 'Private emergency appointments are the other same-day option, and their advantage is availability and choice of time, including the evening and weekend [out-of-hours slots](/services/out-of-hours/) when NHS urgent capacity is scarce. The drawback is calling round takes time you do not have when you are in pain. A typical person rings five to eight Enfield practices on a Saturday morning before finding one with a free slot, and by then half the day is gone. This is exactly the gap a matching service closes: we already know which vetted Enfield practices have same-day capacity, so we can confirm an introduction quickly rather than leaving you working through the phone book. We are an independent matching service and do not treat you ourselves.' },
+      { type: 'p', text: 'Private speed does come at a price, and it helps to know roughly what before you book. Our guide to what an [emergency dentist costs in Enfield](/blog/emergency-dentist-cost-enfield/) sets out the private consultation fee and what treatment adds on top, and if you are weighing the trade-off between the two routes, our comparison of [NHS and private emergency dental care](/blog/nhs-vs-private-emergency-dental-enfield/) walks through which suits which situation. For a fuller picture of getting seen when practices are closed, the [out-of-hours emergency dentist guide](/guides/out-of-hours-emergency-dentist-enfield/) covers the weekend and overnight routes in one place.' },
+
+      { type: 'h2', text: 'What to have ready before you call' },
+      { type: 'p', text: 'Whichever route you use, a little preparation shaves time off getting an appointment and makes the appointment itself more useful. Before you pick up the phone or fill in a form, have to hand:' },
+      { type: 'list', items: [
+        'A clear description of the problem: where the pain is, how bad, whether there is swelling, bleeding, or a tooth that has broken or come out.',
+        'How long it has been going on, and whether it is getting worse.',
+        'Your medical basics: any regular medicines, allergies (especially to antibiotics or local anaesthetic), and whether you are pregnant.',
+        'Any relevant piece to bring, such as a knocked-out tooth stored in milk, a broken fragment, or a crown that has come off.',
+        'A rough idea of your availability that day, so you can say yes to a slot without hesitating.',
+      ] },
+      { type: 'p', text: 'If you are waiting a few hours for the appointment, manage the pain sensibly in the meantime. Our guide to [managing severe toothache before you can be seen](/blog/managing-severe-toothache-before-you-can-be-seen/) covers what actually helps and what makes things worse. In short, take paracetamol or ibuprofen to the packet dose if they are safe for you, keep your head propped up, and avoid very hot, very cold or sugary food on the sore side.' },
+
+      { type: 'h2', text: 'Why walk-ins usually are not the answer' },
+      { type: 'p', text: 'People often assume they can simply turn up at a dentist the way they might at a pharmacy. In practice this rarely works. Almost every Enfield practice is appointment-only, and turning up unannounced usually means being asked to phone and wait for a slot anyway. There is no dedicated dental walk-in centre in the borough. Chase Farm Hospital runs an urgent treatment centre, but that is for medical urgent care and cannot provide routine dental treatment such as extractions, fillings or draining an abscess. The quickest same-day path is almost always a phone call or the matching form, not a journey to a waiting room.' },
+      { type: 'p', text: 'One genuinely useful walk-in resource is your local pharmacy. A pharmacist cannot treat the tooth, but they can advise on safe pain relief while you wait, which is worth knowing if you are between appointments. For independent guidance on a dental problem and what treatment might involve, the Oral Health Foundation runs a free [dental helpline](https://www.dentalhealth.org/dental-helpline) that is not tied to any practice and will not contradict the advice here.' },
+
+      { type: 'h2', text: 'Getting seen across the borough' },
+      { type: 'p', text: 'Emergency demand does not respect postcodes, and we match across the whole borough, from Enfield Town and Bush Hill Park in EN1 and EN2, through Enfield Highway and Ponders End in EN3, down to Edmonton and Palmers Green in the south. Tell us what is wrong and where you are, and we will connect you with a vetted practice that can see you the same day where a slot exists. The single biggest thing you can do to be seen today is simple: act early. A tooth that starts hurting at breakfast is far easier to fit in than one you leave until the evening, so make the call as soon as you can.' },
+    ],
+  },
 ];
 
 export const getArticleBySlug = (slug: string): BlogArticle | undefined =>

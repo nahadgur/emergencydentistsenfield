@@ -1320,6 +1320,287 @@ export const blogArticles: BlogArticle[] = [
       { type: 'p', text: 'Emergency demand does not respect postcodes, and we match across the whole borough, from Enfield Town and Bush Hill Park in EN1 and EN2, through Enfield Highway and Ponders End in EN3, down to Edmonton and Palmers Green in the south. Tell us what is wrong and where you are, and we will connect you with a vetted practice that can see you the same day where a slot exists. The single biggest thing you can do to be seen today is simple: act early. A tooth that starts hurting at breakfast is far easier to fit in than one you leave until the evening, so make the call as soon as you can.' },
     ],
   },
+  {
+    slug: 'is-my-toothache-an-emergency',
+    hub: 'what-counts-as-a-dental-emergency-enfield',
+    draft: true,
+    title: 'Is my toothache an emergency, or can it wait?',
+    metaTitle: 'Is My Toothache an Emergency? How to Tell (Enfield)',
+    metaDescription:
+      'A simple way to judge whether toothache in Enfield needs same-day care, can wait a few days, or is a 999 problem, with the red-flag signs and how to be seen fast.',
+    category: 'Emergency basics',
+    publishDate: '2026-07-03',
+    updatedDate: '2026-07-03',
+    excerpt:
+      'Not every toothache needs an emergency appointment, and a few need a hospital rather than a dentist. Here is a simple way to judge which is which in Enfield, the red-flag signs, and how to be seen when it does count.',
+    faqs: [
+      {
+        question: 'How do I know if my toothache is a dental emergency?',
+        answer:
+          'As a rough guide, treat it as urgent and worth same-day care if the pain is severe or keeps you awake, if it comes with facial or gum swelling, a bad taste with fever, or a tooth that has broken, come loose or fallen out. A mild ache, or a brief twinge with hot or cold that settles in seconds, can usually wait a few days for a routine appointment, but should still be checked. Any swelling spreading towards your eye, throat or neck, or difficulty breathing or swallowing, is beyond a dentist and needs 999 or A&E.',
+      },
+      {
+        question: 'Can toothache wait until Monday?',
+        answer:
+          'Mild, controllable toothache with no swelling and no fever can often wait a couple of days, especially if paracetamol and ibuprofen keep it manageable. What should not wait is severe pain that ordinary painkillers do not touch, pain with swelling or a fever, or a tooth that has broken or been knocked loose. If you are unsure over a weekend, NHS 111 can assess your symptoms and tell you whether to wait or be seen sooner.',
+      },
+      {
+        question: 'Is throbbing toothache at night an emergency?',
+        answer:
+          'Throbbing that is worse lying down is very common and usually means an inflamed nerve rather than an emergency, so it can often be managed overnight with painkillers and by propping your head up, then seen the next day. It becomes urgent if it comes with facial swelling, a fever, or a bad taste, and it becomes a 999 problem if swelling spreads towards the eye or neck or you struggle to breathe or swallow.',
+      },
+      {
+        question: 'My toothache stopped on its own. Do I still need a dentist?',
+        answer:
+          'Yes. Severe pain that suddenly stops without treatment often means the nerve in the tooth has died, so it can no longer send pain signals, while the decay or infection that killed it carries on quietly. It commonly returns weeks later as an abscess or facial swelling. A tooth that hurt badly and then went silent still needs a dental examination rather than being written off as better.',
+      },
+    ],
+    content: [
+      { type: 'p', text: 'Toothache covers everything from a mild twinge to a pain that stops you sleeping, and it is not always obvious whether you need to be seen today, can wait a few days, or are actually looking at a hospital problem. Getting that judgement roughly right saves you an anxious wait when it is not needed and, more importantly, gets you seen fast when it is. Sorting your own symptoms comes down to the same test a dentist uses to decide [what counts as a dental emergency in Enfield](/guides/what-counts-as-a-dental-emergency-enfield/): how severe the pain is, whether there is swelling or fever, and whether a tooth has been physically damaged.' },
+      { type: 'note', text: 'Call 999 or go to A&E now if you have swelling spreading towards your eye, throat or neck, difficulty breathing or swallowing, or a high fever with confusion or feeling very unwell. For severe dental pain without those signs, call NHS 111 out of hours, or use the same-day matching form on this page to reach a vetted Enfield dentist.' },
+
+      { type: 'h2', text: 'Three levels: wait, same-day, or 999' },
+      { type: 'p', text: 'Almost every toothache falls into one of three groups, and working out which one yours is in tells you what to do next. The dividing lines are pain severity, whether there is swelling or fever, and whether a tooth has been physically damaged.' },
+
+      { type: 'h3', text: 'Can usually wait a few days' },
+      { type: 'list', items: [
+        'A mild, dull ache that paracetamol or ibuprofen keeps comfortable.',
+        'A brief twinge with hot, cold or sweet food that settles within seconds.',
+        'Mild sensitivity in one tooth with no swelling and no fever.',
+        'A small chip with no pain and no sharp edge.',
+      ] },
+      { type: 'p', text: 'These still need a dentist, because sensitivity and small chips can hide deeper damage, but they are not an emergency and a routine appointment within a few days is fine.' },
+
+      { type: 'h3', text: 'Worth same-day or next-day care' },
+      { type: 'list', items: [
+        'Severe pain that ordinary painkillers do not control, or that keeps you awake.',
+        'Pain with swelling of the gum or face, a bad taste, or a mild fever.',
+        'A tooth that has broken with the inner tooth exposed, or a sharp edge cutting your tongue.',
+        'A tooth that has been knocked loose, pushed out of line, or fallen out.',
+        'Bleeding from the mouth that keeps restarting.',
+      ] },
+      { type: 'p', text: 'This is the group most people mean by a dental emergency. It needs prompt professional care, but a dentist rather than a hospital. A knocked-out adult tooth is the most time-critical of all, where the first hour decides whether it can be saved.' },
+
+      { type: 'h3', text: 'A 999 or A&E problem, not a dental one' },
+      { type: 'list', items: [
+        'Swelling spreading towards your eye, or down towards your throat or neck.',
+        'Any difficulty breathing or swallowing, or a change in your voice.',
+        'A high fever with shaking chills, confusion, or feeling very unwell.',
+        'Uncontrolled bleeding, or a serious head or facial injury.',
+      ] },
+      { type: 'p', text: 'Here the tooth is no longer the main concern. A dental infection spreading into the facial spaces, or a serious injury, is a medical emergency that needs a hospital, and the nearest major A&E for most of the borough is North Middlesex University Hospital in Edmonton. Chase Farm Hospital runs an urgent treatment centre rather than a full A&E.' },
+
+      { type: 'h2', text: 'Pain is a poor guide on its own' },
+      { type: 'p', text: 'It is tempting to judge urgency purely by how much it hurts, but pain alone can mislead in both directions. A cracked tooth or an inflamed nerve can be agonising yet perfectly safe to treat the next day, while a spreading infection can build with surprisingly modest pain until the swelling takes over. This is why the questions that matter are not only how bad the pain is, but whether there is swelling, a fever, or damage to the tooth itself. The [NHS guidance on toothache](https://www.nhs.uk/conditions/toothache/) takes the same line: manage the pain, but see a dentist, and treat spreading facial swelling or difficulty breathing as an emergency.' },
+      { type: 'p', text: 'One pattern trips people up more than any other. Severe toothache that stops abruptly without treatment is rarely good news, because it usually means the nerve has died rather than healed. The infection underneath carries on silently and often returns as an [abscess](/guides/dental-abscess-enfield/) weeks later. If a bad ache has suddenly gone quiet, still have the tooth checked.' },
+
+      { type: 'h2', text: 'While you decide, manage it sensibly' },
+      { type: 'p', text: 'Whatever level your toothache is at, a few simple measures make the wait easier without masking anything a dentist needs to know. Paracetamol and ibuprofen taken to the packet dose, where they are safe for you, work better together than either alone. Propping your head up on two or three pillows reduces the night-time throb, and avoiding very hot, very cold or sugary food on the sore side stops flare-ups. Never rest an aspirin tablet against the gum, which burns the tissue. For independent advice on safe self-care, the Oral Health Foundation runs a free [dental helpline](https://www.dentalhealth.org/dental-helpline), and there is more on [managing severe toothache before you can be seen](/blog/managing-severe-toothache-before-you-can-be-seen/), from cold-compress technique to the mistakes that make pain worse. If you are not sure whether the ache is even coming from a tooth, the [common causes of sudden toothache](/blog/sudden-toothache-causes/) explain what is usually behind it.' },
+
+      { type: 'h2', text: 'Getting seen in Enfield when it does count' },
+      { type: 'p', text: 'Once you have decided the toothache is urgent, the priority is a dentist. During normal hours your own dentist is the first call if you have one, as many keep a few emergency slots each morning. If you do not have a dentist, or cannot get through, we connect you with a vetted practice for [urgent toothache care](/services/severe-toothache/) across the borough, from [Enfield Town](/location/enfield-town/) and Bush Hill Park in EN1 and EN2, through Enfield Highway and Ponders End in EN3, to Edmonton and Palmers Green in the south. We are an independent matching service and do not treat you ourselves, but most introductions happen within the hour.' },
+      { type: 'p', text: 'Out of hours, at the weekend or on a bank holiday, NHS 111 is the route to urgent NHS dental care across north London and can now book urgent appointments directly. You can also use the same-day matching form on this page at any time. When you are genuinely unsure which of the three levels you are in, calling NHS 111 first is the safest move, because they can steer you to a dentist, an urgent treatment centre, or A&E as your symptoms need.' },
+    ],
+  },
+  {
+    slug: 'facial-swelling-from-a-tooth',
+    hub: 'what-counts-as-a-dental-emergency-enfield',
+    draft: true,
+    title: 'Facial swelling from a tooth: when it is serious',
+    metaTitle: 'Facial Swelling From a Tooth: When to Worry (Enfield)',
+    metaDescription:
+      'When facial swelling from a tooth is urgent dental care and when it is a 999 emergency. Spreading-infection and sepsis red flags, and fast help in Enfield.',
+    category: 'Emergency basics',
+    publishDate: '2026-07-03',
+    updatedDate: '2026-07-03',
+    excerpt:
+      'Swelling in the face from a tooth infection ranges from a job for a same-day dentist to a genuine 999 emergency. Here is how to read the difference in Enfield, the red flags that mean hospital, and how to be seen quickly.',
+    faqs: [
+      {
+        question: 'Is facial swelling from a tooth an emergency?',
+        answer:
+          'It depends on where the swelling is and how you feel with it. A localised swelling around one tooth, with no fever and no spread, is urgent dental work and needs a same-day dentist. Swelling that is spreading across the face, towards the eye, or down under the jaw and into the neck, especially with a fever, difficulty swallowing or breathing, or feeling very unwell, is a medical emergency and needs 999 or A&E, not a dental appointment.',
+      },
+      {
+        question: 'Can a tooth infection spread and become life-threatening?',
+        answer:
+          'Rarely, yes. Most dental infections stay local and are dealt with easily by a dentist. A small number spread into the tissue spaces of the face and neck, which can threaten the airway, or into the bloodstream as sepsis. This is uncommon, but when it happens it moves fast, which is why the spreading signs, swelling towards the eye or neck, difficulty breathing or swallowing, high fever or confusion, mean calling 999 rather than waiting.',
+      },
+      {
+        question: 'What are the warning signs of sepsis from a tooth?',
+        answer:
+          'The UK Sepsis Trust lists signs including slurred speech or confusion, extreme shivering or muscle pain, passing little or no urine, severe breathlessness, mottled or discoloured skin, and a feeling that something is very wrong. Alongside a dental infection, a high fever with shaking chills, a racing heart or feeling extremely unwell should all be taken seriously. Sepsis is a medical emergency: call 999 and say you are worried about sepsis.',
+      },
+      {
+        question: 'How do I reduce facial swelling from a tooth at home?',
+        answer:
+          'Home measures only hold a mild, localised swelling while you arrange to be seen, they do not treat the cause. A cold compress on the outside of the cheek, paracetamol or ibuprofen at the packet dose where they are safe for you, and gentle warm salt-water rinses can ease it. Do not press, squeeze or try to lance a swelling. If it is spreading, or you feel unwell with it, stop self-treating and get urgent help.',
+      },
+    ],
+    content: [
+      { type: 'p', text: 'Waking up with a swollen face because of a tooth is frightening, and the right response depends entirely on where the swelling is and how you feel with it. A small, localised swelling around one tooth is usually a job for a same-day dentist. Swelling that is spreading, or that comes with feeling unwell, can be a genuine emergency that needs a hospital. Facial swelling is one of the clearer markers of [what counts as a dental emergency in Enfield](/guides/what-counts-as-a-dental-emergency-enfield/), and reading it correctly is what keeps you out of the wrong queue.' },
+      { type: 'note', text: 'Call 999 or go to A&E now if facial swelling is spreading towards your eye or down your neck, if you have any difficulty breathing, swallowing or opening your mouth, a high fever with shaking chills, or you feel confused or very unwell. These can be signs of a spreading infection or sepsis. For a localised swelling around one tooth with none of these signs, call NHS 111 out of hours or use the same-day matching form on this page to reach a vetted Enfield dentist.' },
+
+      { type: 'h2', text: 'Why a tooth makes the face swell' },
+      { type: 'p', text: 'Facial swelling from a tooth is almost always infection. When the nerve inside a tooth dies, usually after untreated decay or a crack, bacteria collect and the body walls them off into a pocket of pus, a dental abscess. Pressure builds, and the swelling you see in the cheek, gum or jaw is the infection pushing into the surrounding soft tissue. Most of the time it stays contained near the tooth, and a dentist draining the abscess and treating the tooth clears it quickly. The concern is the minority of cases where the infection does not stay put.' },
+
+      { type: 'h2', text: 'Localised swelling: urgent, but usually a dentist' },
+      { type: 'p', text: 'A swelling that sits close to one tooth, perhaps a firm lump in the gum or a puffy cheek on one side, without a fever and without spreading, is urgent dental work rather than a hospital problem. You should aim to be seen the same day, because an abscess does not settle on its own and antibiotics alone will not cure it, but you are not in immediate danger. A dentist will drain the pus, treat or remove the tooth, and prescribe antibiotics only if the infection is spreading. If you are not certain the lump is an abscess at all, [telling a dental abscess from an ordinary toothache](/blog/recognising-a-dental-abscess-vs-routine-toothache/) sets out the features to look for.' },
+      { type: 'p', text: 'While you wait to be seen, a cold compress on the outside of the cheek, painkillers to the packet dose, and gentle warm salt-water rinses can take the edge off. Do not press, squeeze or try to burst the swelling, which can push the infection deeper.' },
+
+      { type: 'h2', text: 'Spreading swelling: the red flags for A&E' },
+      { type: 'p', text: 'The picture changes the moment the swelling starts to move beyond the immediate area of the tooth. Certain patterns mean the infection is heading into spaces where it can threaten your airway or your eye, and these are hospital problems that need 999 or A&E, not a dental chair:' },
+      { type: 'list', items: [
+        'Swelling spreading up towards or around the eye, or any change in your vision.',
+        'Swelling spreading down under the jaw, into the floor of the mouth, or towards the neck.',
+        'Difficulty swallowing, drooling, or a muffled change in your voice.',
+        'Any difficulty breathing, even mild.',
+        'Not being able to open your mouth more than a little way.',
+      ] },
+      { type: 'p', text: 'The [NHS advice on dental abscesses](https://www.nhs.uk/conditions/dental-abscess/) is explicit about this: go to A&E or call 999 if you are finding it hard to breathe, speak or swallow, have a swollen or painful eye or sudden eyesight problems, have a lot of swelling in your mouth, or cannot open your mouth. Swelling in these areas can close the airway, and that is why the threshold for going to hospital is deliberately low.' },
+
+      { type: 'h2', text: 'When swelling is a sepsis warning' },
+      { type: 'p', text: 'Very occasionally a dental infection spreads into the bloodstream and triggers sepsis, the body\'s overwhelming response to infection. This is rare from a tooth, but it is why feeling systemically unwell alongside facial swelling should never be brushed off. The [UK Sepsis Trust](https://sepsistrust.org/about-sepsis/spotting-the-signs-of-sepsis/) lists warning signs including slurred speech or confusion, extreme shivering or muscle pain, passing little or no urine, severe breathlessness, mottled or discoloured skin, and a strong feeling that something is seriously wrong. A high fever with shaking chills or a racing heart alongside a tooth infection belongs in the same category. If any of these appear, call 999, go to A&E, and say plainly that you are worried about sepsis, because early treatment saves lives.' },
+
+      { type: 'h2', text: 'How fast to act, at a glance' },
+      { type: 'list', items: [
+        'Localised swelling around one tooth, no fever, not spreading: same-day dentist.',
+        'Swelling with a fever, or getting worse by the hour: same-day dentist urgently, and lower your threshold to call NHS 111.',
+        'Swelling towards the eye or neck, difficulty breathing or swallowing, high fever with confusion: 999 or A&E now.',
+      ] },
+      { type: 'p', text: 'If you are not sure which applies, treat it as more serious rather than less. Swelling can change quickly, and it is safer to be reassured at A&E or by NHS 111 than to wait at home while an infection spreads.' },
+
+      { type: 'h2', text: 'Getting seen quickly in Enfield' },
+      { type: 'p', text: 'For a localised swelling that needs a dentist rather than a hospital, being seen the same day matters, because the infection will not wait. During normal hours your own dentist is the first call if you have one. If you do not, or cannot get through, we connect you with a vetted dentist for [urgent abscess and infection care](/services/dental-abscess/) across the borough, from Enfield Town and Bush Hill Park in EN1 and EN2 to [Palmers Green](/location/palmers-green/) and Edmonton in the south. We are an independent matching service and do not treat you ourselves, but most introductions happen within the hour.' },
+      { type: 'p', text: 'Out of hours, at the weekend or on a bank holiday, NHS 111 is the route to urgent NHS dental care across north London. If the swelling is spreading, or you feel unwell with it, do not use a dental route at all: call 999 or go to A&E, the nearest major department being North Middlesex University Hospital in Edmonton. When it is a contained swelling and you simply need a dentist, use the same-day matching form on this page and tell us how long the swelling has been there and whether it is getting bigger.' },
+    ],
+  },
+  {
+    slug: 'child-knocked-out-or-broken-tooth',
+    hub: 'childrens-dental-emergencies-enfield',
+    draft: true,
+    title: 'Child knocks out or breaks a tooth: what to do in Enfield',
+    metaTitle: 'Child Knocked Out or Broke a Tooth: First Aid (Enfield)',
+    metaDescription:
+      'A child has knocked out or broken a tooth in Enfield? Baby versus adult teeth rules, safe first aid, when it is A&E, and how to reach a dentist fast.',
+    category: 'Trauma & first aid',
+    publishDate: '2026-07-03',
+    updatedDate: '2026-07-03',
+    excerpt:
+      'When a child knocks out or breaks a tooth, the first aid depends on whether it is a baby tooth or an adult one, and getting that right matters. Here is what to do in Enfield, what to avoid, and the signs that mean hospital first.',
+    faqs: [
+      {
+        question: 'My child knocked out a baby tooth. Should I put it back?',
+        answer:
+          'No. Never try to reinsert a knocked-out baby tooth. Pushing it back into the socket can damage the developing adult tooth in the gum underneath. Comfort your child, control any bleeding with gentle pressure, and still have them seen by a dentist, who will check the socket and the adult tooth developing beneath it. Bring the tooth so the dentist can confirm it is whole and nothing has been left behind.',
+      },
+      {
+        question: 'My child knocked out an adult tooth. What do I do?',
+        answer:
+          'For an adult permanent tooth, act fast, because the first hour is critical. Pick it up by the white crown, not the root, rinse it briefly in milk if dirty, and if your child is calm enough gently push it back into the socket and have them bite on a clean cloth. If you cannot reinsert it, store it in milk or in their cheek if there is no risk of swallowing, and get to a dentist within the hour.',
+      },
+      {
+        question: 'How do I know if it is a baby tooth or an adult tooth?',
+        answer:
+          'Children usually start losing baby teeth and getting adult teeth from around age six, so it depends on your child\'s age and which tooth it is. Baby teeth are smaller and whiter with a smooth edge. If you are not certain, do not attempt to reinsert it, keep the tooth in milk, and let the dentist identify it. Getting it wrong by pushing a baby tooth back can harm the adult tooth beneath, so when in doubt, leave it out and be seen.',
+      },
+      {
+        question: 'When should I take my child to A&E for a tooth injury?',
+        answer:
+          'Go to A&E or call 999 if the injury came with a heavy blow to the head and your child was knocked out, is drowsy, confused or repeatedly vomiting, has bleeding you cannot control with ten minutes of pressure, a possible broken jaw, or any difficulty breathing or swallowing. For Enfield, the nearest major A&E is North Middlesex University Hospital in Edmonton. Chase Farm Hospital runs an urgent treatment centre rather than a full A&E.',
+      },
+    ],
+    content: [
+      { type: 'p', text: 'Children knock teeth on trampolines, in the playground, off the edge of the coffee table, and a knocked-out or broken tooth is one of the most common [children\'s dental emergencies in Enfield](/guides/childrens-dental-emergencies-enfield/) parents face. The good news is that most childhood tooth injuries are manageable with calm first aid, and the single most important thing to get right is whether it is a baby tooth or an adult one, because the rules are opposite.' },
+      { type: 'note', text: 'Call 999 or go to A&E first if the injury came with a heavy blow to the head and your child was knocked out, is drowsy, confused or vomiting, has bleeding you cannot stop with ten minutes of pressure, a suspected broken jaw, or any difficulty breathing or swallowing. For a dental-only injury, call NHS 111 out of hours or use the same-day matching form on this page to reach a vetted Enfield dentist.' },
+
+      { type: 'h2', text: 'First, stay calm and check your child' },
+      { type: 'p', text: 'A frightened, bleeding child is alarming, but the first job is to reassure them and take stock. Sit them up, have a look in the mouth under good light, and work out what has happened: is a tooth missing, broken, pushed out of line, or just chipped, and is there bleeding from the gum or lip. Control any bleeding by pressing a clean piece of gauze or a folded tissue against it for about ten minutes. A cold compress or a wrapped ice pack on the outside of the cheek helps swelling and pain. Before you do anything with the tooth itself, decide whether it is a baby tooth or an adult one, because that changes everything.' },
+
+      { type: 'h2', text: 'Baby teeth: never push them back' },
+      { type: 'p', text: 'If your child has knocked out a baby, or milk, tooth, do not try to put it back in. Reinserting a baby tooth risks damaging the adult tooth developing in the bone underneath, which is the opposite of what you want. This is different from the rule for adults, and it catches many parents out. Comfort your child, stop any bleeding, and still take them to a dentist, who will examine the socket, check the adult tooth bud is unharmed, and make sure no fragment has been left behind. Keep the tooth and bring it so the dentist can confirm it came out whole.' },
+      { type: 'p', text: 'A broken or chipped baby tooth needs a dental check too, even if your child is not in much pain. A sharp edge can cut the tongue or lip, and a break that reaches the nerve needs treating to prevent infection. The [NHS advice on children\'s teeth](https://www.nhs.uk/conditions/baby/babys-development/teething/looking-after-your-babys-teeth/) is to see a dentist promptly after any injury rather than waiting to see how it settles.' },
+
+      { type: 'h2', text: 'Adult teeth: the first hour counts' },
+      { type: 'p', text: 'For a permanent adult tooth, the response is the reverse, and speed matters enormously. A knocked-out adult tooth has the best chance of survival if it is back in its socket within the hour. Pick the tooth up by the white crown, never the root, and if it is dirty rinse it briefly in milk rather than scrubbing it. If your child is old enough and calm enough, gently ease the tooth back into the socket the right way round and have them bite on a clean cloth to hold it. If you cannot reinsert it, store it in a cup of milk, or tucked inside your child\'s cheek only if they are old enough not to swallow it, and get to a dentist straight away.' },
+      { type: 'p', text: 'Because the timing is so tight, the full step-by-step for a [knocked-out adult tooth in the first 60 minutes](/blog/what-to-do-if-you-knock-out-a-tooth/) is worth knowing before you ever need it. A tooth that has been broken rather than knocked out is less time-critical, but keep any sizeable fragment in milk, as a dentist can sometimes bond it back on, a point the Oral Health Foundation also makes in its advice on [children\'s teeth](https://www.dentalhealth.org/).' },
+
+      { type: 'h2', text: 'A tooth that is loose or pushed out of place' },
+      { type: 'p', text: 'Not every knock removes a tooth. A child\'s tooth can be loosened, pushed sideways, or driven up into the gum. For a baby tooth, do not try to reposition it yourself, as that risks the adult tooth beneath, just have it checked. For an adult tooth that has been pushed out of line, leave it roughly where it is and see a dentist urgently to reposition and support it, rather than forcing it back. Forcing a displaced tooth can damage the root and the surrounding bone, so the safe rule is to steady it and be seen quickly.' },
+
+      { type: 'h2', text: 'When it is a hospital problem first' },
+      { type: 'p', text: 'Children fall hard, and a tooth injury sometimes comes with a head injury that takes priority over the tooth. Treat it as a medical emergency and call 999 or go to A&E if your child took a heavy blow to the head and lost consciousness, is drowsy, confused or repeatedly vomiting, has bleeding you cannot control, a suspected broken jaw where the teeth no longer meet, or any difficulty breathing or swallowing. For Enfield, the nearest major A&E is North Middlesex University Hospital in Edmonton. Chase Farm Hospital runs an urgent treatment centre rather than a full A&E, so for a serious injury head to North Middlesex or call 999. If you are unsure how serious it is, NHS 111 can assess your child and tell you where to go.' },
+
+      { type: 'h2', text: 'What happens afterwards, and what to watch for' },
+      { type: 'p', text: 'A tooth injury in a child is not always over once the tooth is back in or the edge is smoothed, because the nerve inside can take weeks to declare whether it has survived the knock. Dentists often want to review an injured tooth a few times over the following months to check it is healing and settling back into the bite. In the meantime, watch for a tooth that darkens or turns greyish, a gum boil or swelling appearing near it, or renewed pain, any of which can mean the nerve has died and the tooth needs further treatment. This is as true for baby teeth as adult ones, and it is worth mentioning any colour change to the dentist even if your child seems perfectly comfortable.' },
+      { type: 'p', text: 'Practical aftercare at home is straightforward. Keep your child on softer food for a few days so the injured tooth is not stressed, help them keep the area clean with gentle brushing and, for an adult tooth that has been splinted, avoid biting directly on it until the dentist removes the splint. A child who has had a fright around their mouth can be nervous about eating and cleaning, so patience and reassurance do as much good here as anything clinical.' },
+
+      { type: 'h2', text: 'Getting your child seen across Enfield' },
+      { type: 'p', text: 'Once the immediate first aid is done and a head injury is ruled out, the priority is a dentist, and for a knocked-out adult tooth that means within the hour. During normal hours your child\'s own dentist is the first call if they are registered. If you do not have one, or cannot get through, we connect families with a vetted dentist for a [knocked-out or displaced tooth](/services/knocked-out-tooth/) across the borough, from [Enfield Town](/location/enfield-town/) and Bush Hill Park in EN1 and EN2 through to Edmonton and Palmers Green in the south. We are an independent matching service and do not treat your child ourselves, but most introductions happen within the hour.' },
+      { type: 'p', text: 'Out of hours, at the weekend or on a bank holiday, NHS 111 is the route to urgent NHS dental care across north London. You can also use the same-day matching form on this page at any time. Bring the tooth or any fragment stored in milk, and a note of any painkillers you have given your child and when, as the dentist will want to know.' },
+    ],
+  },
+  {
+    slug: 'broken-or-lost-denture',
+    hub: 'bleeding-swelling-denture-emergencies-enfield',
+    draft: true,
+    title: 'Broken or lost denture: what to do before you are seen',
+    metaTitle: 'Broken or Lost Denture: What to Do (Enfield)',
+    metaDescription:
+      'Broken, cracked or lost denture in Enfield? Why not to glue it yourself, how to protect your mouth, dealing with denture sores, and how to be seen quickly.',
+    category: 'Emergency basics',
+    publishDate: '2026-07-03',
+    updatedDate: '2026-07-03',
+    excerpt:
+      'A denture that snaps, cracks or goes missing is disruptive but rarely a true emergency. Here is what to do in Enfield before a dentist can see you, why household glue is a mistake, and how to be seen quickly.',
+    faqs: [
+      {
+        question: 'Can I glue a broken denture back together myself?',
+        answer:
+          'No. Household glue and superglue are toxic in the mouth, set hard in the wrong position, and can make a denture impossible to repair properly, leaving you needing a new one. They can also irritate or damage the gum. Keep all the pieces, however small, in a safe container and let a dentist or clinical dental technician repair it properly. If you must patch a denture to get through a day, use only a pharmacy denture repair kit designed for the purpose, and treat it as a stop-gap.',
+      },
+      {
+        question: 'Is a broken denture a dental emergency?',
+        answer:
+          'A broken or lost denture is usually urgent rather than a true emergency, so it is unlikely to harm your health in the next few hours. It becomes more pressing if a broken denture has a sharp edge cutting your gum or cheek, if a piece is loose enough to be a choking risk, or if the mouth underneath is sore or ulcerated. In those cases, stop wearing it and arrange to be seen promptly rather than waiting.',
+      },
+      {
+        question: 'What do I do about a denture that rubs and has made a sore?',
+        answer:
+          'Take the denture out and leave it out to give the sore a chance to heal, and rinse your mouth with warm salt water a few times a day. Do not keep wearing a denture that is cutting into the gum, as it can worsen the ulcer. If a sore spot lasts more than about two weeks, or an ulcer will not heal, have it checked by a dentist, because a long-lasting mouth ulcer should always be looked at rather than ignored.',
+      },
+      {
+        question: 'Can a denture be repaired the same day in Enfield?',
+        answer:
+          'Often, yes. Many practices and dental laboratories offer same-day or next-day denture repairs and relines, especially for a clean break where all the pieces are kept. During normal hours your own dentist is the first call. If you do not have one, our same-day matching can connect you with a vetted Enfield practice, and out of hours NHS 111 can advise on urgent options. Keeping every fragment gives the best chance of a quick, sound repair.',
+      },
+    ],
+    content: [
+      { type: 'p', text: 'A denture that snaps in half, cracks, loses a tooth, or goes missing altogether is genuinely disruptive, affecting how you eat, speak and feel in company, but it is rarely a threat to your health. That means you have a little time to handle it properly rather than reaching for a quick fix that makes things worse. Unlike the [bleeding and swelling denture emergencies in Enfield](/guides/bleeding-swelling-denture-emergencies-enfield/) that do need urgent care, a broken denture mainly needs the right handling in the first few minutes to keep it repairable.' },
+      { type: 'note', text: 'A broken or lost denture on its own is not a 999 emergency. Seek urgent medical help if a broken piece is small enough to be a choking hazard and you think you may have inhaled rather than swallowed it, or you develop coughing, wheezing or difficulty breathing. For denture repairs and mouth soreness out of hours in Enfield, call NHS 111, and use the form on this page to be matched with a vetted Enfield dentist.' },
+
+      { type: 'h2', text: 'If your denture breaks or cracks' },
+      { type: 'p', text: 'The instinct to mend a broken denture yourself is strong, especially first thing before work, but the way you handle the next few minutes decides whether it can be repaired cleanly. Work through these steps:' },
+      { type: 'list', items: [
+        'Stop wearing the denture if it has broken into pieces or has a sharp edge, so it cannot cut your gum or cheek.',
+        'Gather every fragment, however small, including any individual teeth that have come away, and keep them together in a small container or sealed bag.',
+        'Rinse the pieces gently and store them somewhere safe until you can be seen. There is no need to keep them wet the way you would a knocked-out tooth.',
+        'Leave the repair to a professional. A dentist or clinical dental technician can bond a clean break properly, and keeping all the parts makes a strong repair far more likely.',
+      ] },
+      { type: 'p', text: 'The one thing to avoid above all is household glue or superglue. These adhesives are toxic in the mouth, set hard in the wrong position, and frequently ruin a denture that could otherwise have been repaired, turning a simple fix into a full replacement. If you genuinely cannot manage without the denture for a day, a pharmacy denture repair kit made for the job is the only safe temporary option, and even then it is a stop-gap until a proper repair. The Oral Health Foundation gives similar plain-language guidance on caring for and repairing dentures at [dentalhealth.org](https://www.dentalhealth.org/), and it will not contradict the advice here.' },
+
+      { type: 'h2', text: 'If your denture is lost' },
+      { type: 'p', text: 'A completely lost denture is more of an inconvenience than an urgent problem, but it still needs sorting, because the longer you go without it the more your remaining teeth can drift and the gum ridge can change shape, which affects the fit of a replacement. Have a thorough look in the usual places first, as dentures are often wrapped in a tissue and thrown away by mistake. If it really is gone, contact your dentist to arrange a replacement, which usually means taking new impressions. In the meantime, keep to softer foods you can manage comfortably and keep your remaining teeth and gums clean.' },
+
+      { type: 'h2', text: 'Denture sores, rubbing and ulcers' },
+      { type: 'p', text: 'A denture that has broken, worn or shifted often starts to rub, and a new or badly fitting denture can do the same, leaving a sore spot or an ulcer on the gum. The most useful thing you can do is take the denture out and leave it out to let the area recover, and rinse with warm salt water a few times a day to keep it clean and soothe the soreness. Do not force yourself to keep wearing a denture that is cutting in, as that only deepens the sore. If a sore spot or ulcer has not healed within about two weeks, have it looked at, because any mouth ulcer that persists that long should be checked by a dentist rather than left. A dentist can also ease or reline a denture that rubs so it stops happening.' },
+      { type: 'p', text: 'If the soreness comes with bleeding or swelling of the gum rather than a simple rub, that can point to something other than the denture, and a swollen, painful gum with a bad taste can be an early [dental abscess](/guides/dental-abscess-enfield/) rather than a denture sore. When in doubt, have it looked at rather than assuming the denture is to blame.' },
+
+      { type: 'h2', text: 'Getting seen and repaired across Enfield' },
+      { type: 'p', text: 'Most denture problems are fixed quickly once you reach the right person, and many practices and laboratories offer same-day or next-day repairs and relines for a clean break with all the pieces kept. During normal hours your own dentist is the first call if you have one. If you do not, or cannot get an appointment, we can connect you with a vetted dentist for [urgent denture and gum care](/services/out-of-hours/) across the borough, from [Enfield Town](/location/enfield-town/) and Bush Hill Park in EN1 and EN2, through Enfield Highway and Ponders End in EN3, to Edmonton and Palmers Green in the south. We are an independent matching service and do not treat you ourselves, but most introductions happen within the hour.' },
+      { type: 'p', text: 'Out of hours, at the weekend or on a bank holiday, NHS 111 is the route to urgent NHS dental care across north London and can advise on the quickest option. If you are between dentists, you can also find a practice taking new patients through the [NHS find a dentist service](https://www.nhs.uk/service-search/find-a-dentist). Use the same-day matching form on this page at any time, bringing every piece of the denture with you, and we will connect you with a dentist who can repair, reline or replace it so you are comfortable again.' },
+    ],
+  },
 ];
 
 export const getArticleBySlug = (slug: string): BlogArticle | undefined =>

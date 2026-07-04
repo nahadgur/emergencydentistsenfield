@@ -1253,7 +1253,7 @@ export const blogArticles: BlogArticle[] = [
   {
     slug: 'same-day-emergency-dentist-enfield',
     hub: 'out-of-hours-emergency-dentist-enfield',
-    draft: true,
+    draft: false,
     title: 'How to get seen the same day by an emergency dentist in Enfield',
     metaTitle: 'Same-Day Emergency Dentist in Enfield: How to Get Seen',
     metaDescription:

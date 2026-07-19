@@ -98,15 +98,34 @@ routing, London Borough of Enfield). NEVER paraphrase the Harlow site.
 
 ## 8. Status tracker
 
-10 hubs live (/guides). Spokes: 12 mapped (4 live + 8 draft buffered), target ~80
+10 hubs live (/guides). Spokes: 16 mapped (5 live + 11 draft buffered), target ~80
 (~8/hub), quality-gated. Every hub H1-H10 now has at least one spoke. Last writer
-run 2026-06-13: added H2 second spoke `loose-or-displaced-tooth-first-aid` (draft,
-luxation/displacement first-aid intent, distinct from the existing full-avulsion
-spoke `what-to-do-if-you-knock-out-a-tooth`). Round-robin pass two continues at H3
-(second spoke per hub, distinct intents only).
+run 2026-06-16: added H6 second spoke `pericoronitis-wisdom-tooth-gum-flap` (draft;
+pericoronitis / inflamed operculum gum-flap over a partly erupted wisdom tooth:
+what it is, salt-water relief, when spreading swelling/trismus/dysphagia make it a
+999/A&E emergency, why it recurs until the tooth is assessed/removed). Distinct from
+the existing H6 spoke `dry-socket-after-tooth-extraction` (post-extraction clot loss)
+and from the hub's brief pericoronitis section. Round-robin pass two now advances to
+H7 (second spoke per hub; H7 `out-of-hours` has only the live
+`nhs-vs-private-emergency-dental-enfield`), distinct intents only. Prior writer
+run 2026-06-15: added H5 second spoke `antibiotics-dental-abscess` (draft;
+antibiotics-do-not-cure / when-prescribed / never-self-prescribe intent, distinct
+from the existing recognition spoke `recognising-a-dental-abscess-vs-routine-toothache`
+and the hub's brief antibiotics section). Round-robin pass two now advances to H6
+(second spoke per hub; H6 has only `dry-socket-after-tooth-extraction`), distinct
+intents only. Prior writer run 2026-06-15: added H4 second spoke `lost-crown-first-aid` (draft, lost-crown
+re-cementing / keep-and-reuse-the-crown / swallowed-crown intent, distinct from the
+existing filling-focused spoke `lost-filling-first-aid` which states a filling
+cannot be reused). Prior run 2026-06-15 added H3 second spoke `cracked-tooth-pain`.
+Earlier run 2026-06-13 added H2 second spoke `loose-or-displaced-tooth-first-aid`.
+Round-robin pass two continues at H5 (second spoke per hub, distinct intents only).
+Publisher 2026-06-15: flipped H1 second spoke `sudden-toothache-causes` live (completes
+H1 severe-toothache high-intent pair); wired reciprocal sibling link from the live
+flagship `managing-severe-toothache-before-you-can-be-seen`. Next publish: prefer the H2
+buffered sibling `loose-or-displaced-tooth-first-aid` (completes the knocked-out pair).
 ## Slug rules (writer: follow on every spoke)
 
 Kebab-case: lowercase, hyphens only, ASCII only, 3-6 words, under ~60 chars.
 Do NOT: include a year/date; reuse or near-duplicate an existing slug; use a
 reserved head term or the parent hub's head term; keyword-stuff or repeat a word;
-use st
+use stop words (a/the/to/for). Never rename or reuse a published slug.

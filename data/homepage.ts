@@ -16,7 +16,7 @@
 export const heroContent = {
   eyebrow: 'Free matching · Vetted Enfield emergency dentists',
   titleHtml:
-    '<strong>Severe toothache</strong>, <strong>knocked-out tooth</strong>, or sudden <strong>swelling on the gum</strong>?',
+    'Emergency dentist in Enfield. <strong>Severe toothache</strong>, <strong>knocked-out tooth</strong>, or sudden <strong>swelling on the gum</strong>?',
   subtitleHtml:
     'Tell us what happened and where in the borough you are. We match you with a vetted Enfield <strong>emergency dental appointment</strong> within 60 minutes in working hours, first thing the next morning otherwise. <strong>GDC-registered</strong>, <strong>indemnity-insured</strong>, free to patients.',
 };

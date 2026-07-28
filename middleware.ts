@@ -11,11 +11,12 @@
 // DO NOT redirect retired URLs to / — that creates the soft-404
 // problem (every dead URL looks like a duplicate of the homepage).
 //
-// Note: no canonical-host (www vs apex) redirect here. The sitemap and
-// robots routes are host-aware so both GSC properties (www and apex)
-// see URLs matching their own scope. Forcing one host caused GSC
-// "URL not allowed for a Sitemap at this location" on the property
-// that didn't match.
+// Note: host canonicalisation is handled at the Vercel domain level —
+// www 307-redirects to the apex (emergencydentistsenfield.co.uk), which
+// is the 200 host. siteConfig.url therefore MUST be the apex so every
+// canonical/sitemap/robots/OG URL points at the host that serves 200.
+// Do not re-point these at www: www only redirects, so a www canonical
+// is rejected by Google as "Alternate page with proper canonical tag".
 
 import { NextRequest, NextResponse } from 'next/server';
 

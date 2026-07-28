@@ -2,7 +2,10 @@
 export const siteConfig = {
   name: 'Emergency Dentist Enfield',
   tagline: 'Same-day matching with vetted Enfield emergency dentists',
-  url: 'https://www.emergencydentistsenfield.co.uk',
+  // Apex (non-www) is the host Vercel serves 200; www 307-redirects here.
+  // Canonicals/sitemap/robots/OG/schema MUST match the 200 host or Google
+  // rejects the self-canonical ("Alternate page with proper canonical tag").
+  url: 'https://emergencydentistsenfield.co.uk',
   description:
     'Free matching service for urgent dental care in Enfield. Severe toothache, knocked-out tooth, broken tooth, abscess, lost filling — matched within an hour during opening hours, next-morning otherwise. GDC-registered dentists across EN1, EN2, EN3, N9, N13, N14, N18, N21.',
   // Geographic service area (used in schema). Centralised so organisation/
